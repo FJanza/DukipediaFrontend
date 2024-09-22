@@ -1,6 +1,7 @@
 import {defineCollection, z} from "astro:content";
 
 const songs = defineCollection({
+  type: "data",
   schema: z.object({
     url: z.string(),
     title: z.string(),
