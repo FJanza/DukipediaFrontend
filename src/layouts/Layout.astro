@@ -1,33 +1,50 @@
 ---
 interface Props {
-	title: string;
+  title: string;
 }
 
-const { title } = Astro.props;
+const {title} = Astro.props;
 
-import Header from "../components/Header.astro"
+import Header from "../components/Header.astro";
 ---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Dukipedia - pagina bigrafica de mauro ezequiel lombardo" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Dukipedia - pagina bigrafica de mauro ezequiel lombardo"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-	html {
-		font-family: system-ui, sans-serif;
-		background: #0F1516;
-		color-scheme: dark light;
-	}
-	body {
- 	 	color: white;
-	}
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  @tailwind screens;
+  html {
+    font-family: system-ui, sans-serif;
+    background: #0f1516;
+    color-scheme: dark light;
+  }
+  body {
+    color: white;
+  }
+
+  @layer utilities {
+    .clip-md-image-yt {
+      clip-path: inset(31px 0px 30px 0px round 8px 8px 0px 0px);
+    }
+    .clip-sm-image-yt {
+      clip-path: inset(24px 0px 24px 0px round 8px 8px 0px 0px);
+    }
+  }
 </style>

@@ -1,0 +1,36 @@
+{
+  "url": "https://www.youtube.com/watch?v=7usBVSSjq8A",
+  "title": "Duki - NO VENDO TRAP (Prod. Pa$ha) (VIDEOCLIP OFICIAL)",
+  "shortTitle": "NO VENDO TRAP",
+  "singers": "Duki (Prod. Pa$ha)",
+  "date": "2016-12-11T01:42:12Z",
+  "thumbnails": {
+    "default": {
+      "url": "https://i.ytimg.com/vi/7usBVSSjq8A/default.jpg",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i.ytimg.com/vi/7usBVSSjq8A/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i.ytimg.com/vi/7usBVSSjq8A/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+    },
+    "standard": {
+      "url": "https://i.ytimg.com/vi/7usBVSSjq8A/sddefault.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "maxres": {
+      "url": "https://i.ytimg.com/vi/7usBVSSjq8A/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "position": 0,
+  "videoOwnerChannelTitle": "Frankzjj '"
+}

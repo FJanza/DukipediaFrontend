@@ -1,0 +1,168 @@
+---
+import {getCollection} from "astro:content";
+import SongCard from "./SongCard.astro";
+
+const songs = await getCollection("songs");
+
+const years: number[] = [
+  ...new Set<number>(
+    songs.map((song: any) => {
+      const {id, data} = song;
+      const {date} = data;
+      const dateObject = new Date(date);
+      const dateUTCminus3 = new Date(dateObject.getTime() - 3 * 60 * 60 * 1000);
+
+      return dateUTCminus3.getFullYear();
+    })
+  ),
+].sort((a, b) => a - b);
+---
+
+<style>
+  .active {
+    color: white;
+    background-color: #14b8a567;
+  }
+  .card {
+    position: relative;
+  }
+  .container {
+    width: 90dvw;
+  }
+</style>
+
+<article class="relative h-svh flex flex-col items-center z-20 pt-4">
+  <h2 class="text-xl md:text-2xl font-semibold text-center">
+    Todos los temas en los que ha participado
+  </h2>
+
+  <div class="flex flex-col items-center">
+    <div class="flex flex-row flex-wrap gap-3 justify-center px-4 py-5">
+      {
+        years.map((year, i) => {
+          return (
+            <a
+              href={`#${year}`}
+              id={`${year}`}
+              class={`${i === 0 ? "active" : ""} bg-transparent text-teal-500 border-teal-600 border-2 py-1 px-2 rounded-lg pointer-events-none`}
+            >
+              {year}
+            </a>
+          );
+        })
+      }
+    </div>
+    <div class="container">
+      <div class="relative">
+        <div
+          id="scrollContainer"
+          class="flex overflow-hidden overflow-x-auto space-x-4 pb-3"
+        >
+          {
+            songs
+              .sort(
+                (a: any, b: any) =>
+                  new Date(a.data.date).getTime() -
+                  new Date(b.data.date).getTime()
+              )
+              .map((song: any) => {
+                const {id, data} = song;
+                const {url, title, shortTitle, singers, date, thumbnails} =
+                  data;
+                const {high} = thumbnails;
+                const dateObject = new Date(date);
+                const dateUTCminus3 = new Date(
+                  dateObject.getTime() - 3 * 60 * 60 * 1000
+                ).getFullYear();
+                const imgUrl = high?.url;
+                return (
+                  <SongCard
+                    dateUTCminus3={dateUTCminus3}
+                    imgUrl={imgUrl}
+                    shortTitle={shortTitle}
+                    url={url}
+                    singers={singers}
+                  />
+                );
+              })
+          }
+        </div>
+        <button
+          id="prev"
+          class="hidden md:block z-40 absolute left-0 top-2/3 md:top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-lg w-10 ml-3"
+        >
+          ←
+        </button>
+        <button
+          id="next"
+          class="hidden md:block z-40 absolute right-0 top-2/3 md:top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-lg w-10 mr-3"
+        >
+          →
+        </button>
+      </div>
+    </div>
+  </div>
+</article>
+
+<script>
+  const scrollContainer = document.querySelector("#scrollContainer");
+  const nextButton = document.getElementById("next");
+  const prevButton = document.getElementById("prev");
+
+  nextButton?.addEventListener("click", () => {
+    scrollContainer?.scrollBy({
+      top: 0,
+      left: 300,
+      behavior: "smooth",
+    });
+  });
+
+  prevButton?.addEventListener("click", () => {
+    scrollContainer?.scrollBy({
+      top: 0,
+      left: -320,
+      behavior: "smooth",
+    });
+  });
+
+  scrollContainer?.addEventListener("scroll", () => {
+    const cards = document.querySelectorAll(".card");
+    let closestCard: any = null;
+    let closestDistance = Infinity;
+
+    cards.forEach((card) => {
+      const cardRect = card.getBoundingClientRect();
+      const containerRect = scrollContainer.getBoundingClientRect();
+
+      // Solo consideramos las tarjetas que están dentro del contenedor
+      if (
+        cardRect.left < containerRect.right &&
+        cardRect.right > containerRect.left
+      ) {
+        const distance = Math.abs(cardRect.left - containerRect.left);
+
+        // Encontrar la tarjeta más a la izquierda
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestCard = card;
+        }
+      }
+    });
+
+    // Remover la clase 'active' del enlace previamente activo
+    const previousActiveLink = document.querySelector("a.active");
+    if (previousActiveLink) {
+      previousActiveLink.classList.remove("active");
+    }
+
+    // Agregar la clase 'active' al enlace correspondiente a la tarjeta más a la izquierda
+    if (closestCard) {
+      const currentLink = document.querySelector(
+        `a[href*="${closestCard.id}"]`
+      );
+      if (currentLink) {
+        currentLink.classList.add("active");
+      }
+    }
+  });
+</script>
