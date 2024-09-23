@@ -1,6 +1,7 @@
 ---
 import {getCollection} from "astro:content";
 import SongCard from "./SongCard.astro";
+import Modal from "./Modal.astro";
 
 const songs = await getCollection("songs");
 
@@ -54,6 +55,8 @@ const years: number[] = [
     </div>
     <div class="container">
       <div class="relative">
+        <Modal />
+
         <div
           id="scrollContainer"
           class="flex overflow-hidden overflow-x-auto space-x-4 pb-3"
@@ -105,7 +108,9 @@ const years: number[] = [
 </article>
 
 <script>
-  const scrollContainer = document.querySelector("#scrollContainer");
+  import {$, $$} from "../lib/dom-selectors";
+
+  const scrollContainer = $("#scrollContainer");
   const nextButton = document.getElementById("next");
   const prevButton = document.getElementById("prev");
 
@@ -126,7 +131,7 @@ const years: number[] = [
   });
 
   scrollContainer?.addEventListener("scroll", () => {
-    const cards = document.querySelectorAll(".card");
+    const cards = $$(".card");
     let closestCard: any = null;
     let closestDistance = Infinity;
 
@@ -150,16 +155,14 @@ const years: number[] = [
     });
 
     // Remover la clase 'active' del enlace previamente activo
-    const previousActiveLink = document.querySelector("a.active");
+    const previousActiveLink = $("a.active");
     if (previousActiveLink) {
       previousActiveLink.classList.remove("active");
     }
 
     // Agregar la clase 'active' al enlace correspondiente a la tarjeta más a la izquierda
     if (closestCard) {
-      const currentLink = document.querySelector(
-        `a[href*="${closestCard.id}"]`
-      );
+      const currentLink = $(`a[href*="${closestCard.id}"]`);
       if (currentLink) {
         currentLink.classList.add("active");
       }

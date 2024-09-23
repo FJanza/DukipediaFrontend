@@ -1,4 +1,6 @@
 ---
+import {convertToEmbed} from "../lib/utils";
+
 const {dateUTCminus3, imgUrl, shortTitle, url, singers} = Astro.props;
 ---
 
@@ -12,9 +14,13 @@ const {dateUTCminus3, imgUrl, shortTitle, url, singers} = Astro.props;
       class="max-w-56 max-h-56 md:max-w-80 md:max-h-96 object-cover"
     />
 
-    <a href={url} target="_blank" class="absolute z-20 top-28 right-3">
+    <a
+      class="absolute z-20 top-28 right-3 video-container"
+      data-clip-item
+      data-url={convertToEmbed(url) ?? "dQw4w9WgXcQ"}
+    >
       <button
-        class="absolute bottom-6 -right-1 md:bottom-7 md:right-2 bg-teal-700/40 rounded-full p-1"
+        class="button absolute bottom-6 -right-1 md:bottom-7 md:right-2 bg-teal-700/40 rounded-full p-1"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
