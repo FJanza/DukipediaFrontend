@@ -1,0 +1,33 @@
+{
+  "url": "https://www.youtube.com/watch?v=m0W62UdjBWk",
+  "title": "KLAN FIUCHER vs MKS DUKI",
+  "subtitle": "8vos Fecha 7 Torneo 2016 - El Quinto Escalon",
+  "date": "2016-09-19T06:00:00.000Z",
+  "thumbnails": {
+    "default": {
+      "url": "https://i.ytimg.com/vi/m0W62UdjBWk/default.jpg",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i.ytimg.com/vi/m0W62UdjBWk/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i.ytimg.com/vi/m0W62UdjBWk/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+    },
+    "standard": {
+      "url": "https://i.ytimg.com/vi/m0W62UdjBWk/sddefault.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "maxres": {
+      "url": "https://i.ytimg.com/vi/m0W62UdjBWk/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+    }
+  }
+}

@@ -50,4 +50,51 @@ const songs = defineCollection({
   }),
 });
 
-export const collections = {songs};
+const freestyles = defineCollection({
+  type: "data",
+  schema: z.object({
+    url: z.string(),
+    title: z.string(),
+    subtitle: z.string(),
+    date: z.string(),
+    thumbnails: z.object({
+      default: z
+        .object({
+          url: z.string(),
+          width: z.number(),
+          height: z.number(),
+        })
+        .optional(),
+      medium: z
+        .object({
+          url: z.string(),
+          width: z.number(),
+          height: z.number(),
+        })
+        .optional(),
+      high: z
+        .object({
+          url: z.string(),
+          width: z.number(),
+          height: z.number(),
+        })
+        .optional(),
+      standard: z
+        .object({
+          url: z.string(),
+          width: z.number(),
+          height: z.number(),
+        })
+        .optional(),
+      maxres: z
+        .object({
+          url: z.string(),
+          width: z.number(),
+          height: z.number(),
+        })
+        .optional(),
+    }),
+  }),
+});
+
+export const collections = {songs, freestyles};
