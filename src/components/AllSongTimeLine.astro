@@ -8,7 +8,7 @@ const songs = await getCollection("songs");
 const years: number[] = [
   ...new Set<number>(
     songs.map((song: any) => {
-      const {id, data} = song;
+      const {data} = song;
       const {date} = data;
       const dateObject = new Date(date);
       const dateUTCminus3 = new Date(dateObject.getTime() - 3 * 60 * 60 * 1000);
@@ -71,9 +71,8 @@ const years: number[] = [
                   new Date(b.data.date).getTime()
               )
               .map((song: any) => {
-                const {id, data} = song;
-                const {url, title, shortTitle, singers, date, thumbnails} =
-                  data;
+                const {data} = song;
+                const {url, shortTitle, singers, date, thumbnails} = data;
                 const {high} = thumbnails;
                 const dateObject = new Date(date);
                 const dateUTCminus3 = new Date(
