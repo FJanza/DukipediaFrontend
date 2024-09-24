@@ -20,7 +20,7 @@ const {dateUTCminus3, imgUrl, shortTitle, url, singers} = Astro.props;
       data-url={convertToEmbed(url) ?? "dQw4w9WgXcQ"}
     >
       <button
-        class="button absolute bottom-6 -right-1 md:bottom-7 md:right-2 bg-teal-700/40 rounded-full p-1"
+        class="button absolute bottom-10 -right-1 md:bottom-7 md:right-2 bg-teal-700/40 rounded-full p-1"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -44,8 +44,8 @@ const {dateUTCminus3, imgUrl, shortTitle, url, singers} = Astro.props;
       </button>
     </a>
   </div>
-  <div class="p-4 bg-black/50 absolute z-30 bottom-0 w-full">
-    <h3 class="text-white text-sm md:text-lg font-semibold">
+  <div class="p-2 md:p-4 bg-black/50 absolute z-30 bottom-0 w-full">
+    <h3 class="text-white text-xs md:text-lg font-semibold">
       {shortTitle}
     </h3>
     <p class="text-gray-400 text-xs md:text-sm mt-1 max-w-[40ch]">
