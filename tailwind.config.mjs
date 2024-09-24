@@ -26,6 +26,11 @@ export default {
       "3xl": "1536px",
       // => @media (min-width: 1536px) { ... }
     },
+    extend: {
+      backgroundImage: {
+        quinto: "url('/quinto_escalon.png')",
+      },
+    },
   },
   plugins: [],
 };
