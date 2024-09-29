@@ -22,8 +22,7 @@
     src="/degrade.png"
   />
   <img
-    class="object-cover w-80 lg:w-4/12 absolute lg:left-[10%] bottom-0 z-10"
-    style="filter: drop-shadow(0 0 1rem rgb(255, 255, 255))"
+    class="animated-shadow object-cover w-80 lg:w-4/12 absolute lg:left-[10%] bottom-0 z-10"
     src="/duki-cantando.png"
   />
   <img
@@ -31,3 +30,21 @@
     src="/estadio.png"
   />
 </article>
+
+<style>
+
+  .animated-shadow{
+    animation: shadow-pulse 2s infinite ease-in-out; /* Apply the animation */
+  }
+  @keyframes shadow-pulse {
+    0% {
+      filter: drop-shadow(0 0 2rem rgb(255, 255, 255));
+    }
+    50% {
+      filter: drop-shadow(0 0 4rem rgb(255, 255, 255));
+    }
+    100% {
+      filter: drop-shadow(0 0 2rem rgb(255, 255, 255));
+    }
+  }
+</style>
