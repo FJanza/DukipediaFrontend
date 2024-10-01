@@ -6,11 +6,12 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import {convertToEmbed} from "../lib/utils";
+import {format, parse} from "@formkit/tempo";
 
 const FreestyleCard = ({title, img, subtitle, date, url}) => {
   return (
     <div className="flex flex-col h-full justify-around items-center relative">
-      <card className="p-2 bg-[#00C0C8]/80 h-[85%] md:h-[70%] xl:h-[65%] rounded-md w-[80%]">
+      <card className="p-2 bg-[#00C0C8]/80 h-[85%] md:h-[70%] rounded-md w-[80%]">
         <h3 className="min-h-16 text-base md:text-lg font-bold px-3 pt-3 text-center">
           {title}
         </h3>
@@ -65,14 +66,14 @@ const FreestyleCarrusel = ({freestyles}) => {
       {freestyles.map((free) => {
         const {title, subtitle, thumbnails, date, url} = free.data;
         const img = thumbnails.high.url;
-        const formatedDate = new Date(date).toLocaleDateString();
+        const formatedDate = parse(date.split("T")[0], "YYYY-MM-DD");
         return (
           <SwiperSlide key={free.id}>
             <FreestyleCard
               title={title}
               subtitle={subtitle}
               img={img}
-              date={formatedDate}
+              date={format(formatedDate, {date: "medium"})}
               url={url}
             />
           </SwiperSlide>

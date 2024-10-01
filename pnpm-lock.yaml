@@ -17,6 +17,9 @@ importers:
       '@astrojs/tailwind':
         specifier: ^5.1.1
         version: 5.1.1(astro@5.0.0-beta.1(rollup@4.20.0)(typescript@5.5.4))(tailwindcss@3.4.10)
+      '@formkit/tempo':
+        specifier: ^0.1.2
+        version: 0.1.2
       '@types/react':
         specifier: ^18.3.10
         version: 18.3.10
@@ -356,6 +359,9 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+
+  '@formkit/tempo@0.1.2':
+    resolution: {integrity: sha512-jNPPbjL8oj7hK3eHX++CwbR6X4GKQt+x00/q4yeXkwynXHGKL27dylYhpEgwrmediPP4y7s0XtN1if/M/JYujg==}
 
   '@img/sharp-darwin-arm64@0.33.4':
     resolution: {integrity: sha512-p0suNqXufJs9t3RqLBO6vvrgr5OhgbWp76s5gTRvdmxmuv9E1rcaqGUsl3l4mKVmXPkTkTErXediAui4x+8PSA==}
@@ -2541,6 +2547,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.21.5':
     optional: true
+
+  '@formkit/tempo@0.1.2': {}
 
   '@img/sharp-darwin-arm64@0.33.4':
     optionalDependencies:
