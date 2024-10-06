@@ -15,7 +15,7 @@ const sortedFreestyles = freestyles.sort(
   >
     {
       sortedFreestyles.map((free, i) => {
-        const date = new Date(free.data.date).toLocaleDateString();
+        const date = new Date(free.data.date).toLocaleDateString("en-GB");
         return (
           <FreestyleCard
             first={i === 0}
