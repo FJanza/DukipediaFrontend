@@ -7,6 +7,20 @@ export default {
         stadium: "url('/estadio.png')",
       },
     },
+    colors: {
+      ameri: {
+        10: "#FDE3E3",
+        20: "#FAC3C3",
+        30: "#F69F9E",
+        40: "#F17A78",
+        50: "#EB5553",
+        60: "#E63330",
+        70: "#D92424",
+        80: "#C51E1E",
+        90: "#B11A1A",
+        100: "#D71112",
+      },
+    },
     screens: {
       sm: "640px",
       // => @media (min-width: 640px) { ... }
