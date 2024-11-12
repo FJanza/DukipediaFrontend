@@ -20,29 +20,31 @@ const years: number[] = [
 ---
 
 <article
-  class="relative bg-[url('/duki-mirando-horizonte.webp')] bg-cover h-svh flex flex-col items-center justify-start z-20 pt-14 gap-10 md:gap-24"
+  class="relative bg-custom-pos-x md:bg-center bg-[url('/duki-mirando-horizonte.webp')] bg-cover h-svh flex flex-col items-center justify-start z-20 pt-14 gap-10 md:gap-24"
 >
   <h2 class="text-2xl md:text-5xl font-semibold text-center">
     Todos los temas en los que ha participado
   </h2>
 
   <div class="flex flex-col items-center gap-5">
-    <div
-      class="flex flex-row flex-wrap gap-5 justify-center border-2 border-ameri-100 mb-3 rounded-lg"
-    >
-      {
-        years.map((year, i) => {
-          return (
-            <a
-              href={`#${year}`}
-              id={`${year}`}
-              class={`bg-transparent text-xl text-teal-500 py-1 px-2 rounded-lg pointer-events-none`}
-            >
-              {year}
-            </a>
-          );
-        })
-      }
+    <div class="px-4 flex justify-center">
+      <div
+        class="md:max-w-[60svw] flex flex-row flex-wrap gap-3 md:gap-5 justify-center border-2 border-ameri-100 mb-3 rounded-lg"
+      >
+        {
+          years.map((year, i) => {
+            return (
+              <a
+                href={`#${year}`}
+                id={`${year}`}
+                class={`bg-transparent text-base md:text-xl text-teal-500 py-1 px-2 rounded-lg pointer-events-none`}
+              >
+                {year}
+              </a>
+            );
+          })
+        }
+      </div>
     </div>
     <div class="max-h-[60svh] overflow-y-scroll">
       <Modal />

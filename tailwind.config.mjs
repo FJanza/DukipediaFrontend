@@ -2,11 +2,6 @@
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    extend: {
-      backgroundImage: {
-        stadium: "url('/estadio.png')",
-      },
-    },
     colors: {
       ameri: {
         10: "#FDE3E3",
@@ -43,6 +38,10 @@ export default {
     extend: {
       backgroundImage: {
         quinto: "url('/quinto_escalon.png')",
+        stadium: "url('/estadio.png')",
+      },
+      backgroundPosition: {
+        "custom-pos-x": "-300px", // Nombre de la clase y valor de background-position-x
       },
     },
   },

@@ -15,20 +15,20 @@ const {dateUTCminus3, imgUrl, shortTitle, url, singers} = Astro.props;
       <img
         src={imgUrl}
         alt={`Portada del álbum ${shortTitle}`}
-        class="max-w-64 object-cover"
+        class="max-w-32 md:max-w-64 object-cover"
       />
 
       <a
-        class="absolute z-20 top-28 right-[96px] video-container"
+        class="absolute z-20 top-14 right-[80px] md:top-28 md:right-[96px] video-container"
         data-clip-item
         data-url={convertToEmbed(url) ?? "dQw4w9WgXcQ"}
       >
         <button
-          class="button absolute bottom-10 -right-1 md:bottom-7 md:right-2 bg-teal-700/40 rounded-full p-1"
+          class="button absolute bottom-2 md:bottom-7 md:right-2 bg-teal-700/40 rounded-full p-1"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-8 w-8 text-white"
+            class="h-6 w-6 md:h-8 md:w-8 text-white"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
