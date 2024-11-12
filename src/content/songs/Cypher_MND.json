@@ -1,1 +1,36 @@
-{"url":"https://www.youtube.com/watch?v=1pmwjJ1h02Q","title":"Cypher MND #16: Duki (Video Oficial)","shortTitle":"Cypher MND","singers":"Duki","date":"2024-01-31T23:00:07Z","thumbnails":{"default":{"url":"https://i.ytimg.com/vi/1pmwjJ1h02Q/default.jpg","width":120,"height":90},"medium":{"url":"https://i.ytimg.com/vi/1pmwjJ1h02Q/mqdefault.jpg","width":320,"height":180},"high":{"url":"https://i.ytimg.com/vi/1pmwjJ1h02Q/hqdefault.jpg","width":480,"height":360},"standard":{"url":"https://i.ytimg.com/vi/1pmwjJ1h02Q/sddefault.jpg","width":640,"height":480},"maxres":{"url":"https://i.ytimg.com/vi/1pmwjJ1h02Q/maxresdefault.jpg","width":1280,"height":720}},"position":264,"videoOwnerChannelTitle":"Mundialista Crew"}
+{
+  "url": "https://www.youtube.com/watch?v=1pmwjJ1h02Q",
+  "title": "Cypher MND #16: Duki (Video Oficial)",
+  "shortTitle": "Cypher MND",
+  "singers": "Duki",
+  "date": "2024-01-31T23:00:07Z",
+  "thumbnails": {
+    "default": {
+      "url": "https://i.ytimg.com/vi/1pmwjJ1h02Q/default.jpg",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i.ytimg.com/vi/1pmwjJ1h02Q/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i.ytimg.com/vi/1pmwjJ1h02Q/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+    },
+    "standard": {
+      "url": "https://i.ytimg.com/vi/1pmwjJ1h02Q/sddefault.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "maxres": {
+      "url": "https://i.ytimg.com/vi/1pmwjJ1h02Q/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "position": 264,
+  "videoOwnerChannelTitle": "Mundialista Crew"
+}

@@ -1,0 +1,36 @@
+{
+  "url": "https://www.youtube.com/watch?v=9t13r4iqxLU",
+  "title": "Vida De Rock",
+  "shortTitle": "Vida De Rock",
+  "singers": "DUKI & Milo J",
+  "date": "2024-10-31T00:00:08Z",
+  "thumbnails": {
+    "default": {
+      "url": "https://i.ytimg.com/vi/9t13r4iqxLU/default.jpg",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i.ytimg.com/vi/9t13r4iqxLU/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i.ytimg.com/vi/9t13r4iqxLU/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+    },
+    "standard": {
+      "url": "https://i.ytimg.com/vi/9t13r4iqxLU/sddefault.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "maxres": {
+      "url": "https://i.ytimg.com/vi/9t13r4iqxLU/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "position": 241,
+  "videoOwnerChannelTitle": "Duki"
+}
