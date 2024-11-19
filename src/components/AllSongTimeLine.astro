@@ -60,7 +60,7 @@ const years: number[] = [
             .map((song: any) => {
               const {data} = song;
               const {url, shortTitle, singers, date, thumbnails} = data;
-              const {high, medium} = thumbnails;
+              const {high} = thumbnails;
               const dateObject = new Date(date);
               const dateUTCminus3 = new Date(
                 dateObject.getTime() - 3 * 60 * 60 * 1000
