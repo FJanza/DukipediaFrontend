@@ -2,6 +2,7 @@
 import {getCollection} from "astro:content";
 import SongCard from "./SongCard.astro";
 import Modal from "./Modal.astro";
+import {IMG_URL_DEFAULT_VIDEO_NOT_FOUND} from "../utils/constants";
 
 const songs = await getCollection("songs");
 
@@ -67,8 +68,7 @@ const years: number[] = [
               ).getFullYear();
               const imgUrl = high?.url;
 
-              return imgUrl !==
-                "https://i.ytimg.com/vi/1pmwjJ1h02Q/hqdefault.jpg" ? (
+              return imgUrl !== IMG_URL_DEFAULT_VIDEO_NOT_FOUND ? (
                 <SongCard
                   dateUTCminus3={dateUTCminus3}
                   imgUrl={imgUrl}
