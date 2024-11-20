@@ -2,20 +2,6 @@
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    colors: {
-      ameri: {
-        10: "#FDE3E3",
-        20: "#FAC3C3",
-        30: "#F69F9E",
-        40: "#F17A78",
-        50: "#EB5553",
-        60: "#E63330",
-        70: "#D92424",
-        80: "#C51E1E",
-        90: "#B11A1A",
-        100: "#D71112",
-      },
-    },
     screens: {
       sm: "640px",
       // => @media (min-width: 640px) { ... }
@@ -42,6 +28,20 @@ export default {
       },
       backgroundPosition: {
         "custom-pos-x": "-300px", // Nombre de la clase y valor de background-position-x
+      },
+      colors: {
+        ameri: {
+          10: "#FDE3E3",
+          20: "#FAC3C3",
+          30: "#F69F9E",
+          40: "#F17A78",
+          50: "#EB5553",
+          60: "#E63330",
+          70: "#D92424",
+          80: "#C51E1E",
+          90: "#B11A1A",
+          100: "#D71112",
+        },
       },
     },
   },
