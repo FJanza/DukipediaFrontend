@@ -37,8 +37,8 @@ export default {
     },
     extend: {
       backgroundImage: {
-        quinto: "url('/quinto_escalon.png')",
-        stadium: "url('/estadio.png')",
+        quinto: "url('/quinto_escalon.webp')",
+        stadium: "url('/estadio.webp')",
       },
       backgroundPosition: {
         "custom-pos-x": "-300px", // Nombre de la clase y valor de background-position-x
