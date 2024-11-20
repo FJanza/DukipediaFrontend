@@ -3,6 +3,9 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     screens: {
+      xs: "500px",
+      // => @media (min-width: 500px) { ... }
+
       sm: "640px",
       // => @media (min-width: 640px) { ... }
 
@@ -25,9 +28,11 @@ export default {
       backgroundImage: {
         quinto: "url('/quinto_escalon.webp')",
         stadium: "url('/estadio.webp')",
+        dukiRubio: "url('/duki-rubio-cantando.webp')",
       },
       backgroundPosition: {
-        "custom-pos-x": "-300px", // Nombre de la clase y valor de background-position-x
+        "custom-pos-x-300": "-300px", // Nombre de la clase y valor de background-position-x
+        "custom-pos-x-1000": "-1000px", // Nombre de la clase y valor de background-position-x
       },
       colors: {
         ameri: {
