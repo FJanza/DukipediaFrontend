@@ -29,10 +29,14 @@ export default {
         quinto: "url('/quinto_escalon.webp')",
         stadium: "url('/estadio.webp')",
         dukiRubio: "url('/duki-rubio-cantando.webp')",
+        antezana: "url('/antezana-background.webp')",
+        antezanaBeforeGraffity: "url('/antezana-before-graffity.webp')",
+        antezanaGraffity: "url('/antezana-graffity.webp')",
       },
       backgroundPosition: {
         "custom-pos-x-300": "-300px", // Nombre de la clase y valor de background-position-x
         "custom-pos-x-1000": "-1000px", // Nombre de la clase y valor de background-position-x
+        "custom-pos-y-100": "0, -100px", // Nombre de la clase y valor de background-position-x
       },
       colors: {
         ameri: {
