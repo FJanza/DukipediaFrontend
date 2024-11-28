@@ -1,0 +1,76 @@
+---
+import {getCollection} from "astro:content";
+import SongCard from "./SongCard.astro";
+import {IMG_URL_DEFAULT_VIDEO_NOT_FOUND} from "../utils/constants";
+
+const songs = await getCollection("modoDiabloSongs");
+---
+
+<article
+  class="bg-alasDeDuki bg-auto flex flex-col items-center relative min-h-svh pt-80 pb-12"
+>
+  <canvas
+    class="absolute w-svw h-36 top-0 left-0"
+    style={{background: "radial-gradient(#D71112, #710909)"}}></canvas>
+  <div class="group">
+    <img
+      src="/duki-ysy-neo.webp"
+      class="w-80 z-20 absolute left-[calc(50%-160px)] top-11 group-hover:scale-110 transition-all"
+      style={{maskImage: "linear-gradient(black 70%, transparent)"}}
+    />
+    <img
+      src="/modo-diablo-title.webp"
+      class="w-96 z-30 absolute left-[calc(50%-170px)] top-32"
+      style={{filter: "drop-shadow(0 2mm 4mm #D71112)"}}
+    />
+  </div>
+  <div
+    class="w-full flex flex-col justify-center items-center px-9 md:w-[80%] gap-7 md:gap-12"
+  >
+    <p class="text-base md:text-xl prose prose-white">
+      <span class="font-bold">Modo Diablo</span> es el grupo mas icónico dentro del
+      trap argentino, compuesto por <span class="font-bold">Duki</span> (Mauro Ezequiel
+      Lombardo), <span class="font-bold">Neo Pistea</span> (Sebastián Chinellato)
+      e
+      <span class="font-bold">Ysy A</span> (Alejo Nahuel Acosta, creador de El Quinto
+      Escalón). Su amistad y colaboración artística se afianzo en la Mansión (casa
+      de Antezana 247), un lugar donde produjeron y grabaron gran parte de su música
+    </p>
+    <div class="flex flex-col justify-center items-center gap-7 md:gap-9 px-2">
+      <h3 class="text-lg md:text-2xl font-semibold">
+        Temas en los que participo el grupo
+      </h3>
+      <div
+        class="flex flex-row flex-wrap justify-between md:justify-start gap-8"
+      >
+        {
+          songs
+            .sort(
+              (a: any, b: any) =>
+                new Date(a.data.date).getTime() -
+                new Date(b.data.date).getTime()
+            )
+            .map((song: any) => {
+              const {data} = song;
+              const {url, shortTitle, singers, date, thumbnails} = data;
+              const {high} = thumbnails;
+              const dateObject = new Date(date);
+              const dateUTCminus3 = new Date(
+                dateObject.getTime() - 3 * 60 * 60 * 1000
+              ).getFullYear();
+              const imgUrl = high?.url;
+              return imgUrl !== IMG_URL_DEFAULT_VIDEO_NOT_FOUND ? (
+                <SongCard
+                  dateUTCminus3={dateUTCminus3}
+                  imgUrl={imgUrl}
+                  shortTitle={shortTitle}
+                  url={url}
+                  singers={singers}
+                />
+              ) : null;
+            })
+        }
+      </div>
+    </div>
+  </div>
+</article>

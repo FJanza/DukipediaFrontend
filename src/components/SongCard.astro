@@ -1,7 +1,8 @@
 ---
 import {convertToEmbed} from "../lib/utils";
 
-const {dateUTCminus3, imgUrl, shortTitle, url, singers} = Astro.props;
+const {dateUTCminus3, imgUrl, shortTitle, url, singers, description} =
+  Astro.props;
 ---
 
 <div
@@ -17,6 +18,13 @@ const {dateUTCminus3, imgUrl, shortTitle, url, singers} = Astro.props;
         alt={`Portada del álbum ${shortTitle}`}
         class="max-w-32 md:max-w-64 object-cover"
       />
+      {
+        !description && (
+          <div class="absolute z-50 w-full h-5 xs:h-8 bg-ameri-50/60 -bottom-3 ">
+            <h4 class="text-center font-bold text-xs">{shortTitle}</h4>
+          </div>
+        )
+      }
 
       <a
         class="absolute z-20 top-14 right-[80px] md:top-28 md:right-[96px] video-container"
@@ -49,12 +57,16 @@ const {dateUTCminus3, imgUrl, shortTitle, url, singers} = Astro.props;
       </a>
     </div>
   </div>
-  <div class="p-2 md:p-4">
-    <h3 class="text-white text-xs md:text-lg font-semibold">
-      {shortTitle}
-    </h3>
-    <p class="text-gray-400 text-xs md:text-sm mt-1 max-w-[30ch]">
-      {singers}
-    </p>
-  </div>
+  {
+    description && (
+      <div class="p-2 md:p-4">
+        <h3 class="text-white text-xs md:text-lg font-semibold">
+          {shortTitle}
+        </h3>
+        <p class="text-gray-400 text-xs md:text-sm mt-1 max-w-[30ch]">
+          {singers}
+        </p>
+      </div>
+    )
+  }
 </div>
