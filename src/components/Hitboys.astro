@@ -1,0 +1,78 @@
+---
+import {getCollection} from "astro:content";
+import SongCard from "./SongCard.astro";
+import {IMG_URL_DEFAULT_VIDEO_NOT_FOUND} from "../utils/constants";
+
+const songs = await getCollection("hitboySongs");
+---
+
+<article
+  class="min-h-svh bg-gradient-to-b from-black from-40% via-blue-500/40 to-purple-500/30 flex flex-col items-center pb-20 pt-5"
+>
+  <div class="w-full bg-black flex justify-center pt-4">
+    <img
+      src="/hitboys.webp"
+      class="w-[500px] hover:brightness-110 saturate-150"
+      style={{
+        maskImage:
+          "linear-gradient(to bottom, transparent, black 30%, transparent)",
+      }}
+    />
+  </div>
+  <div
+    class="w-full flex flex-col justify-center items-center px-9 md:w-[80%] gap-7 md:gap-12 pt-5"
+  >
+    <div
+      class="flex flex-col justify-center text-base md:text-xl prose prose-white"
+    >
+      <p>
+        Khea y Duki son considerados dos de los principales pilares de la
+        revolución del trap en Argentina, junto a Cazzu. Khea comenzó su carrera
+        musical en las batallas de rap en las plazas de Buenos Aires, y junto a
+        Duki y Cazzu sentó las bases del trap en el país.
+      </p>
+    </div>
+    <div class="flex flex-col justify-center items-center gap-7 md:gap-9 px-2">
+      <h3 class="text-lg md:text-2xl font-semibold">
+        Temas en los que participo el grupo
+      </h3>
+      <div
+        class="flex flex-row flex-wrap justify-between md:justify-center gap-8 max-h-[400px] overflow-y-scroll"
+        style={{
+          maskImage: "linear-gradient(black 90%, transparent)",
+        }}
+      >
+        {
+          songs
+            .sort(
+              (a: any, b: any) =>
+                new Date(a.data.date).getTime() -
+                new Date(b.data.date).getTime()
+            )
+            .map((song: any, i: number) => {
+              const {data} = song;
+              const {url, shortTitle, singers, date, thumbnails} = data;
+              const {high} = thumbnails;
+              const dateObject = new Date(date);
+              const dateUTCminus3 = new Date(
+                dateObject.getTime() - 3 * 60 * 60 * 1000
+              ).getFullYear();
+              const imgUrl = high?.url;
+              return imgUrl !== IMG_URL_DEFAULT_VIDEO_NOT_FOUND ? (
+                <SongCard
+                  dateUTCminus3={dateUTCminus3}
+                  imgUrl={imgUrl}
+                  shortTitle={shortTitle}
+                  url={url}
+                  singers={singers}
+                  detailsColor={
+                    i % 2 === 0 ? "bg-purple-600/50" : "bg-cyan-600/50"
+                  }
+                />
+              ) : null;
+            })
+        }
+      </div>
+    </div>
+  </div>
+</article>

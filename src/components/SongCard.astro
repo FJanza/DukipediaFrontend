@@ -1,8 +1,16 @@
 ---
+import classNames from "classnames";
 import {convertToEmbed} from "../lib/utils";
 
-const {dateUTCminus3, imgUrl, shortTitle, url, singers, description} =
-  Astro.props;
+const {
+  dateUTCminus3,
+  imgUrl,
+  shortTitle,
+  url,
+  singers,
+  description,
+  detailsColor,
+} = Astro.props;
 ---
 
 <div
@@ -20,7 +28,12 @@ const {dateUTCminus3, imgUrl, shortTitle, url, singers, description} =
       />
       {
         !description && (
-          <div class="absolute z-50 w-full h-5 xs:h-8 bg-ameri-50/60 -bottom-3 ">
+          <div
+            class={classNames(
+              "absolute z-50 w-full h-5 xs:h-8 bg-ameri-70/60 -bottom-3 ",
+              detailsColor
+            )}
+          >
             <h4 class="text-center font-bold text-xs">{shortTitle}</h4>
           </div>
         )
@@ -32,7 +45,10 @@ const {dateUTCminus3, imgUrl, shortTitle, url, singers, description} =
         data-url={convertToEmbed(url) ?? "dQw4w9WgXcQ"}
       >
         <button
-          class="button absolute bottom-2 md:bottom-7 md:right-2 bg-ameri-70/40 rounded-full p-1"
+          class={classNames(
+            "button absolute bottom-2 md:bottom-7 md:right-2 bg-ameri-70/40 rounded-full p-1",
+            detailsColor
+          )}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
