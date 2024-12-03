@@ -26,10 +26,15 @@ const songs = await getCollection("hitboySongs");
       class="flex flex-col justify-center text-base md:text-xl prose prose-white"
     >
       <p>
-        Khea y Duki son considerados dos de los principales pilares de la
-        revolución del trap en Argentina, junto a Cazzu. Khea comenzó su carrera
-        musical en las batallas de rap en las plazas de Buenos Aires, y junto a
-        Duki y Cazzu sentó las bases del trap en el país.
+        <span class="font-bold">Khea</span> y <span class="font-bold">Duki</span
+        > son considerados dos de los principales pilares de la revolución del trap
+        en Argentina, junto a <span class="font-bold">Cazzu</span>. <span
+          class="font-bold">Khea</span
+        > comenzó su carrera musical en las batallas de rap en las plazas de Buenos
+        Aires, y junto a
+        <span class="font-bold">Duki</span> y <span class="font-bold"
+          >Cazzu</span
+        > sentó las bases del trap en el país.
       </p>
     </div>
     <div class="flex flex-col justify-center items-center gap-7 md:gap-9 px-2">
@@ -37,10 +42,7 @@ const songs = await getCollection("hitboySongs");
         Temas en los que participo el grupo
       </h3>
       <div
-        class="flex flex-row flex-wrap justify-between md:justify-center gap-8 max-h-[400px] overflow-y-scroll"
-        style={{
-          maskImage: "linear-gradient(black 90%, transparent)",
-        }}
+        class="flex flex-row flex-wrap justify-between md:justify-center gap-8 max-h-[400px] overflow-y-scroll sm:gradient-mask-transparent-90"
       >
         {
           songs
