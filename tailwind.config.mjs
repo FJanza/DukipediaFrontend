@@ -25,12 +25,6 @@ export default {
       // => @media (min-width: 1536px) { ... }
     },
     extend: {
-      maskImage: {
-        "gradient-mask-transparent-30":
-          "linear-gradient(to bottom, transparent, black 30%, transparent)",
-        "gradient-mask-transparent-90":
-          "linear-gradient(black 90%, transparent)",
-      },
       backgroundImage: {
         quinto: "url('/quinto_escalon.webp')",
         stadium: "url('/estadio.webp')",
@@ -61,5 +55,20 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({addUtilities}) {
+      addUtilities({
+        ".gradient-mask-transparent-30": {
+          maskImage:
+            "linear-gradient(to bottom, transparent, black 30%, transparent)",
+          WebkitMaskImage:
+            "linear-gradient(to bottom, transparent, black 30%, transparent)",
+        },
+        ".gradient-mask-transparent-linear-90": {
+          maskImage: "linear-gradient(black 90%, transparent)",
+          WebkitMaskImage: "linear-gradient(black 90%, transparent)",
+        },
+      });
+    },
+  ],
 };
