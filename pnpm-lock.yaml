@@ -20,9 +20,6 @@ importers:
       '@formkit/tempo':
         specifier: ^0.1.2
         version: 0.1.2
-      astro:
-        specifier: 5.0.0-beta.1
-        version: 5.0.0-beta.1(rollup@4.20.0)(typescript@5.5.4)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -38,6 +35,10 @@ importers:
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
+    devDependencies:
+      astro:
+        specifier: 5.0.0-beta.1
+        version: 5.0.0-beta.1(rollup@4.20.0)(typescript@5.5.4)
 
 packages:
 

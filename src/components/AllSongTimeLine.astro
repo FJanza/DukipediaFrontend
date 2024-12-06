@@ -24,7 +24,7 @@ const years: number[] = [
   class="relative bg-custom-pos-x-300 md:bg-center bg-[url('/duki-mirando-horizonte.webp')] bg-cover h-fit flex flex-col items-center justify-start z-20 pt-14 gap-10 md:gap-24"
 >
   <h2 class="text-2xl md:text-5xl font-semibold text-center">
-    Todos los temas en los que ha participado
+    Todos los temas en los que ha participado hasta ahora ({songs.length})
   </h2>
 
   <div class="flex flex-col items-center gap-5 pb-12">
@@ -104,7 +104,10 @@ const years: number[] = [
           (song) => Number(song.id) === Number(link.textContent)
         );
 
-        firstSong?.scrollIntoView({behavior: "smooth"});
+        firstSong?.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
       });
     });
   });
