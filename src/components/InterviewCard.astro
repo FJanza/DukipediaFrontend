@@ -1,0 +1,129 @@
+---
+const {paragraphs} = Astro.props;
+---
+
+<div
+  class="relative max-w-full sm:max-w-xl overflow-hidden border-2 border-ameri-70 rounded-lg"
+>
+  <div
+    class="flex transition-transform duration-500 ease-in-out carrusel-inner"
+    data-carrusel-id="carrusel-unique-{{Math.random()}}"
+  >
+    {
+      paragraphs.map((paragraph: string, index: number) => (
+        <div class="w-full flex-shrink-0 px-7 py-3 sm:p-12 pb-6">
+          <p class="text-sm md:text-xl prose prose-white">{paragraph}</p>
+        </div>
+      ))
+    }
+  </div>
+
+  {/* Botones de navegación */}
+  {
+    paragraphs.length > 1 && (
+      <>
+        <button class="prev absolute top-1/2 -left-1 transform -translate-y-1/2 text-ameri-70 hover:text-ameri-30   px-4 py-2 rounded-full">
+          ❮
+        </button>
+        <button class="next absolute top-1/2 -right-1 transform -translate-y-1/2 text-ameri-70 hover:text-ameri-30  px-4 py-2 rounded-full">
+          ❯
+        </button>
+      </>
+    )
+  }
+
+  {/* Indicadores del carrusel */}
+  <div
+    class="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2"
+  >
+    {
+      paragraphs.map((paragraph: string, index: number) => (
+        <span
+          class="w-2 h-2 sm:w-3 sm:h-3 bg-gray-400 rounded-full transition-all duration-300"
+          data-index={index}
+          aria-label={`Slide ${index + 1}`}
+        />
+      ))
+    }
+  </div>
+
+  <img
+    src="/comma.svg"
+    class="absolute top-1 right-1 z-50 w-5 sm:w-8 aspect-square"
+  />
+</div>
+
+<script type="module">
+  let currentIndex = 0;
+
+  // Función para mover el carrusel
+  function moveSlide(direction, carruselId) {
+    const carruselInner = document.querySelector(
+      `[data-carrusel-id="${carruselId}"]`
+    );
+    const slides = carruselInner.querySelectorAll("div");
+    const totalSlides = slides.length;
+
+    // Cambiar el índice de la imagen
+    currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+
+    // Mover el carrusel
+    carruselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+    // Actualizar los indicadores
+    updateIndicators(carruselId);
+  }
+
+  // Función para actualizar los indicadores
+  function updateIndicators(carruselId) {
+    const carruselInner = document.querySelector(
+      `[data-carrusel-id="${carruselId}"]`
+    );
+    const indicators = carruselInner
+      .closest(".relative")
+      .querySelectorAll('[aria-label^="Slide"]');
+    indicators.forEach((indicator, index) => {
+      indicator.classList.add("bg-gray-400");
+      if (index === currentIndex) {
+        indicator.classList.remove("bg-gray-400");
+        indicator.classList.add("bg-ameri-100"); // Indicador activo
+      }
+    });
+  }
+
+  // Asegurarse de que los eventos se agreguen correctamente al DOM
+  window.addEventListener("DOMContentLoaded", () => {
+    // Selecciona todos los carruseles con la clase .carrusel-inner
+    const carruseles = document.querySelectorAll(".carrusel-inner");
+
+    carruseles.forEach((carrusel, index) => {
+      const prevButton = carrusel.closest(".relative").querySelector(".prev");
+      const nextButton = carrusel.closest(".relative").querySelector(".next");
+      const carruselId = `carrusel-unique-${index}`;
+
+      // Establecer un ID único para cada carrusel
+      carrusel.setAttribute("data-carrusel-id", carruselId);
+
+      // Actualizar los indicadores al inicio
+      updateIndicators(carruselId);
+
+      if (prevButton && nextButton) {
+        prevButton.addEventListener("click", () => moveSlide(-1, carruselId));
+        nextButton.addEventListener("click", () => moveSlide(1, carruselId));
+      }
+
+      // Agregar eventos a los indicadores
+      const indicators = carrusel
+        .closest(".relative")
+        .querySelectorAll('[aria-label^="Slide"]');
+      indicators.forEach((indicator) => {
+        indicator.addEventListener("click", (e) => {
+          const targetIndex = parseInt(e.target.getAttribute("data-index"), 10);
+          currentIndex = targetIndex;
+          carruselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+          updateIndicators(carruselId);
+        });
+      });
+    });
+  });
+</script>
