@@ -1,0 +1,36 @@
+{
+  "url": "https://www.youtube.com/watch?v=nzE_VSuDnvE",
+  "title": "Ta Te Ti (prod ZECCA & Tatool)",
+  "shortTitle": "Ta Te Ti",
+  "singers": "Duki (prod ZECCA & Tatool)",
+  "date": "2024-12-24T19:00:08Z",
+  "thumbnails": {
+    "default": {
+      "url": "https://i.ytimg.com/vi/nzE_VSuDnvE/default.jpg",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i.ytimg.com/vi/nzE_VSuDnvE/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i.ytimg.com/vi/nzE_VSuDnvE/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+    },
+    "standard": {
+      "url": "https://i.ytimg.com/vi/nzE_VSuDnvE/sddefault.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "maxres": {
+      "url": "https://i.ytimg.com/vi/nzE_VSuDnvE/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "position": 107,
+  "videoOwnerChannelTitle": "CTanganaVEVO"
+}
