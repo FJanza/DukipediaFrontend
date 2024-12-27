@@ -37,7 +37,9 @@ export default {
       },
       backgroundPosition: {
         "custom-pos-x-300": "-300px", // Nombre de la clase y valor de background-position-x
+
         "custom-pos-x-1000": "-700px", // Nombre de la clase y valor de background-position-x
+
         "custom-pos-y-100": "0, -100px", // Nombre de la clase y valor de background-position-x
       },
       colors: {
