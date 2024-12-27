@@ -1,0 +1,84 @@
+---
+import {getCollection} from "astro:content";
+import SongCard from "./SongCard.astro";
+import {IMG_URL_DEFAULT_VIDEO_NOT_FOUND} from "../utils/constants";
+
+const songs = await getCollection("vampirosSongs");
+---
+
+<article
+  class="min-h-svh bg-gradient-to-b from-purple-500/30 from-60% to-zinc-900 flex flex-col items-center pb-20 pt-5"
+>
+  <div class="relative flex w-full justify-center pt-4 mb-[100px]">
+    <div class="group">
+      <img
+        src="/gengar-gastly.webp"
+        class="w-72 sm:w-96 group-hover:scale-105 group-hover:saturate-[1.5] transition-all"
+        style={{aspectRatio: 1.75}}
+      />
+      <img
+        src="/alas-titulo-2.webp"
+        class="absolute -bottom-12 sm:-bottom-16 px-4 sm:px-0"
+        style={{
+          filter: "drop-shadow(0 3mm 5mm rgb(160, 0, 210))",
+          left: "50%",
+          transform: "translateX(-50%)",
+        }}
+      />
+    </div>
+  </div>
+  <div
+    class="w-full flex flex-col justify-center items-center px-9 md:w-[80%] gap-7 md:gap-12 pt-5"
+  >
+    <div
+      class="flex flex-col justify-center text-base md:text-xl prose prose-white"
+    >
+      <p>
+        <span class="font-bold text-purple-400">Duki</span> y <span
+          class="font-bold text-purple-400">CRO</span
+        >
+        son reconocidos como dos figuras influyentes en la escena del trap argentino.
+        Su colaboración en <span class="font-bold">Vampiros</span> marcó un hito
+        en el género, fusionando estilos poniendo ese nombre a la dupla.
+      </p>
+    </div>
+    <div class="flex flex-col justify-center items-center gap-7 md:gap-9 px-2">
+      <h3 class="text-lg md:text-2xl font-semibold">
+        Temas en los que participo el grupo
+      </h3>
+      <div
+        class="relative flex flex-row flex-wrap justify-between md:justify-center gap-8 sm:gradient-mask-transparent-linear-90"
+      >
+        {
+          songs
+            .sort(
+              (a: any, b: any) =>
+                new Date(a.data.date).getTime() -
+                new Date(b.data.date).getTime()
+            )
+            .map((song: any, i: number) => {
+              const {data} = song;
+              const {url, shortTitle, singers, date, thumbnails} = data;
+              const {high} = thumbnails;
+              const dateObject = new Date(date);
+              const dateUTCminus3 = new Date(
+                dateObject.getTime() - 3 * 60 * 60 * 1000
+              ).getFullYear();
+              const imgUrl = high?.url;
+              return imgUrl !== IMG_URL_DEFAULT_VIDEO_NOT_FOUND ? (
+                <SongCard
+                  dateUTCminus3={dateUTCminus3}
+                  imgUrl={imgUrl}
+                  shortTitle={shortTitle}
+                  url={url}
+                  singers={singers}
+                  detailsColor={"bg-purple-600/50"}
+                />
+              ) : null;
+            })
+        }
+        <div class="sticky w-full h-12 -bottom-1 left-0"></div>
+      </div>
+    </div>
+  </div>
+</article>

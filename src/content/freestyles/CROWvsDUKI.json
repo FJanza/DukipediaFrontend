@@ -1,0 +1,33 @@
+{
+  "url": "https://www.youtube.com/watch?v=DE7GLcB5MyA",
+  "title": "CROW vs DUKI",
+  "subtitle": "EGO FEST / OCTAVOS DE FINAL",
+  "date": "2017-11-03T03:00:00.000Z",
+  "thumbnails": {
+    "default": {
+      "url": "https://i.ytimg.com/vi/DE7GLcB5MyA/default.jpg",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i.ytimg.com/vi/DE7GLcB5MyA/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i.ytimg.com/vi/DE7GLcB5MyA/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+    },
+    "standard": {
+      "url": "https://i.ytimg.com/vi/DE7GLcB5MyA/sddefault.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "maxres": {
+      "url": "https://i.ytimg.com/vi/DE7GLcB5MyA/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+    }
+  }
+}

@@ -1,0 +1,24 @@
+---
+const {year} = Astro.props;
+---
+
+<div class="flex flex-col w-36 md:w-56">
+  <div
+    class="relative flex flex-row items-center w-36 md:w-56 py-[2px] md:py-1"
+  >
+    <h2
+      class="top-2 left-2 text-xl md:text-3xl pl-3 md:pl-5 z-30 font-semibold"
+    >
+      {year}
+    </h2>
+    <div
+      class="w-8 h-8 md:w-11 md:h-11 bg-ameri-80 rounded-full absolute -right-[20px] z-10"
+    >
+    </div>
+    <div
+      class="absolute top-0 left-0 w-full h-full bg-ameri-80/20 z-20 backdrop-blur-sm"
+    >
+    </div>
+  </div>
+  <slot />
+</div>

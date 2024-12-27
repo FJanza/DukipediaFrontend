@@ -1,0 +1,51 @@
+                                                                                                  
+                                                                                                  
+                                                                                                  
+                                                                                                  
+              +@@@:                                                            .*@#.            /* TEAM */  
+              *% .#@=                                                        .@@. @=            	Chef:Francisco Janza  
+               ##   =@@-                                                  .=@%.  #*             	Contact: franciscojanza001@gmail.com  
+               .@@.   .=@@-                                            .+@@:   .@+              	web: fjanza.dev.ar  
+              .@-.*#.    .=@@@+:                                   .+@@%:     *#.*#             	GitHub: @fjanza  
+               =@:. :=.       :*@@@@*=:..                  ..:+%@@@+.      .=:  -@:             	From:Argentina  
+                =@%.                .:==#@@@@.       :@@@@#*+:.               .@@:                
+                 =@@@*.                     .@*     @@.                    .+@@@:                 	UX/UI: Melani Kaplan
+                 .@@..:-.                     @@: -@#                    .-:.:@#.                 	LinkdIn: @melanikaplan
+                   :@@#.                       .                          :%@%.                   	From:Argentina
+                   .@.:*@@%.                                          .#@%-.:@.                   
+                    =@@+.                                               .-%@@.                    
+                       =@@@@@@@*.                                 +@@@@@%@:                       
+                       .%@%-.      ..                        :=:.....-#@@=                    	/* THANKS */    
+                           -@@@@@@*: .                      -.. :===+@.                           	Dev consultant / tester: Marcos Monaco
+                            -@@@@@@@@=. .+.             :%-. :*@@@@@#.                            	GitHub: @marcosmonaco
+                               :@@%%%@@@-                  +@@@@@@.                               	Location: Argentina
+
+                                                                                                  	Tester: Laucha
+                                                                                                        Location: Argentina
+
+                                                                                                  	Dev consultant / tester: Leandro Lescano
+                                                                                                  	Location: Argentina
+                                                                                                  
+                                                                                                  	UI consultant / tester: Belen Allegue
+                                                                                                  	Location: Argentina
+               :@@@%-                                                      :+%@@@                 
+                  =@@@@@@@@@@@@@@@@@.                       .@@@@@@@@@@@@@@@@@-                   	UX/UI consultant: Hans
+                    -@#           @@                         @@           #@+                     	Location: Argentina
+                     .@*         :@-                         @@          %@.                      
+                      %@..=++*** :@-                         @@  ***++-. @#                       	Data scrapping: Vasty
+                      :@=         @@                         @%         *@:                       	Twitter: @VastySSJ
+                       @+         :@%                       +@          %@                        	Location: Argentina	
+                      :@@@%:       .@@:                   .@@        :%@@@                        
+                          .@@:       .@@=              .+@@:       .@@:                           
+                            *@-   #=   .%@@+ .=. =@@@@@@-    %-   :@*                        	/* SITE */     
+                             @@.           -#@@- +@              .@*                              	Language: Castellano
+                              @@@@@@%-       *@- *@.      .*@@@@@@@                               	Technologies:  Ts, HTML5 & CSS
+                                     .*@@%   *@- %@    =@@@.                                     	Frameworks: Astro & Tailwind
+                                         +@@ #@- %@  @@%.                                         	IDE: VSCode
+                                           +@@@- @@%@=                                            
+                                             @@+ @@@                                              
+                                              .  @%                                               
+                                                                                                  
+                                                                                                  
+                                                                                                  
+  

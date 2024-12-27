@@ -1,11 +1,46 @@
 ---
-import Home from '../components/Home.astro';
-import Layout from '../layouts/Layout.astro';
+import AllSongTimeLine from "../components/AllSongTimeLine.astro";
+import Antezana from "../components/Antezana.astro";
+import DevilMode from "../components/DevilMode.astro";
+import FifthStep from "../components/FifthStep.astro";
+import Freestyles from "../components/Freestyles.astro";
+import Hitboys from "../components/Hitboys.astro";
+import Home from "../components/Home.astro";
+import Interviews from "../components/Interviews.astro";
+import TheBeginnings from "../components/TheBeginnings.astro";
+import Vampires from "../components/Vampires.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Dukipedia 𓆰𓆪">
-	<main>
-		<Home/>
-	</main>
+  <main style="content-visibility:auto;">
+    <Home />
+  </main>
+  <section style="content-visibility:auto;">
+    <TheBeginnings />
+  </section>
+  <section style="content-visibility:auto;">
+    <FifthStep />
+  </section>
+  <section style="content-visibility:auto;">
+    <Freestyles />
+  </section>
+  <section style="content-visibility:auto;">
+    <AllSongTimeLine />
+  </section>
+  <section style="content-visibility:auto;">
+    <Antezana />
+  </section>
+  <section style="content-visibility:auto;" class="bg-black">
+    <DevilMode />
+  </section>
+  <section style="content-visibility:auto;">
+    <Hitboys />
+  </section>
+  <section style="content-visibility:auto;">
+    <Vampires />
+  </section>
+  <section style="content-visibility:auto;" class="bg-zinc-900">
+    <Interviews />
+  </section>
 </Layout>
-

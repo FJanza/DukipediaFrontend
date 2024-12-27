@@ -1,0 +1,33 @@
+{
+  "url": "https://www.youtube.com/watch?v=BmBCjm0HIiY",
+  "title": "KLAN vs DUKI",
+  "subtitle": "Fecha 6 Torneo 2016 - El Quinto Escalon",
+  "date": "2016-08-08T06:00:00.000Z",
+  "thumbnails": {
+    "default": {
+      "url": "https://i.ytimg.com/vi/BmBCjm0HIiY/default.jpg",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i.ytimg.com/vi/BmBCjm0HIiY/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i.ytimg.com/vi/BmBCjm0HIiY/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+    },
+    "standard": {
+      "url": "https://i.ytimg.com/vi/BmBCjm0HIiY/sddefault.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "maxres": {
+      "url": "https://i.ytimg.com/vi/BmBCjm0HIiY/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+    }
+  }
+}

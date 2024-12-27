@@ -1,0 +1,91 @@
+---
+import classNames from "classnames";
+import {convertToEmbed} from "../lib/utils";
+
+const {
+  dateUTCminus3,
+  imgUrl,
+  shortTitle,
+  url,
+  singers,
+  description,
+  detailsColor,
+} = Astro.props;
+---
+
+<div
+  id={`${dateUTCminus3}`}
+  class="song relative flex flex-row justify-start gap-5 items-center"
+>
+  <div class="relative card hover:brightness-110">
+    <div
+      class="-mt-[16px] md:-mt-[31px] -mb-[25px] md:-mb-[30px] clip-songs-sm-image-yt md:clip-songs-md-image-yt"
+    >
+      <img
+        src={imgUrl}
+        alt={`Portada del álbum ${shortTitle}`}
+        class="max-w-32 md:max-w-64 object-cover"
+      />
+      {
+        !description && (
+          <div
+            class={classNames(
+              "absolute z-50 w-full h-5 xs:h-8 bg-ameri-70/60 -bottom-3 ",
+              detailsColor
+            )}
+          >
+            <h4 class="text-center font-bold text-xs">{shortTitle}</h4>
+          </div>
+        )
+      }
+
+      <a
+        class="absolute z-20 top-14 right-[80px] md:top-28 md:right-[96px] video-container"
+        data-clip-item
+        data-url={convertToEmbed(url) ?? "dQw4w9WgXcQ"}
+      >
+        <button
+          class={classNames(
+            "button absolute bottom-2 md:bottom-7 md:right-2 bg-ameri-70/40 rounded-full p-1",
+            detailsColor
+          )}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 md:h-8 md:w-8 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+            ></path>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+        </button>
+      </a>
+    </div>
+  </div>
+  {
+    description && (
+      <div class="p-2 md:p-4">
+        <h3 class="text-white text-xs md:text-lg font-semibold">
+          {shortTitle}
+        </h3>
+        <p class="text-gray-400 text-xs md:text-sm mt-1 max-w-[30ch]">
+          {singers}
+        </p>
+        <p class="text-gray-400 text-xs md:text-sm mt-1 max-w-[30ch]">
+          {dateUTCminus3}
+        </p>
+      </div>
+    )
+  }
+</div>

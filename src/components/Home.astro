@@ -2,20 +2,48 @@
 
 ---
 
-
 <article class="relative h-svh justify-center">
-    <div class="absolute flex-col flex z-40 left-[15%] sm:left-[50%] top-[20%] md:top-[35%] lg:gap-3">
-        <div class="flex flex-row items-center" >
-            <img class="w-12 h-12  md:w-14 md:h-14 lg:w-24 lg:h-24" src="/duki-logo.svg">
-            <h1 class="text-5xl md:text-6xl lg:text-8xl font-bold">
-                UKIPEDIA 
-            </h1>
-        </div>
-        <h3 class="pl-4 text-xs  lg:text-xl font-semibold">
-            La historia de Mauro Ezequiel Lombardo
-        </h3>
+  <div
+    class="absolute flex-col flex items-end z-40 right-[calc(50%-134px)] sm:right-20 top-[20%] md:top-[35%] lg:gap-3"
+  >
+    <div class="flex flex-row items-center">
+      <img
+        class="w-12 h-12 md:w-14 md:h-14 lg:w-24 lg:h-24"
+        src="/duki-logo.svg"
+      />
+      <h1 class="text-5xl md:text-6xl lg:text-8xl font-bold">UKIPEDIA</h1>
     </div>
-    <img class="object-cover w-svw h-svh absolute left-0 top-0 z-20" src="/degrade.png"> 
-    <img class="object-cover w-80 lg:w-4/12 absolute lg:left-[10%] bottom-0 z-10" style="filter: drop-shadow(0 0 1rem rgb(255, 255, 255))" src="/duki-cantando.png">
-    <img class="object-cover w-svw h-svh absolute left-0 top-0 z-0 " src="/estadio.png">
+    <h3 class="pl-4 text-xs lg:text-xl font-semibold">
+      La historia de Mauro Ezequiel Lombardo
+    </h3>
+  </div>
+  <div
+    class="object-cover w-svw h-svh absolute left-0 top-0 z-20 bg-gradient-to-t from-black to-transparent to-15% md:to-25%"
+  >
+  </div>
+  <img
+    class="animated-shadow object-cover w-80 lg:w-4/12 absolute lg:left-[10%] bottom-0 z-10"
+    src="/duki-cantando.webp"
+  />
+  <img
+    class="object-cover w-svw h-svh absolute left-0 top-0 z-0"
+    src="/estadio.webp"
+  />
 </article>
+
+<style>
+  .animated-shadow {
+    animation: shadow-pulse 2s infinite ease-in-out; /* Apply the animation */
+  }
+  @keyframes shadow-pulse {
+    0% {
+      filter: drop-shadow(0 0 2rem rgb(255, 255, 255));
+    }
+    50% {
+      filter: drop-shadow(0 0 4rem rgb(255, 255, 255));
+    }
+    100% {
+      filter: drop-shadow(0 0 2rem rgb(255, 255, 255));
+    }
+  }
+</style>

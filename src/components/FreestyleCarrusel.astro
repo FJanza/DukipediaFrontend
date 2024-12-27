@@ -1,0 +1,126 @@
+---
+import {getCollection} from "astro:content";
+import FreestyleCard from "./FreestyleCard.astro";
+
+const freestyles = await getCollection("freestyles");
+const sortedFreestyles = freestyles.sort(
+  (a, b) => new Date(a.data.date).getTime() - new Date(b.data.date).getTime()
+);
+---
+
+<div class="container">
+  <div
+    class="cards"
+    style={`grid-template-columns: repeat(${sortedFreestyles.length}, 250px);`}
+  >
+    {
+      sortedFreestyles.map((free, i) => {
+        const date = new Date(free.data.date).toLocaleDateString("en-GB");
+        return (
+          <FreestyleCard
+            first={i === 0}
+            final={i === sortedFreestyles.length - 1}
+            title={free.data.title}
+            url={free.data.url}
+            img={free.data.thumbnails.high?.url}
+            subtitle={free.data.subtitle}
+            date={date}
+          />
+        );
+      })
+    }
+  </div>
+</div>
+
+<style>
+  .container {
+    padding-top: 1rem;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .cards {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-gap: 0px;
+    pointer-events: none;
+    .video-container {
+      pointer-events: auto;
+    }
+  }
+</style>
+
+<script>
+  // @ts-nocheck
+  const slider = document.querySelector(".container");
+  const cards = document.querySelector(".cards");
+
+  let isPressed = false;
+
+  let cursorX: number;
+
+  slider.addEventListener("touchstart", (e) => {
+    isPressed = true;
+    // Obtener la posición del toque
+    const touch = e.touches[0];
+    const touchX = touch.clientX; // Obtener la coordenada X del toque
+    cursorX = touchX - cards.offsetLeft;
+    slider.style.cursor = "grabbing";
+  });
+
+  slider.addEventListener("touchend", () => {
+    slider.style.cursor = "grab";
+  });
+
+  window.addEventListener("touchend", () => {
+    isPressed = false;
+  });
+
+  slider.addEventListener("touchmove", (e) => {
+    if (!isPressed) return;
+    e.preventDefault();
+
+    // Obtener la posición del toque
+    const touch = e.touches[0];
+    const touchX = touch.clientX; // Obtener la coordenada X del toque
+    cards.style.left = `${touchX - cursorX}px`;
+    boundSlides();
+  });
+
+  slider.addEventListener("mousedown", (e) => {
+    isPressed = true;
+    cursorX = e.offsetX - cards.offsetLeft;
+    slider.style.cursor = "grabbing";
+  });
+
+  slider.addEventListener("mouseup", () => {
+    slider.style.cursor = "grab";
+  });
+
+  window.addEventListener("mouseup", () => {
+    isPressed = false;
+  });
+
+  slider.addEventListener("mousemove", (e) => {
+    if (!isPressed) return;
+    e.preventDefault();
+    cards.style.left = `${e.offsetX - cursorX}px`;
+    boundSlides();
+  });
+
+  function boundSlides() {
+    const containerRect = slider.getBoundingClientRect();
+    const cardsRect = cards.getBoundingClientRect();
+    console.log(cardsRect);
+    if (parseInt(cards.style.left) > 0) {
+      cards.style.left = 0;
+    } else if (cardsRect.right < containerRect.right) {
+      cards.style.left = `-${cardsRect.width - containerRect.width}px`;
+    }
+  }
+</script>

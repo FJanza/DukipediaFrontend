@@ -1,0 +1,97 @@
+---
+import InterviewCard from "./InterviewCard.astro";
+
+const texto1 = [
+  "Si tuve de mis momentos de equivocarme tuve mi momento de Rockstar de jodienda excesiva de drogas pero mal, gracias a Dios me recuperé de eso, la verdad fue un proceso de varios años, tuve dos o tres años que todavía tenía recaída por una semana estaba bien después la otra semana.",
+  "Estaba endemoniado que era el diablo. Lo peor de todo fue que ya después me enganché con las pastillas con los alplax, me despertaba y me tomaba, dos de un miligramo y ya arrancaba el día y por ahí me fumaba un porro pero un rato me toma otra. Mi problema fue que no me di cuenta.",
+  "Cuando me volví adicto y dependiente y que eso me estaba matando entonces para mí está bueno hablarlo porque hay gente que le pasa, es terrible hay video míos que no los puedo ver, videos míos de 2018 todo que lo veo y me cuesta, lo enterré, ya está.",
+];
+
+const texto2 = [
+  "Yo había estado tuvimos un fin de semana bastante fuerte y me habré tomado como 16 pastillas en tres días de 2 miligramos o sea estaba totalmente, entonces cuando me fui a dormir el domingo digamos creo que era un domingo no me no me despertaba obviamente porque estaba estaba dormidísimo.",
+  "O sea estaba dormido que tenía que recuperar y estaba durmiendo hace como 12 horas y justo a la mala suerte que ese mismo día muere El rapero Lil Peep, justo ese día es la misma el mismo día, claro la noticia, mi primo ve la noticia y cuando lee lea el alprazolam y ve que era lo que yo había estado tomando.",
+  "Mi primo me va a despertar, yo estaba estaba zombie y llamó a toda mi familia, entonces cuando yo me revive estaban mis padres todo alrededor mío, todo pensando que yo me había muerto y yo no entendía nada, no podía hablar, todavía tenía tenía residuos de droga estaba hecho un zombie.",
+  "Recién en 2017 y ponele en la pandemia, yo en la pandemia fue cuando pude bajar que un día me desperté me miré al espejo y dije No soy yo, lo raro pues yo podía seguir haciendo todo o sea yo vivía normal y ya empecé a generar una tolerancia y nada era era de repente era eso.",
+  "Obviamente me veía si yo no estaba 100% me bajé lo estaba con la voz rota estaba afónico en un momento me dijeron che si seguís así se te están, armando nódulos vas a tener terminar con una afonía crónica. Sí cada tres meses cuatro tenía que hacer un rihan que estaba una semana que estás enfermo.",
+  "No puedes comer no puedes meter nada en el cuerpo lo que me da el cuerpo lo lo devuelve vomitás agua estás con fiebre transpiración fría, hablando con los demonios es feo no es feo de verdad feo de verdad.",
+];
+---
+
+<article
+  class="relative bg-smoke bg-cover h-fit pb-12 min-h-svh px-12 gap-12 flex flex-col pt-6"
+>
+  <h1 class="text-2xl sm:text-4xl w-full text-center">
+    Su <span class="multicolor-text-weed">experiencia</span> con las <span
+      class="multicolor-text-galactic">drogas</span
+    >
+  </h1>
+  <div class="flex flex-col-reverse sm:flex-row sm:justify-center gap-7 z-20">
+    <InterviewCard paragraphs={texto1} />
+    <img
+      src="/duki-fumando.webp"
+      class="rounded-xl aspect-square object-cover"
+      style={{maxWidth: "330px"}}
+    />
+  </div>
+  <div
+    class="flex flex-col-reverse sm:flex-row-reverse sm:justify-center gap-7 z-20"
+  >
+    <InterviewCard paragraphs={texto2} />
+    <img
+      src="/duki-entrevista.webp"
+      class="rounded-xl aspect-square object-cover"
+      style={{maxWidth: "330px"}}
+    />
+  </div>
+  <img
+    src="/pills.webp"
+    class="absolute top-0 left-0 opacity-5 h-svh z-10 object-cover pointer-events-none"
+  />
+</article>
+
+<style>
+  .multicolor-text-galactic {
+    font-weight: bold;
+    background: linear-gradient(
+      90deg,
+      rgb(1, 55, 202),
+      rgb(152, 27, 241),
+      rgb(221, 43, 132),
+      blue,
+      rgb(255, 7, 214)
+    );
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colors 6s linear infinite;
+  }
+
+  .multicolor-text-weed {
+    font-weight: bold;
+    background: linear-gradient(
+      90deg,
+      rgb(1, 97, 33),
+      rgb(2, 230, 78),
+      rgb(0, 126, 42),
+      rgb(2, 230, 78),
+      rgb(0, 126, 42),
+      rgb(2, 230, 78),
+      rgb(0, 126, 42),
+      rgb(2, 230, 78),
+      rgb(0, 126, 42)
+    );
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: colors 6s linear infinite;
+  }
+
+  @keyframes colors {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 400%;
+    }
+  }
+</style>

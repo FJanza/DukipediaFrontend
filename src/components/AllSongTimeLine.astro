@@ -1,0 +1,172 @@
+---
+import {getCollection} from "astro:content";
+import SongCard from "./SongCard.astro";
+import Modal from "./Modal.astro";
+import {IMG_URL_DEFAULT_VIDEO_NOT_FOUND} from "../utils/constants";
+
+const songs = await getCollection("songs");
+
+const years: number[] = [
+  ...new Set<number>(
+    songs.map((song: any) => {
+      const {data} = song;
+      const {date} = data;
+      const dateObject = new Date(date);
+      const dateUTCminus3 = new Date(dateObject.getTime() - 3 * 60 * 60 * 1000);
+
+      return dateUTCminus3.getFullYear();
+    })
+  ),
+].sort((a, b) => a - b);
+---
+
+<article
+  class="relative bg-custom-pos-x-300 md:bg-center bg-[url('/duki-mirando-horizonte.webp')] bg-cover h-fit min-h-svh flex flex-col items-center justify-start z-20 pt-14 gap-10 md:gap-24"
+>
+  <h2 class="text-2xl md:text-5xl font-semibold text-center">
+    Todos los temas en los que ha participado hasta ahora ({songs.length})
+  </h2>
+
+  <div class="flex flex-col items-center gap-5 pb-12">
+    <div class="px-4 flex justify-center">
+      <div
+        class="md:max-w-[60svw] flex flex-row flex-wrap justify-start border-2 border-ameri-100 mb-3 rounded-md"
+      >
+        {
+          years.map((year, i) => {
+            return (
+              <a
+                id={`${year}`}
+                class={`year-link ${i === 0 ? "selected" : ""} bg-transparent focus:border-ameri-100 text-base md:text-xl text-slate-100 py-1 px-3 md:px-5 rounded-sm pointer-events-auto cursor-pointer xs:hover:brightness-75 transition-all`}
+              >
+                {year}
+              </a>
+            );
+          })
+        }
+      </div>
+    </div>
+    <div
+      class="max-h-[60svh] overflow-y-scroll md:max-w-[80svw]"
+      id="songs-container"
+    >
+      <Modal />
+      <div class="songs-container grid grid-cols-1 lg:grid-cols-2 gap-4">
+        {
+          songs
+            .sort(
+              (a: any, b: any) =>
+                new Date(a.data.date).getTime() -
+                new Date(b.data.date).getTime()
+            )
+            .map((song: any) => {
+              const {data} = song;
+              const {url, shortTitle, singers, date, thumbnails} = data;
+              const {high} = thumbnails;
+              const dateObject = new Date(date);
+              const dateUTCminus3 = new Date(
+                dateObject.getTime() - 3 * 60 * 60 * 1000
+              ).getFullYear();
+              const imgUrl = high?.url;
+
+              return imgUrl !== IMG_URL_DEFAULT_VIDEO_NOT_FOUND ? (
+                <SongCard
+                  dateUTCminus3={dateUTCminus3}
+                  imgUrl={imgUrl}
+                  shortTitle={shortTitle}
+                  url={url}
+                  singers={singers}
+                  description={true}
+                  id={dateUTCminus3.toString()}
+                  Usar
+                  el
+                  año
+                  como
+                  ID
+                  para
+                  la
+                  canción
+                />
+              ) : null;
+            })
+        }
+      </div>
+    </div>
+  </div>
+</article>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const yearLinks = document.querySelectorAll(".year-link");
+    const songs = document.querySelectorAll(".song");
+    const container = document.getElementById("songs-container");
+
+    let observer = new IntersectionObserver(
+      (entries) => {
+        console.log({entries});
+        const entry = entries.sort(
+          (a, b) => Number(a.target.id) - Number(b.target.id)
+        )[0];
+        if (entry.isIntersecting) {
+          // Encontramos la canción visible más antigua
+          const songYear = entry.target.id; // Suponiendo que cada canción tiene un ID con el año
+          const selectedLink = document.getElementById(songYear);
+
+          // Si el enlace de año no tiene la clase 'selected', actualizamos el estilo
+          if (selectedLink && !selectedLink.classList.contains("selected")) {
+            // Eliminar la clase 'selected' de todos los enlaces
+            yearLinks.forEach((link) => link.classList.remove("selected"));
+
+            // Agregar la clase 'selected' al enlace de año visible
+            selectedLink.classList.add("selected");
+          }
+        }
+      },
+      {
+        root: container, // Aquí especificamos el contenedor con el scroll interno
+        threshold: 0.5, // 50% de la canción debe ser visible
+      }
+    );
+
+    // Observamos cada canción
+    songs.forEach((song) => {
+      observer.observe(song);
+    });
+
+    // Al cargar la página, seleccionamos el primer año visible (el de la canción más antigua)
+    yearLinks[0].classList.add("selected");
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const yearLinks = document.querySelectorAll(".year-link");
+    const songs = document.querySelectorAll(".song");
+
+    // Agregar evento de clic a cada enlace de año
+    yearLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        // Evitar que el enlace realice la navegación
+        event.preventDefault();
+
+        // Eliminar la clase 'selected' de todos los enlaces de año
+        yearLinks.forEach((item) => item.classList.remove("selected"));
+
+        // Agregar la clase 'selected' al enlace clickeado
+        link.classList.add("selected");
+        const firstSong = Array.from(songs).find(
+          (song) => Number(song.id) === Number(link.textContent)
+        );
+
+        firstSong?.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+      });
+    });
+  });
+</script>
+
+<style>
+  .selected {
+    background-color: #d71112;
+  }
+</style>

@@ -1,0 +1,36 @@
+{
+  "url": "https://www.youtube.com/watch?v=Y84Cfi08Q4A",
+  "title": "Duki x Moonkey - hello cotto remix",
+  "shortTitle": "hello cotto remix",
+  "singers": "Duki x Moonkey",
+  "date": "2017-10-13T00:26:29Z",
+  "thumbnails": {
+    "default": {
+      "url": "https://i.ytimg.com/vi/Y84Cfi08Q4A/default.jpg",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i.ytimg.com/vi/Y84Cfi08Q4A/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i.ytimg.com/vi/Y84Cfi08Q4A/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+    },
+    "standard": {
+      "url": "https://i.ytimg.com/vi/Y84Cfi08Q4A/sddefault.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "maxres": {
+      "url": "https://i.ytimg.com/vi/Y84Cfi08Q4A/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "position": 21,
+  "videoOwnerChannelTitle": "MOONKEY"
+}

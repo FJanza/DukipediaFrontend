@@ -1,0 +1,82 @@
+---
+import BeginningsCard from "./BeginningsCard.astro";
+---
+
+<article class="relative flex h-dvh justify-center bg-black z-10">
+  <h1
+    class="text-3xl md:text-5xl 2xl:text-6xl font-medium md:font-semibold z-30 mt-14 2xl:mt-10"
+  >
+    Los inicios
+  </h1>
+
+  <div
+    class="absolute -left-2 md:left-0 top-6 w-full h-svh md:top-0 z-30 flex flex-row justify-center items-center gap-16"
+  >
+    <div
+      class="flex flex-row flex-wrap max-w-[800px] gap-7 md:gap-10 max-h-[70svh] items-start justify-center"
+    >
+      <BeginningsCard year={1996}>
+        <p
+          class="prose prose-white pl-1 text-xs md:text-sm 2xl:text-base font-medium"
+        >
+          Mauro nació el <span class="text-ameri-80 font-bold"
+            >24 de junio de 1996</span
+          > en el barrio de Almagro, en la Ciudad de Buenos Aires, Argentina.
+        </p>
+      </BeginningsCard>
+      <BeginningsCard year={2003}>
+        <p
+          class="prose prose-white pl-1 text-xs md:text-sm 2xl:text-base font-medium"
+        >
+          Cuando tenía 7 años tenía una fascinación por el rap mostrando un gran
+          interés por el <span class="text-ameri-80 font-bold">hip-hop</span> y el
+          <span class="text-ameri-80 font-bold">rap norteamericano</span>.
+        </p>
+      </BeginningsCard>
+      <BeginningsCard year={2010}>
+        <p
+          class="prose prose-white pl-1 text-xs md:text-sm 2xl:text-base font-medium"
+        >
+          Surgió su <span class="text-ameri-80 font-bold"
+            >interés por las batallas de freestyle</span
+          > cuando vio una batalla entre los españoles Arkano y Skone, la cual se
+          realizó en 2009.
+        </p>
+      </BeginningsCard>
+      <BeginningsCard year={2012}>
+        <p
+          class="prose prose-white pl-1 text-xs md:text-sm 2xl:text-base font-medium"
+        >
+          Un amigo le dio el <span class="text-ameri-80 font-bold">
+            apodo "Duki"
+          </span> y lo introdujo a más batallas, lo que incrementó aún más su pasión
+          por el rap.
+        </p>
+      </BeginningsCard>
+      <BeginningsCard year={2013}>
+        <p
+          class="prose prose-white pl-1 text-xs md:text-sm 2xl:text-base font-medium"
+        >
+          Participó en su <span class="text-ameri-80 font-bold"
+            >primera batalla</span
+          > de rap junto a Salva contra Monto y Ambro en Madero Free, donde <span
+            class="text-ameri-80 font-bold">salió victorioso.</span
+          >
+        </p>
+      </BeginningsCard>
+      <BeginningsCard year={2014}>
+        <p
+          class="prose prose-white pl-1 text-xs md:text-sm 2xl:text-base font-medium"
+        >
+          Participó en la <span class="text-ameri-80 font-bold"
+            >competencia underground Unión de Zonas</span
+          >, donde junto a Felpa, enfrentó a Dani y Elai.
+        </p>
+      </BeginningsCard>
+    </div>
+  </div>
+  <img
+    class="object-cover w-svw h-svh absolute left-0 top-0 z-20 blur-sm"
+    src="/duki-plaza.webp"
+  />
+</article>
