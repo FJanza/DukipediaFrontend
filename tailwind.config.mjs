@@ -29,6 +29,7 @@ export default {
         quinto: "url('/quinto_escalon.webp')",
         stadium: "url('/estadio.webp')",
         dukiRubio: "url('/duki-rubio-cantando.webp')",
+        dukiVelez: "url('/duki-velez.webp')",
         antezana: "url('/antezana-background.webp')",
         antezanaBeforeGraffity: "url('/antezana-before-graffity.webp')",
         antezanaGraffity: "url('/antezana-graffity.webp')",
