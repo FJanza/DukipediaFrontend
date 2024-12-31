@@ -6,14 +6,14 @@ const {img, text, link, title, reverse} = Astro.props;
 
 <div
   class={classNames(
-    `relative mt-12 flex flex-col md:flex-row py-3 md:py-9 px-4 md:px-16 gap-5 bg-[#0F1516] rounded-md `,
+    `relative mt-12 flex flex-col md:flex-row py-4 md:py-9 px-4 md:px-16 gap-5 bg-[#0F1516] rounded-md `,
     reverse ? "md:flex-row-reverse" : "md:flex-row"
   )}
 >
   <div
     class={classNames(
-      `absolute -top-7 bg-[#0F1516] rounded-t-md pt-2`,
-      reverse ? "md:right-16 right-4" : "md:left-16 left-4"
+      `absolute -top-8 bg-[#0F1516] rounded-t-md pt-2 pb-1 left-1/2 transform -translate-x-1/2 md:transform-none`,
+      reverse ? "md:right-16 md:left-auto" : "md:left-16 md:right-auto"
     )}
   >
     <h2 class="text-xl font-semibold w-[300px] text-center">{title}</h2>
