@@ -16,7 +16,9 @@ const {img, text, link, title, reverse} = Astro.props;
       reverse ? "md:right-16 md:left-auto" : "md:left-16 md:right-auto"
     )}
   >
-    <h2 class="text-xl font-semibold w-[300px] text-center">{title}</h2>
+    <h2 class="text-lg md:text-xl font-semibold w-[300px] text-center">
+      {title}
+    </h2>
   </div>
   <img src={img} class="aspect-square rounded-md max-w-full md:max-w-[300px]" />
   <div class="flex flex-col justify-between max-w-full md:max-w-[600px] gap-4">
