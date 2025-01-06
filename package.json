@@ -10,9 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.3",
-    "@astrojs/react": "^3.6.2",
-    "@astrojs/tailwind": "^5.1.1",
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/tailwind": "^5.1.4",
     "@formkit/tempo": "^0.1.2",
     "@vercel/analytics": "^1.4.1",
     "@vercel/speed-insights": "^1.1.0",

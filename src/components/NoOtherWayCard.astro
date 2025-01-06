@@ -1,7 +1,10 @@
 ---
 import classNames from "classnames";
+import {convertToEmbed} from "../lib/utils";
 
-const {img, text, link, title, reverse} = Astro.props;
+const {img, text, link, title, reverse, type} = Astro.props;
+
+const [ytlink, startTime] = link.split("?t=");
 ---
 
 <div
@@ -29,12 +32,24 @@ const {img, text, link, title, reverse} = Astro.props;
         reverse ? "md:justify-start" : "md:justify-end"
       )}
     >
-      <a
-        href={link}
-        target="_blank"
-        class="border-2 border-ameri-100 rounded-md px-3 text-center py-1 hover:brightness-50"
-        >Ir a la entrevista</a
-      >
+      {
+        type === "video" ? (
+          <div
+            data-url={convertToEmbed(ytlink, startTime)}
+            class="border-2 border-ameri-100 rounded-md px-3 text-center py-1 hover:brightness-50 video-container cursor-pointer"
+          >
+            Ir a la entrevista
+          </div>
+        ) : (
+          <a
+            href={link}
+            target="_blank"
+            class="border-2 border-ameri-100 rounded-md px-3 text-center py-1 hover:brightness-50 cursor-pointer"
+          >
+            Ir a la entrevista
+          </a>
+        )
+      }
     </div>
   </div>
 </div>

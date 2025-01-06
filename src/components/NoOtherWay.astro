@@ -1,6 +1,7 @@
 ---
 import classNames from "classnames";
 import NoOtherWayCard from "./NoOtherWayCard.astro";
+import {convertToEmbed} from "../lib/utils";
 
 const data = [
   {
@@ -8,18 +9,21 @@ const data = [
     img: "/duki-cara-tapada.webp",
     text: "En una entrevista, Duki menciona que, desde muy joven, decidió enfocarse completamente en la música, comentando que al terminar su etapa en las batallas de freestyle con El Quinto Escalón, se encerró a grabar constantemente, sintiendo que no había otra opción para él más que triunfar en la música. Esta obsesión y compromiso fueron fundamentales para su éxito.",
     link: "https://www.filo.news/actualidad/Duki-Extrano-sorprender-y-ser-el-desconocido-que-llego-y-exploto-el-mundo-20210505-0037.html",
+    type: "blog",
   },
   {
     title: "Entrevista a Sandra",
     img: "/duki-te-apunta.webp",
     text: 'Duki ha señalado que en su camino hacia la cima, hubo momentos de incertidumbre, pero nunca dejó de creer en su proyecto y continuó avanzando sin mirar atrás. Esta mentalidad es lo que lo ha impulsado a superar adversidades, afirmando en varias ocasiones que no había un "plan B", solo la música',
-    link: "https://youtu.be/91tfmlPUcQo?list=PLi0NmtMIAcT_M_TcSg8Dic6_J8SRVdfnf&t=419",
+    link: "https://youtu.be/91tfmlPUcQo?t=419",
+    type: "video",
   },
   {
     title: "Entrevista en la plaza",
     img: "/duki-2017.webp",
-    text: "Duki: Quiero mirar, quiero mirar afuera y que haya 8000 personas y levantar el brazo y que las 800 personas levanten los brazos..",
+    text: "Duki: Quiero mirar, quiero mirar afuera y que haya 8000 personas y levantar el brazo y que las 8000 personas levanten los brazos..",
     link: "https://youtu.be/j981x5W2x_k?t=656",
+    type: "video",
   },
 ];
 ---
@@ -59,14 +63,14 @@ const data = [
           text={item.text}
           link={item.link}
           reverse={i % 2 === 0}
+          type={item.type}
         />
       ))
     }
 
-    <a
-      href="https://youtu.be/_TF65tspqBk?t=34"
-      target="_blank"
-      class="relative aspect-video border-2 border-slate-400 rounded-md hover:brightness-110 cursor-pointer"
+    <div
+      data-url={convertToEmbed("https://youtu.be/_TF65tspqBk", 34)}
+      class="relative aspect-video border-2 border-slate-400 rounded-md hover:brightness-110 cursor-pointer video-container"
     >
       <img src="/duki-jujuy-2017.webp" class="blur-sm w-full h-full" />
       <img
@@ -82,6 +86,6 @@ const data = [
           que sea la mia por el resto de mi vida..
         </p>
       </div>
-    </a>
+    </div>
   </div>
 </article>

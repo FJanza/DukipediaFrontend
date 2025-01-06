@@ -35,6 +35,7 @@ export default {
         antezanaGraffity: "url('/antezana-graffity.webp')",
         alasDeDuki: "url('/fondo-alas.webp')",
         smoke: "url('/smoke.webp')",
+        dukiCantandoBW: "url('/duki-cantando-bw.webp')",
       },
       backgroundPosition: {
         "custom-pos-x-300": "-300px", // Nombre de la clase y valor de background-position-x

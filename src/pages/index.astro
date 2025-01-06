@@ -1,4 +1,5 @@
 ---
+import Albums from "../components/Albums.astro";
 import AllSongTimeLine from "../components/AllSongTimeLine.astro";
 import Antezana from "../components/Antezana.astro";
 import DevilMode from "../components/DevilMode.astro";
@@ -7,6 +8,7 @@ import Freestyles from "../components/Freestyles.astro";
 import Hitboys from "../components/Hitboys.astro";
 import Home from "../components/Home.astro";
 import Interviews from "../components/Interviews.astro";
+import Modal from "../components/Modal.astro";
 import NoOtherWay from "../components/NoOtherWay.astro";
 import TheBeginnings from "../components/TheBeginnings.astro";
 import Vampires from "../components/Vampires.astro";
@@ -14,6 +16,7 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Dukipedia 𓆰𓆪">
+  <Modal />
   <main style="content-visibility:auto;">
     <Home />
   </main>
@@ -44,7 +47,10 @@ import Layout from "../layouts/Layout.astro";
   <section style="content-visibility:auto;" class="bg-zinc-900">
     <Interviews />
   </section>
-  <section style="content-visibility:auto;" class="bg-zinc-900">
+  <section style="content-visibility:auto;">
     <NoOtherWay />
+  </section>
+  <section style="content-visibility:auto;">
+    <Albums />
   </section>
 </Layout>
