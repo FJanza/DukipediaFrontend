@@ -6,8 +6,8 @@
   <div
     class="absolute flex-col flex items-end z-40 right-[calc(50%-154px)] sm:right-20 top-[30%] md:top-[35%] lg:gap-3"
   >
-    <div class="flex flex-row items-center">
-      <div id="target-div">
+    <div class="flex flex-row items-center cursor-default">
+      <div id="target-div" class="cursor-help">
         <img
           id="target-img"
           class="w-12 h-12 md:w-14 md:h-14 lg:w-24 lg:h-24"
@@ -16,7 +16,7 @@
       </div>
       <h1 class="text-6xl lg:text-8xl font-bold">UKIPEDIA</h1>
     </div>
-    <h3 class="pl-4 text-md lg:text-xl font-semibold">
+    <h3 class="pl-4 text-md lg:text-xl font-semibold cursor-default">
       La historia de Mauro Ezequiel Lombardo
     </h3>
   </div>
@@ -26,6 +26,7 @@
   </div>
   <img
     loading="lazy"
+    id="Duki-singing"
     class="animated-shadow object-cover w-96 lg:w-4/12 absolute lg:left-[10%] bottom-0 z-10"
     src="/duki-cantando.webp"
   />
@@ -47,6 +48,20 @@
       filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
     }
   }
+  .animated-shadow-red {
+    animation: shadow-pulse-red 2s infinite ease-in-out; /* Apply the animation */
+  }
+  @keyframes shadow-pulse-red {
+    0% {
+      filter: drop-shadow(0 0 2rem rgb(255, 255, 255));
+    }
+    50% {
+      filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
+    }
+    100% {
+      filter: drop-shadow(0 0 2rem rgb(255, 255, 255));
+    }
+  }
 </style>
 
 <script>
@@ -55,6 +70,7 @@
     "lightning-canvas"
   ) as HTMLCanvasElement;
   const targetImg = document.getElementById("target-img");
+  const DukiSinging = document.getElementById("Duki-singing");
   const ctx = canvas?.getContext("2d");
 
   canvas.width = window.innerWidth;
@@ -196,6 +212,15 @@
         ? "/duki-logo.svg"
         : "/ameri-logo.svg"
     );
+    targetImg?.getAttribute("src") === "/ameri-logo.svg"
+      ? DukiSinging?.setAttribute(
+          "class",
+          "animated-shadow-red object-cover w-96 lg:w-4/12 absolute lg:left-[10%] bottom-0 z-10"
+        )
+      : DukiSinging?.setAttribute(
+          "class",
+          "animated-shadow object-cover w-96 lg:w-4/12 absolute lg:left-[10%] bottom-0 z-10"
+        );
   });
 
   // (Opcional) Puedes mantener o eliminar el listener de "mouseleave"
