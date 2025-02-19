@@ -2,18 +2,21 @@
 
 ---
 
-<article class="relative h-svh justify-center">
+<article class="relative h-svh justify-center bg-stadium bg-cover">
   <div
-    class="absolute flex-col flex items-end z-40 right-[calc(50%-134px)] sm:right-20 top-[20%] md:top-[35%] lg:gap-3"
+    class="absolute flex-col flex items-end z-40 right-[calc(50%-154px)] sm:right-20 top-[30%] md:top-[35%] lg:gap-3"
   >
     <div class="flex flex-row items-center">
-      <img
-        class="w-12 h-12 md:w-14 md:h-14 lg:w-24 lg:h-24"
-        src="/duki-logo.svg"
-      />
-      <h1 class="text-5xl md:text-6xl lg:text-8xl font-bold">UKIPEDIA</h1>
+      <div id="target-div">
+        <img
+          id="target-img"
+          class="w-12 h-12 md:w-14 md:h-14 lg:w-24 lg:h-24"
+          src="/duki-logo.svg"
+        />
+      </div>
+      <h1 class="text-6xl lg:text-8xl font-bold">UKIPEDIA</h1>
     </div>
-    <h3 class="pl-4 text-xs lg:text-xl font-semibold">
+    <h3 class="pl-4 text-md lg:text-xl font-semibold">
       La historia de Mauro Ezequiel Lombardo
     </h3>
   </div>
@@ -22,13 +25,11 @@
   >
   </div>
   <img
-    class="animated-shadow object-cover w-80 lg:w-4/12 absolute lg:left-[10%] bottom-0 z-10"
+    loading="lazy"
+    class="animated-shadow object-cover w-96 lg:w-4/12 absolute lg:left-[10%] bottom-0 z-10"
     src="/duki-cantando.webp"
   />
-  <img
-    class="object-cover w-svw h-svh absolute left-0 top-0 z-0"
-    src="/estadio.webp"
-  />
+  <canvas id="lightning-canvas" class="z-30"></canvas>
 </article>
 
 <style>
@@ -37,13 +38,166 @@
   }
   @keyframes shadow-pulse {
     0% {
-      filter: drop-shadow(0 0 2rem rgb(255, 255, 255));
+      filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
     }
     50% {
-      filter: drop-shadow(0 0 4rem rgb(255, 255, 255));
+      filter: drop-shadow(0 0 0.5rem rgb(255, 255, 255));
     }
     100% {
-      filter: drop-shadow(0 0 2rem rgb(255, 255, 255));
+      filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
     }
   }
 </style>
+
+<script>
+  // Configuración del canvas a pantalla completa
+  const canvas = document.getElementById(
+    "lightning-canvas"
+  ) as HTMLCanvasElement;
+  const targetImg = document.getElementById("target-img");
+  const ctx = canvas?.getContext("2d");
+
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  // Actualizar dimensiones en caso de redimensionar la ventana
+  window.addEventListener("resize", () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+
+  // Clase para cada segmento del rayo
+  class LightningSegment {
+    start: {x: number; y: number};
+    end: {x: number; y: number};
+    thickness: number;
+    opacity: number;
+
+    constructor(
+      x1: number,
+      y1: number,
+      x2: number,
+      y2: number,
+      thickness: number,
+      opacity: number
+    ) {
+      this.start = {x: x1, y: y1};
+      this.end = {x: x2, y: y2};
+      this.thickness = thickness;
+      this.opacity = opacity;
+    }
+    draw(ctx: CanvasRenderingContext2D) {
+      ctx.beginPath();
+      ctx.moveTo(this.start.x, this.start.y);
+      ctx.lineTo(this.end.x, this.end.y);
+      ctx.lineWidth = this.thickness;
+      ctx.strokeStyle = `rgba(255,255,255,${this.opacity})`;
+      ctx.shadowBlur = 10;
+      ctx.shadowColor = "red";
+      ctx.stroke();
+      ctx.closePath();
+    }
+  }
+
+  // Función para generar el rayo
+  // start: punto de inicio (fuera del div, en el borde superior)
+  // end: punto final (el centro del div)
+  // segments: cantidad de segmentos del rayo
+  // maxOffset: máximo desplazamiento lateral (que decrece hacia el final)
+  // thickness: grosor inicial
+  function generateLightning(
+    start: {x: number; y: number},
+    end: {x: number; y: number},
+    segments = 20,
+    maxOffset = 30,
+    thickness = 4
+  ) {
+    const bolt = [];
+    let current = {...start};
+
+    for (let i = 1; i <= segments; i++) {
+      const t = i / segments;
+      // Posición base (interpolación lineal) entre start y end
+      const baseX = start.x + t * (end.x - start.x);
+      const baseY = start.y + t * (end.y - start.y);
+
+      // Offset lateral aleatorio que decrece conforme se acerca al final
+      const offsetFactor = (1 - t) * maxOffset;
+      const randomOffset = (Math.random() - 0.5) * offsetFactor * 2;
+
+      // Para el último segmento forzamos el final en el punto exacto
+      const newX = i === segments ? end.x : baseX + randomOffset;
+      const newY = baseY;
+
+      bolt.push(
+        new LightningSegment(current.x, current.y, newX, newY, thickness, 1)
+      );
+      current = {x: newX, y: newY};
+    }
+    return bolt;
+  }
+
+  // Animación del rayo
+  let currentBolt: any[] = [];
+  let animationFrameId = null;
+
+  function animateLightning() {
+    // Limpiar canvas completo
+    ctx?.clearRect(0, 0, canvas?.width, canvas?.height);
+
+    let allFaded = true;
+
+    currentBolt.forEach((segment) => {
+      // Disminuir la opacidad y el grosor para simular el desvanecimiento
+      segment.opacity -= 0.03;
+      segment.thickness -= 0.1;
+      if (segment.opacity > 0 && segment.thickness > 0) {
+        allFaded = false;
+      }
+      segment.draw(ctx);
+    });
+
+    if (!allFaded) {
+      animationFrameId = requestAnimationFrame(animateLightning);
+    } else {
+      ctx?.clearRect(0, 0, canvas?.width, canvas?.height);
+      animationFrameId = null;
+    }
+  }
+
+  // Función para iniciar el efecto de rayo cuando se hace hover
+  const targetDiv = document.getElementById("target-div");
+
+  targetDiv?.addEventListener("mouseenter", () => {
+    // No cancelamos ninguna animación en curso, dejamos que la existente finalice
+
+    // Obtener posición y dimensiones del div
+    const rect = targetDiv.getBoundingClientRect();
+    const center = {
+      x: rect.left + rect.width / 2,
+      y: rect.top + rect.height / 2,
+    };
+
+    // Definir el punto de inicio en el borde superior de la página (y = 0)
+    // Con un pequeño offset en x para dar variedad
+    const startX = center.x + (Math.random() - 0.5) * 20;
+    const startY = 0; // en el borde superior de la página
+
+    const start = {x: startX, y: startY};
+
+    // Generamos el rayo desde 'start' hasta el centro del div
+    currentBolt = generateLightning(start, center, 20, 30, 4);
+    const audio = new Audio("/lighting-strike.mp3");
+    audio.play();
+    animateLightning();
+    targetImg?.setAttribute(
+      "src",
+      targetImg.getAttribute("src") === "/ameri-logo.svg"
+        ? "/duki-logo.svg"
+        : "/ameri-logo.svg"
+    );
+  });
+
+  // (Opcional) Puedes mantener o eliminar el listener de "mouseleave"
+  // Si se elimina, el rayo continuará su animación aún al retirar el mouse.
+</script>
