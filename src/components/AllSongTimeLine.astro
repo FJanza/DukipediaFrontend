@@ -102,7 +102,6 @@ const years: number[] = [
 
     let observer = new IntersectionObserver(
       (entries) => {
-        console.log({entries});
         const entry = entries.sort(
           (a, b) => Number(a.target.id) - Number(b.target.id)
         )[0];
