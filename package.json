@@ -16,7 +16,7 @@
     "@vercel/analytics": "^1.4.1",
     "@vercel/speed-insights": "^1.1.0",
     "classnames": "^2.5.1",
-    "prettier": "^3.0.0",
+    "prettier": "^3.3.3",
     "swiper": "^11.1.14",
     "tailwindcss": "^3.4.10",
     "typescript": "^5.5.4"
