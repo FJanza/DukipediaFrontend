@@ -1,0 +1,36 @@
+{
+  "url": "https://www.youtube.com/watch?v=V9JBUwo7ot8",
+  "title": "AGRIDULCE",
+  "shortTitle": "AGRIDULCE",
+  "singers": "BHAVI",
+  "date": "2025-03-11T22:23:07Z",
+  "thumbnails": {
+    "default": {
+      "url": "https://i.ytimg.com/vi/V9JBUwo7ot8/default.jpg",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i.ytimg.com/vi/V9JBUwo7ot8/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i.ytimg.com/vi/V9JBUwo7ot8/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+    },
+    "standard": {
+      "url": "https://i.ytimg.com/vi/V9JBUwo7ot8/sddefault.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "maxres": {
+      "url": "https://i.ytimg.com/vi/V9JBUwo7ot8/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "position": 254,
+  "videoOwnerChannelTitle": "bhaviboi"
+}
