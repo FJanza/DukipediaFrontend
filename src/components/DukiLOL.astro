@@ -1,0 +1,83 @@
+---
+import {convertToEmbed} from "../lib/utils";
+---
+
+<article
+  class="relative flex flex-col min-h-svh justify-center items-center bg-gradient-to-b from-[#19181C] to-[#171719] pb-4"
+>
+  <div
+    class="flex flex-col items-start justify-center w-[90%] md:w-[40%] gap-2 p-5 z-30"
+  >
+    <h3
+      class="text-4xl font-bold pt-3 pb-6 md:py-0"
+      style={{fontFamily: "lol"}}
+    >
+      Legend of Duki
+    </h3>
+    <div class="flex flex-col md:flex-row gap-2 justify-center items-center">
+      <div class="flex flex-col gap-2 items-start">
+        <p class="prose prose-white">
+          Desde los inicios de su carrera, Duki ha demostrado ser un apasionado
+          del gaming, y si hay un juego que lo ha acompañado a lo largo de los
+          años, ese es <span class="font-bold">League of Legends (y TFT)</span>.
+        </p>
+        <p class="prose prose-white">
+          Su conexión con el LoL no es solo casual, sino parte de su rutina y su
+          círculo de amigos. A lo largo de los años, ha compartido partidas y
+          streams con figuras reconocidas de la comunidad argentina, como Coscu,
+          Momo y Zeko, demostrando que su fanatismo por el juego va más allá de
+          una simple distracción.
+        </p>
+      </div>
+      <div
+        class="h-[450px] overflow-hidden sm:w-[calc(100%-2px)] border-b-[1px] border-b-white rounded-sm max-w-[540px] min-w-[326px] p-0 w-[99.375%]"
+      >
+        <blockquote
+          class="instagram-media HoverCard>hidden Feedback>hidden bg-white border-0 rounded-md shadow-[0_0_1px_0_rgba(0,0,0,0.5),0_1px_10px_0_rgba(0,0,0,0.15)] m-[1px] max-w-[540px] min-w-[326px] p-0 w-[99.375%] sm:w-[calc(100%-2px)]"
+          data-instgrm-permalink="https://www.instagram.com/reel/DGoZdbluZ4V/?utm_source=ig_embed&utm_campaign=loading"
+          data-instgrm-version="14"
+        >
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  <div
+    class="flex flex-col items-start justify-center w-[90%] md:w-[40%] gap-2 p-5 z-30"
+  >
+    <h3 class="text-4xl font-bold">La Mansion</h3>
+    <p class="prose prose-white">
+      Pero si hay un momento que quedó grabado en la historia del streaming, es
+      el mítico clip con Sandra, su mamá, que surgió mientras jugaba una partida
+      en vivo en el canal de Coscu. En pleno rage, Duki, frustrado por la
+      partida, soltó la icónica frase: <span class="font-bold">
+        “No te voy a comprar ningún auto caro, no te voy a comprar la mansión
+        cuando este re zarpado”
+      </span>, dirigiéndose a su madre, quien estaba en la otra habitación. Este
+      momento se convirtió en una joya de internet y un meme recurrente entre
+      sus seguidores.
+    </p>
+    <div
+      data-url={convertToEmbed("https://youtu.be/M8athqoOvRU", 29)}
+      class="relative aspect-video hover:brightness-110 cursor-pointer video-container"
+    >
+      <img src="/clipCoscu.webp" class="aspect-video w-full h-full lg:w-full" />
+      <img
+        src="/play-button.svg"
+        class="absolute w-10 h-10 top-[calc(50%-50px)] right-[calc(50%-20px)] md:w-20 md:h-20 md:top-[calc(50%-40px)] md:right-[calc(50%-40px)] opacity-80 cursor-pointer"
+      />
+    </div>
+  </div>
+  <div class="opacity-5">
+    <img src="/leona.webp" class="absolute bottom-0 left-0 z-10" />
+    <img
+      src="/nautilus.webp"
+      class="absolute bottom-[500px] md:bottom-0 right-0 z-10"
+    />
+    <img src="/lol-bg.webp" class="absolute inset-0 w-svw" />
+  </div>
+  <img
+    src="/tft-logo.webp"
+    class="absolute top-5 right-2 w-[300px] z-10 opacity-15"
+  />
+</article>
+<script async src="//www.instagram.com/embed.js"></script>

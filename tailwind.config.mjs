@@ -36,6 +36,7 @@ export default {
         alasDeDuki: "url('/fondo-alas.webp')",
         smoke: "url('/smoke.webp')",
         dukiCantandoBW: "url('/duki-cantando-bw.webp')",
+        grietaDelInvocador: "url('/lol-bg.webp')",
       },
       backgroundPosition: {
         "custom-pos-x-300": "-300px", // Nombre de la clase y valor de background-position-x
