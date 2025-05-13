@@ -38,6 +38,15 @@ export default {
         dukiCantandoBW: "url('/duki-cantando-bw.webp')",
         grietaDelInvocador: "url('/lol-bg.webp')",
       },
+      keyframes: {
+        "flip-horizontal": {
+          "0%, 100%": {transform: "scaleX(1)"},
+          "50%": {transform: "scaleX(-1)"},
+        },
+      },
+      animation: {
+        "flip-horizontal": "flip-horizontal 1s infinite",
+      },
       backgroundPosition: {
         "custom-pos-x-300": "-300px", // Nombre de la clase y valor de background-position-x
 
