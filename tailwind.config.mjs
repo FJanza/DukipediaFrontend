@@ -29,11 +29,23 @@ export default {
         quinto: "url('/quinto_escalon.webp')",
         stadium: "url('/estadio.webp')",
         dukiRubio: "url('/duki-rubio-cantando.webp')",
+        dukiVelez: "url('/duki-velez.webp')",
         antezana: "url('/antezana-background.webp')",
         antezanaBeforeGraffity: "url('/antezana-before-graffity.webp')",
         antezanaGraffity: "url('/antezana-graffity.webp')",
         alasDeDuki: "url('/fondo-alas.webp')",
         smoke: "url('/smoke.webp')",
+        dukiCantandoBW: "url('/duki-cantando-bw.webp')",
+        grietaDelInvocador: "url('/lol-bg.webp')",
+      },
+      keyframes: {
+        "flip-horizontal": {
+          "0%, 100%": {transform: "scaleX(1)"},
+          "50%": {transform: "scaleX(-1)"},
+        },
+      },
+      animation: {
+        "flip-horizontal": "flip-horizontal 1s infinite",
       },
       backgroundPosition: {
         "custom-pos-x-300": "-300px", // Nombre de la clase y valor de background-position-x

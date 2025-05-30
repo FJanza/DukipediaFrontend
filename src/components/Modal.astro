@@ -98,11 +98,11 @@
 
         $ytFrame = $(".yt-iframe") as HTMLIFrameElement;
         if ($ytFrame !== null) {
-          $ytFrame.setAttribute("src", `${url}?autoplay=1`);
+          $ytFrame.setAttribute("src", `${url}`);
         } else {
           if (ytFrameCopy) {
             $Dialog?.querySelector("div")?.prepend(ytFrameCopy);
-            ytFrameCopy.setAttribute("src", `${url}?autoplay=1`);
+            ytFrameCopy.setAttribute("src", `${url}`);
           }
         }
         $Dialog.showModal();

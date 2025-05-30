@@ -1,0 +1,36 @@
+{
+  "url": "https://www.youtube.com/watch?v=Al9YZq61LEg",
+  "title": "Down Girl",
+  "shortTitle": "Down Girl",
+  "singers": "Benji Blue Bills & DUKI",
+  "date": "2025-05-16T22:23:07Z",
+  "thumbnails": {
+    "default": {
+      "url": "https://i.ytimg.com/vi/Al9YZq61LEg/default.jpg",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i.ytimg.com/vi/Al9YZq61LEg/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i.ytimg.com/vi/Al9YZq61LEg/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+    },
+    "standard": {
+      "url": "https://i.ytimg.com/vi/Al9YZq61LEg/sddefault.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "maxres": {
+      "url": "https://i.ytimg.com/vi/Al9YZq61LEg/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "position": 254,
+  "videoOwnerChannelTitle": "Callejero Fino"
+}

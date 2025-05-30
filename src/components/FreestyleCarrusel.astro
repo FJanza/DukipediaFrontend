@@ -116,7 +116,6 @@ const sortedFreestyles = freestyles.sort(
   function boundSlides() {
     const containerRect = slider.getBoundingClientRect();
     const cardsRect = cards.getBoundingClientRect();
-    console.log(cardsRect);
     if (parseInt(cards.style.left) > 0) {
       cards.style.left = 0;
     } else if (cardsRect.right < containerRect.right) {

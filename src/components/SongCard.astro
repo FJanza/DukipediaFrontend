@@ -24,7 +24,8 @@ const {
       <img
         src={imgUrl}
         alt={`Portada del álbum ${shortTitle}`}
-        class="max-w-32 md:max-w-64 object-cover"
+        class="w-32 md:w-64 object-cover"
+        loading="lazy"
       />
       {
         !description && (
@@ -39,7 +40,7 @@ const {
         )
       }
 
-      <a
+      <div
         class="absolute z-20 top-14 right-[80px] md:top-28 md:right-[96px] video-container"
         data-clip-item
         data-url={convertToEmbed(url) ?? "dQw4w9WgXcQ"}
@@ -70,7 +71,7 @@ const {
               d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
         </button>
-      </a>
+      </div>
     </div>
   </div>
   {

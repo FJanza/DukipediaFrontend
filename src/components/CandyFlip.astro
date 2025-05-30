@@ -1,0 +1,92 @@
+---
+import {convertToEmbed} from "../lib/utils";
+---
+
+<article
+  class="flex flex-col p-12 lg:px-[20%] min-h-svh gap-6 items-center lg:max-w-full justify-center bg-gradient-to-b from-[#18181B] from-60% to-[#1F1E22] relative"
+>
+  <div
+    class="absolute inset-0 bg-cover blur-md opacity-50"
+    style='background-image: url("https://lh3.googleusercontent.com/gps-cs-s/AC9h4noz6xkX4pUel4SczTiutwFGIJ7jkYQXtVRsLo045MkaZt98lgwlg6nOJf06ytER-R6ZIAm4oV8gf_pNl61ShKc9ulJMLnVRTtuZW5QDGynxUPozi9gVaY3kTQxEzbQytRC_GCsZ=w203-h152-k-no");'
+  >
+  </div>
+  <div class="relative z-10">
+    <div class="flex justify-center gap-2 group cursor-default pb-3">
+      <h3 class="text-3xl lg:text-5xl lg:mb-3 font-bold">Candy Flip</h3>
+      <p class="group-hover:animate-flip-horizontal text-3xl lg:text-5xl">🍭</p>
+    </div>
+    <div class="p-6 rounded-lg bg-[#1F1E22]/50 backdrop-blur-sm">
+      <div class="flex flex-col lg:flex-row gap-6 justify-center items-center">
+        <div class="flex flex-col gap-2 lg:flex-1">
+          <p class="prose prose-white">
+            Durante una entrevista, DJ Mami recordó una anécdota poco conocida
+            sobre
+            <span class="font-semibold">Duki</span> y cómo, en una movida creativa,
+            terminó formando una banda de cumbia por una noche:
+          </p>
+          <p class="prose prose-white">
+            <span class="font-semibold">DJMAMI:</span> yo le decia no te puedo pagar,
+            el se habia vuelto fanatico del club del sodeado y el ya se habi hecho
+            muy conocido yo le decia ya sos <span class="font-semibold"
+              >DUKI</span
+            >, es una fiesta que la gente entra gratis. Un dia se inventó una
+            banda que se llamaba CANDY FLIP que reversionaba sus temas pero con
+            cumbia. Fue la unica vez que existió CANDY FLIP y para que no
+            tuviese que pagarle lo que salia <span class="font-semibold"
+              >DUKI</span
+            >,fue en finales de 2018 o inicios de 2019
+          </p>
+        </div>
+        <div
+          data-url={convertToEmbed("https://youtu.be/7dAYBKV3M6k", 973)}
+          class="relative aspect-video hover:brightness-110 cursor-pointer video-container lg:flex-1"
+        >
+          <img
+            src="https://i.ytimg.com/vi/7dAYBKV3M6k/hqdefault.jpg"
+            class="aspect-video w-full h-full lg:w-full clip-songs-sm-image-yt md:clip-songs-md-image-yt"
+          />
+          <img
+            src="/play-button.svg"
+            class="absolute w-10 h-10 top-[calc(50%-20px)] right-[calc(50%-20px)] lg:w-20 lg:h-20 lg:top-[calc(50%-40px)] lg:right-[calc(50%-40px)] opacity-80 cursor-pointer"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="mt-12 p-6 rounded-lg bg-[#1F1E22]/50 backdrop-blur-sm">
+      <h2 class="text-2xl font-semibold mb-4">Bonus</h2>
+      <p class="prose prose-white mb-6">
+        <span class="font-semibold">DJMAMI</span> cuenta que la primer gira, la primer
+        fecha de <span class="font-semibold">MODO DIABLO</span> fue en el club del
+        sodeado
+      </p>
+      <div class="flex flex-col lg:flex-row justify-center items-center gap-6">
+        <div
+          data-url={convertToEmbed("https://youtu.be/7dAYBKV3M6k", 792)}
+          class="relative aspect-video hover:brightness-110 cursor-pointer video-container lg:flex-1"
+        >
+          <img
+            src="https://i.ytimg.com/vi/7dAYBKV3M6k/hqdefault.jpg"
+            class="aspect-video w-full h-full lg:w-full clip-songs-sm-image-yt md:clip-songs-md-image-yt"
+          />
+          <img
+            src="/play-button.svg"
+            class="absolute w-10 h-10 top-[calc(50%-20px)] right-[calc(50%-20px)] opacity-80 cursor-pointer"
+          />
+        </div>
+        <div
+          data-url={convertToEmbed("https://youtu.be/35jSSuKKTDM", 11)}
+          class="relative aspect-video hover:brightness-110 cursor-pointer video-container lg:flex-1"
+        >
+          <img
+            src="https://i.ytimg.com/vi/35jSSuKKTDM/hqdefault.jpg"
+            class="aspect-video w-full h-full lg:w-full clip-songs-sm-image-yt md:clip-songs-md-image-yt"
+          />
+          <img
+            src="/play-button.svg"
+            class="absolute w-10 h-10 top-[calc(50%-20px)] right-[calc(50%-20px)] opacity-80 cursor-pointer"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

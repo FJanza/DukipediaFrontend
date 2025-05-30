@@ -1,0 +1,55 @@
+---
+import classNames from "classnames";
+import {convertToEmbed} from "../lib/utils";
+
+const {img, text, link, title, reverse, type} = Astro.props;
+
+const [ytlink, startTime] = link.split("?t=");
+---
+
+<div
+  class={classNames(
+    `relative mt-12 flex flex-col md:flex-row py-4 md:py-9 px-4 md:px-16 gap-5 bg-[#0F1516] rounded-md `,
+    reverse ? "md:flex-row-reverse" : "md:flex-row"
+  )}
+>
+  <div
+    class={classNames(
+      `absolute -top-8 bg-[#0F1516] rounded-t-md pt-2 pb-1 left-1/2 transform -translate-x-1/2 md:transform-none`,
+      reverse ? "md:right-16 md:left-auto" : "md:left-16 md:right-auto"
+    )}
+  >
+    <h2 class="text-lg md:text-xl font-semibold w-[300px] text-center">
+      {title}
+    </h2>
+  </div>
+  <img src={img} class="aspect-square rounded-md max-w-full md:max-w-[300px]" />
+  <div class="flex flex-col justify-between max-w-full md:max-w-[600px] gap-4">
+    <p class="text-sm md:text-lg text-white prose prose-white">{text}</p>
+    <div
+      class={classNames(
+        "flex justify-center",
+        reverse ? "md:justify-start" : "md:justify-end"
+      )}
+    >
+      {
+        type === "video" ? (
+          <div
+            data-url={convertToEmbed(ytlink, startTime)}
+            class="border-2 border-ameri-100 rounded-md px-3 text-center py-1 hover:brightness-50 video-container cursor-pointer"
+          >
+            Ir a la entrevista
+          </div>
+        ) : (
+          <a
+            href={link}
+            target="_blank"
+            class="border-2 border-ameri-100 rounded-md px-3 text-center py-1 hover:brightness-50 cursor-pointer"
+          >
+            Ir a la entrevista
+          </a>
+        )
+      }
+    </div>
+  </div>
+</div>

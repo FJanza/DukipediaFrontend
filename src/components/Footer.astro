@@ -1,0 +1,80 @@
+---
+
+---
+
+<footer class="flex flex-col -mt-[100px] min-h-[150px] items-center">
+  <div class="w-full h-[100px] bg-transparent flex items-end">
+    <div
+      class="w-full h-[50px] relative"
+      style={{
+        backgroundImage:
+          "radial-gradient(circle at 50% -0px,rgba(0, 0, 0, 0) 0,rgba(0, 0, 0, 0) 50px,#1f2937 40px)",
+      }}
+    >
+      <div
+        class="w-[90px] aspect-square rounded-full absolute -top-[45px] z-20 flex items-center justify-center bg-black/40"
+        style={{right: "calc(50% - 45px)"}}
+      >
+        <img
+          src="/duki-logo.svg"
+          class="w-[50px] aspect-square transition-all absolute inset-[20px]"
+          id="logo1"
+          style="opacity: 1;"
+        />
+
+        <img
+          src="/ameri-logo.svg"
+          class="w-[50px] aspect-square transition-all absolute inset-[20px]"
+          id="logo2"
+          style="opacity: 0;"
+        />
+      </div>
+      <div
+        class="w-[70px] aspect-square rounded-full bg-transparent absolute -top-[35px] z-10"
+        style={{right: "calc(50% - 35px)"}}
+      >
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col items-center justify-center w-full">
+    <p class="text-2xl font-semibold text-center w-full pb-3 bg-gray-800">
+      Dukipedia
+    </p>
+    <div
+      class="w-full min-h-[50px] bg-gray-800 px-3 pb-6 flex flex-row justify-center gap-4 items-start text-sm"
+    >
+      <p class="font-semibold">
+        Desarrollado por:
+        <a
+          href="https://fjanza.vercel.app"
+          target="_blank"
+          class="hover:text-ameri-30"
+        >
+          fjanza.dev
+        </a>
+      </p>
+
+      <a
+        href="https://dukipedia.vercel.app/humans.txt"
+        target="_blank"
+        class="hover:text-ameri-30 font-semibold"
+      >
+        Créditos
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  let currentLogo = 1;
+
+  const logo1 = document.getElementById("logo1");
+  const logo2 = document.getElementById("logo2");
+
+  if (logo1 && logo2)
+    setInterval(() => {
+      logo1.style.opacity = currentLogo === 1 ? "1" : "0";
+      logo2.style.opacity = currentLogo === 2 ? "1" : "0";
+      currentLogo = currentLogo === 1 ? 2 : 1;
+    }, 5000);
+</script>

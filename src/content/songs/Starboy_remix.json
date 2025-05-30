@@ -1,0 +1,36 @@
+{
+  "url": "https://www.youtube.com/watch?v=BpgkpAYI9HA",
+  "title": "Starboy Remix",
+  "shortTitle": "Starboy Remix",
+  "singers": "Zell & Neo Pistea & DUKI",
+  "date": "2025-03-05T22:00:14Z",
+  "thumbnails": {
+    "default": {
+      "url": "https://i.ytimg.com/vi/BpgkpAYI9HA/default.jpg",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i.ytimg.com/vi/BpgkpAYI9HA/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i.ytimg.com/vi/BpgkpAYI9HA/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+    },
+    "standard": {
+      "url": "https://i.ytimg.com/vi/BpgkpAYI9HA/sddefault.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "maxres": {
+      "url": "https://i.ytimg.com/vi/BpgkpAYI9HA/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "position": 208,
+  "videoOwnerChannelTitle": "Duki"
+}

@@ -1,0 +1,91 @@
+---
+import classNames from "classnames";
+import NoOtherWayCard from "./NoOtherWayCard.astro";
+import {convertToEmbed} from "../lib/utils";
+
+const data = [
+  {
+    title: "Entrevista a Caja negra",
+    img: "/duki-cara-tapada.webp",
+    text: "En una entrevista, Duki menciona que, desde muy joven, decidió enfocarse completamente en la música, comentando que al terminar su etapa en las batallas de freestyle con El Quinto Escalón, se encerró a grabar constantemente, sintiendo que no había otra opción para él más que triunfar en la música. Esta obsesión y compromiso fueron fundamentales para su éxito.",
+    link: "https://www.filo.news/actualidad/Duki-Extrano-sorprender-y-ser-el-desconocido-que-llego-y-exploto-el-mundo-20210505-0037.html",
+    type: "blog",
+  },
+  {
+    title: "Entrevista a Sandra",
+    img: "/duki-te-apunta.webp",
+    text: 'Duki ha señalado que en su camino hacia la cima, hubo momentos de incertidumbre, pero nunca dejó de creer en su proyecto y continuó avanzando sin mirar atrás. Esta mentalidad es lo que lo ha impulsado a superar adversidades, afirmando en varias ocasiones que no había un "plan B", solo la música',
+    link: "https://youtu.be/91tfmlPUcQo?t=419",
+    type: "video",
+  },
+  {
+    title: "Entrevista en la plaza",
+    img: "/duki-2017.webp",
+    text: "Duki: Quiero mirar, quiero mirar afuera y que haya 8000 personas y levantar el brazo y que las 8000 personas levanten los brazos..",
+    link: "https://youtu.be/j981x5W2x_k?t=656",
+    type: "video",
+  },
+];
+---
+
+<article
+  class="min-h-svh bg-gradient-to-b from-ameri-90 to-black flex flex-col items-center pb-12"
+>
+  <header
+    class="bg-dukiVelez bg-cover bg-center bg-no-repeat w-full flex flex-col items-center justify-end h-[200px] md:h-[500px] 3xl:h-[700px] md:pb-6 md:px-6"
+  >
+    <div class="relative p-2 md:p-8 backdrop-blur-sm">
+      <div
+        class="absolute inset-0 bg-black opacity-30 rounded-t-md md:rounded-md"
+      >
+      </div>
+      <div class="relative flex flex-col md:flex-row justify-between">
+        <h1
+          class="text-xl md:text-3xl 2xl:text-5xl font-bold text-white flex-1"
+        >
+          No existe un plan B
+        </h1>
+        <p
+          class="text-xs md:text-lg 2xl:text-xl font-semibold text-white flex-1"
+        >
+          En varias entrevistas, Duki ha expresado esta idea, mostrando la
+          dedicación total que ha puesto en su carrera musical.
+        </p>
+      </div>
+    </div>
+  </header>
+  <div class="flex flex-col justify-between px-8 gap-12">
+    {
+      data.map((item, i) => (
+        <NoOtherWayCard
+          title={item.title}
+          img={item.img}
+          text={item.text}
+          link={item.link}
+          reverse={i % 2 === 0}
+          type={item.type}
+        />
+      ))
+    }
+
+    <div
+      data-url={convertToEmbed("https://youtu.be/_TF65tspqBk", 34)}
+      class="relative aspect-video border-2 border-slate-400 rounded-md hover:brightness-110 cursor-pointer video-container"
+    >
+      <img src="/duki-jujuy-2017.webp" class="blur-sm w-full h-full" />
+      <img
+        src="/play-button.svg"
+        class="absolute w-10 h-10 top-[calc(50%-50px)] right-[calc(50%-20px)] md:w-20 md:h-20 md:top-[calc(50%-40px)] md:right-[calc(50%-40px)] opacity-80 cursor-pointer"
+      />
+      <div class="absolute bottom-0 backdrop-blur-sm">
+        <p
+          class="text-xs md:text-lg 2xl:text-xl font-semibold text-white flex-1 prose prose-white bg-black/30 p-2 md:p-8"
+        >
+          Duki dijo en 2017: esta es la segunda vez que toco en vivo en mi vida,
+          muchas gracias por estar aca, es el comienzo de una etapa que quiero
+          que sea la mia por el resto de mi vida..
+        </p>
+      </div>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,36 @@
+{
+  "url": "https://www.youtube.com/watch?v=woSZDSjBxvw",
+  "title": "Nena Sad Remix",
+  "shortTitle": "Nena Sad Remix",
+  "singers": "ORO600 & Pablo Chill-E & Duki & Quevedo",
+  "date": "2025-04-23T22:23:07Z",
+  "thumbnails": {
+    "default": {
+      "url": "https://i.ytimg.com/vi/woSZDSjBxvw/default.jpg",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i.ytimg.com/vi/woSZDSjBxvw/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i.ytimg.com/vi/woSZDSjBxvw/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+    },
+    "standard": {
+      "url": "https://i.ytimg.com/vi/woSZDSjBxvw/sddefault.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "maxres": {
+      "url": "https://i.ytimg.com/vi/woSZDSjBxvw/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "position": 254,
+  "videoOwnerChannelTitle": "Callejero Fino"
+}
