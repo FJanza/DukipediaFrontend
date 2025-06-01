@@ -1,0 +1,45 @@
+---
+import {getCollection} from "astro:content";
+import {IMG_URL_DEFAULT_VIDEO_NOT_FOUND} from "../utils/constants";
+import {convertToEmbed, getTimeAgo} from "../lib/utils";
+import GlitchText from "./GlitchText.astro";
+
+const songs = await getCollection("songs");
+
+const lastSong = songs.sort(
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+)[0];
+---
+
+<article
+  class="flex flex-col items-center justify-center p-6 bg-gradient-to-b from-[#0E1415] to-[#151919] relative"
+>
+  <img
+    src={lastSong.data.thumbnails.high?.url || IMG_URL_DEFAULT_VIDEO_NOT_FOUND}
+    alt="background"
+    class="absolute inset-0 w-full h-full object-cover opacity-[0.08] grayscale"
+  />
+  <div class="relative z-10">
+    <h1 class="text-2xl md:text-4xl font-bold mb-4 w-full text-center">
+      Último tema hasta la fecha
+    </h1>
+    <div class="flex flex-col items-center justify-center space-y-4 p-4">
+      <img
+        src={lastSong.data.thumbnails.high?.url ||
+          IMG_URL_DEFAULT_VIDEO_NOT_FOUND}
+        alt={lastSong.data.shortTitle}
+        class="song-image w-full max-w-md cursor-pointer hover:scale-105 transition video-container"
+        data-url={convertToEmbed(lastSong.data.url)}
+        data-clip-item
+      />
+      <GlitchText
+        text={lastSong.data.shortTitle}
+        className="text-3xl md:text-5xl font-glitch text-center"
+      />
+
+      <p class="text-gray-600 text-center">
+        Hace {getTimeAgo(new Date(lastSong.data.date))}
+      </p>
+    </div>
+  </div>
+</article>

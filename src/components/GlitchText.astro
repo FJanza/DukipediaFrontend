@@ -1,0 +1,38 @@
+---
+interface Props {
+  text: string;
+  className?: string;
+}
+
+const {text, className = ""} = Astro.props;
+---
+
+<h1 class={`glitch-container relative uppercase tracking-wider ${className}`}>
+  <span class="glitch-base relative inline-block">{text}</span>
+
+  <!-- Capas de glitch -->
+  <span
+    class="glitch absolute left-0 top-0 w-full text-glitchRed animate-glitchAnim"
+    aria-hidden="true"
+  >
+    {text}
+  </span>
+  <span
+    class="glitch absolute left-0 top-0 w-full text-glitchCyan animate-glitchAnim2"
+    aria-hidden="true"
+  >
+    {text}
+  </span>
+  <span
+    class="glitch absolute left-0 top-0 w-full text-glitchGreen animate-glitchAnim3"
+    aria-hidden="true"
+  >
+    {text}
+  </span>
+
+  <!-- Efecto de scanlines -->
+  <div class="scanlines absolute inset-0 pointer-events-none"></div>
+
+  <!-- Efecto de ruido -->
+  <div class="noise absolute inset-0 pointer-events-none"></div>
+</h1>

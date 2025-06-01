@@ -65,6 +65,151 @@ const canonicalURL = new URL(Astro.url.pathname, siteUrl).toString();
   @tailwind components;
   @tailwind utilities;
   @tailwind screens;
+
+  /* Estilos para el efecto glitch */
+  @keyframes textShadow {
+    0% {
+      text-shadow:
+        0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+        -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    5% {
+      text-shadow:
+        2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5),
+        -2.7928974010788217px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    10% {
+      text-shadow:
+        0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+        -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    15% {
+      text-shadow:
+        2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5),
+        -2.7928974010788217px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    20% {
+      text-shadow:
+        0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+        -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    25% {
+      text-shadow:
+        2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5),
+        -2.7928974010788217px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    30% {
+      text-shadow:
+        0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+        -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    35% {
+      text-shadow:
+        2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5),
+        -2.7928974010788217px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    40% {
+      text-shadow:
+        0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+        -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    45% {
+      text-shadow:
+        2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5),
+        -2.7928974010788217px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    50% {
+      text-shadow:
+        0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+        -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    55% {
+      text-shadow:
+        2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5),
+        -2.7928974010788217px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    60% {
+      text-shadow:
+        0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+        -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    65% {
+      text-shadow:
+        2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5),
+        -2.7928974010788217px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    70% {
+      text-shadow:
+        0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+        -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    75% {
+      text-shadow:
+        2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5),
+        -2.7928974010788217px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    80% {
+      text-shadow:
+        0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+        -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    85% {
+      text-shadow:
+        2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5),
+        -2.7928974010788217px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    90% {
+      text-shadow:
+        0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+        -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    95% {
+      text-shadow:
+        2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5),
+        -2.7928974010788217px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+    100% {
+      text-shadow:
+        0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+        -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3),
+        0 0 3px;
+    }
+  }
+
+  .glitch-base {
+    text-shadow:
+      0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+      -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3),
+      0 0 3px;
+    animation: textShadow 4s infinite;
+  }
+
+  .glitch {
+    clip: rect(44px, 450px, 56px, 0);
+    transform: skew(0.32deg);
+    mix-blend-mode: overlay;
+  }
+
   img {
     user-select: none;
   }
