@@ -1,6 +1,31 @@
 [
   {
     "coords": {
+      "lat": 42.880524123434,
+      "long": -8.54568958282471
+    },
+    "city": "Santiago de Compostela",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "12-06-2025",
+        "venueName": "Auditorio Monte do Gozo",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "17-06-2023",
+        "venueName": "Auditorio Monte do Gozo",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "17-06-2022",
+        "venueName": "Auditorio Monte do Gozo",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
       "lat": -34.576,
       "long": -58.409
     },
@@ -48,61 +73,6 @@
         "tourName": "Ameri World Tour"
       },
       {
-        "eventDate": "07-12-2017",
-        "venueName": "Groove",
-        "tourName": "N/A"
-      },
-      {
-        "eventDate": "04-05-2018",
-        "venueName": "Teatro Gran Rex",
-        "tourName": "N/A"
-      },
-      {
-        "eventDate": "05-10-2018",
-        "venueName": "Estadio Luna Park",
-        "tourName": "N/A"
-      },
-      {
-        "eventDate": "09-12-2018",
-        "venueName": "Club Hípico Argentino",
-        "tourName": "N/A"
-      },
-      {
-        "eventDate": "08-04-2021",
-        "venueName": "La Rural",
-        "tourName": "N/A"
-      },
-      {
-        "eventDate": "12-12-2021",
-        "venueName": "Movistar Arena",
-        "tourName": "N/A"
-      },
-      {
-        "eventDate": "06-10-2022",
-        "venueName": "Estadio Vélez Sarsfield",
-        "tourName": "Ya supiste"
-      },
-      {
-        "eventDate": "07-10-2022",
-        "venueName": "Estadio Vélez Sarsfield",
-        "tourName": "Ya supiste"
-      },
-      {
-        "eventDate": "11-11-2022",
-        "venueName": "Estadio Vélez Sarsfield",
-        "tourName": "Ya supiste"
-      },
-      {
-        "eventDate": "12-11-2022",
-        "venueName": "Estadio Vélez Sarsfield",
-        "tourName": "Ya supiste"
-      },
-      {
-        "eventDate": "02-12-2023",
-        "venueName": "Estadio River Plate",
-        "tourName": "N/A"
-      },
-      {
         "eventDate": "07-12-2024",
         "venueName": "Parque de la Ciudad",
         "tourName": "N/A"
@@ -115,6 +85,41 @@
       {
         "eventDate": "03-12-2023",
         "venueName": "Estadio River Plate",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "02-12-2023",
+        "venueName": "Estadio River Plate",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "12-11-2022",
+        "venueName": "Estadio Vélez Sarsfield",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "11-11-2022",
+        "venueName": "Estadio Vélez Sarsfield",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "07-10-2022",
+        "venueName": "Estadio Vélez Sarsfield",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "06-10-2022",
+        "venueName": "Estadio Vélez Sarsfield",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "12-12-2021",
+        "venueName": "Movistar Arena",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "08-04-2021",
+        "venueName": "La Rural",
         "tourName": "N/A"
       },
       {
@@ -138,8 +143,28 @@
         "tourName": "N/A"
       },
       {
+        "eventDate": "09-12-2018",
+        "venueName": "Club Hípico Argentino",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "05-10-2018",
+        "venueName": "Estadio Luna Park",
+        "tourName": "N/A"
+      },
+      {
         "eventDate": "29-05-2018",
         "venueName": "Centro Cultural Kirchner",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "04-05-2018",
+        "venueName": "Teatro Gran Rex",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "07-12-2017",
+        "venueName": "Groove",
         "tourName": "N/A"
       },
       {
@@ -418,12 +443,12 @@
     "country": "Paraguay",
     "concerts": [
       {
-        "eventDate": "04-04-2025",
+        "eventDate": "05-04-2025",
         "venueName": "SND Arena",
         "tourName": "Ameri World Tour"
       },
       {
-        "eventDate": "05-04-2025",
+        "eventDate": "04-04-2025",
         "venueName": "SND Arena",
         "tourName": "Ameri World Tour"
       }
@@ -448,13 +473,13 @@
         "tourName": "Ameri World Tour"
       },
       {
-        "eventDate": "02-08-2019",
-        "venueName": "La Trastienda Club",
+        "eventDate": "06-05-2023",
+        "venueName": "Velódromo Municipal",
         "tourName": "N/A"
       },
       {
-        "eventDate": "06-05-2023",
-        "venueName": "Velódromo Municipal",
+        "eventDate": "02-08-2019",
+        "venueName": "La Trastienda Club",
         "tourName": "N/A"
       }
     ]
@@ -518,6 +543,16 @@
         "tourName": "A.D.A Tour 2024"
       },
       {
+        "eventDate": "10-09-2022",
+        "venueName": "Movistar Arena",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "07-09-2019",
+        "venueName": "Teatro Teletón",
+        "tourName": "N/A"
+      },
+      {
         "eventDate": "11-05-2018",
         "venueName": "Teatro La Cúpula",
         "tourName": "N/A"
@@ -526,16 +561,6 @@
         "eventDate": "11-05-2018",
         "venueName": "Movistar Arena",
         "tourName": "N/A"
-      },
-      {
-        "eventDate": "07-09-2019",
-        "venueName": "Teatro Teletón",
-        "tourName": "N/A"
-      },
-      {
-        "eventDate": "10-09-2022",
-        "venueName": "Movistar Arena",
-        "tourName": "Ya supiste"
       }
     ]
   },
@@ -608,14 +633,14 @@
     "country": "Spain",
     "concerts": [
       {
-        "eventDate": "01-07-2023",
-        "venueName": "Estadio Metropolitano",
-        "tourName": "N/A"
-      },
-      {
         "eventDate": "08-06-2024",
         "venueName": "Estadio Santiago Bernabeu",
         "tourName": "A.D.A Tour 2024"
+      },
+      {
+        "eventDate": "01-07-2023",
+        "venueName": "Estadio Metropolitano",
+        "tourName": "N/A"
       },
       {
         "eventDate": "25-02-2023",
@@ -628,14 +653,14 @@
         "tourName": "N/A"
       },
       {
-        "eventDate": "03-07-2019",
-        "venueName": "La Riviera",
-        "tourName": "Tour España 2019"
-      },
-      {
         "eventDate": "11-06-2022",
         "venueName": "Caja Mágica",
         "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "03-07-2019",
+        "venueName": "La Riviera",
+        "tourName": "Tour España 2019"
       },
       {
         "eventDate": "29-06-2018",
@@ -743,14 +768,14 @@
     "country": "Mexico",
     "concerts": [
       {
-        "eventDate": "02-04-2023",
-        "venueName": "Parque Fundidora",
-        "tourName": "N/A"
-      },
-      {
         "eventDate": "12-04-2024",
         "venueName": "Auditorio Citibanamex",
         "tourName": "A.D.A Tour 2024"
+      },
+      {
+        "eventDate": "02-04-2023",
+        "venueName": "Parque Fundidora",
+        "tourName": "N/A"
       }
     ]
   },
@@ -778,12 +803,12 @@
     "country": "Argentina",
     "concerts": [
       {
-        "eventDate": "09-02-2020",
+        "eventDate": "11-02-2024",
         "venueName": "Aeródromo Santa María de Punilla",
         "tourName": "N/A"
       },
       {
-        "eventDate": "11-02-2024",
+        "eventDate": "09-02-2020",
         "venueName": "Aeródromo Santa María de Punilla",
         "tourName": "N/A"
       }
@@ -798,12 +823,12 @@
     "country": "Argentina",
     "concerts": [
       {
-        "eventDate": "12-02-2022",
+        "eventDate": "09-02-2024",
         "venueName": "Anfiteatro Villa María",
         "tourName": "N/A"
       },
       {
-        "eventDate": "09-02-2024",
+        "eventDate": "12-02-2022",
         "venueName": "Anfiteatro Villa María",
         "tourName": "N/A"
       }
@@ -883,14 +908,14 @@
     "country": "Spain",
     "concerts": [
       {
-        "eventDate": "04-07-2019",
-        "venueName": "Santana 27",
-        "tourName": "Tour España 2019"
-      },
-      {
         "eventDate": "07-07-2023",
         "venueName": "Kobetamendi",
         "tourName": "N/A"
+      },
+      {
+        "eventDate": "04-07-2019",
+        "venueName": "Santana 27",
+        "tourName": "Tour España 2019"
       }
     ]
   },
@@ -931,26 +956,6 @@
   },
   {
     "coords": {
-      "lat": 42.880524123434,
-      "long": -8.54568958282471
-    },
-    "city": "Santiago de Compostela",
-    "country": "Spain",
-    "concerts": [
-      {
-        "eventDate": "17-06-2023",
-        "venueName": "Auditorio Monte do Gozo",
-        "tourName": "N/A"
-      },
-      {
-        "eventDate": "17-06-2022",
-        "venueName": "Auditorio Monte do Gozo",
-        "tourName": "Ya supiste"
-      }
-    ]
-  },
-  {
-    "coords": {
       "lat": 41.3887868890716,
       "long": 2.15898513793945
     },
@@ -958,19 +963,9 @@
     "country": "Spain",
     "concerts": [
       {
-        "eventDate": "07-07-2018",
-        "venueName": "Sala Apolo",
-        "tourName": "España Tour 2018"
-      },
-      {
-        "eventDate": "05-07-2019",
-        "venueName": "Sala Apolo",
-        "tourName": "Tour España 2019"
-      },
-      {
-        "eventDate": "04-06-2022",
-        "venueName": "Parc del Fòrum",
-        "tourName": "Ya supiste"
+        "eventDate": "04-03-2023",
+        "venueName": "Palau Sant Jordi",
+        "tourName": "N/A"
       },
       {
         "eventDate": "03-03-2023",
@@ -978,9 +973,9 @@
         "tourName": "N/A"
       },
       {
-        "eventDate": "04-03-2023",
-        "venueName": "Palau Sant Jordi",
-        "tourName": "N/A"
+        "eventDate": "04-06-2022",
+        "venueName": "Parc del Fòrum",
+        "tourName": "Ya supiste"
       },
       {
         "eventDate": "17-08-2021",
@@ -991,6 +986,16 @@
         "eventDate": "23-07-2021",
         "venueName": "Parc del Fòrum",
         "tourName": "N/A"
+      },
+      {
+        "eventDate": "05-07-2019",
+        "venueName": "Sala Apolo",
+        "tourName": "Tour España 2019"
+      },
+      {
+        "eventDate": "07-07-2018",
+        "venueName": "Sala Apolo",
+        "tourName": "España Tour 2018"
       }
     ]
   },
@@ -1063,14 +1068,14 @@
     "country": "Peru",
     "concerts": [
       {
-        "eventDate": "10-08-2019",
-        "venueName": "Barranco Arena",
-        "tourName": "N/A"
-      },
-      {
         "eventDate": "09-09-2022",
         "venueName": "Arena Perú Hall",
         "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "10-08-2019",
+        "venueName": "Barranco Arena",
+        "tourName": "N/A"
       }
     ]
   },
