@@ -38,14 +38,12 @@ const songs = await getCollection("hitboySongs");
         > sentó las bases del trap en el país.
       </p>
     </div>
-    <div
-      class="relative flex flex-col justify-center items-center gap-7 md:gap-9 px-2"
-    >
+    <div class="flex flex-col justify-center items-center gap-7 md:gap-9 px-2">
       <h3 class="text-lg md:text-2xl font-semibold">
         Temas en los que participó el grupo
       </h3>
       <div
-        class="min-w-[320px] px-2 sm:px-0 relative flex flex-row flex-wrap justify-between md:justify-center gap-8 max-h-[400px] overflow-y-scroll sm:gradient-mask-transparent-linear-90"
+        class="relative flex flex-row flex-wrap justify-between md:justify-center gap-8 sm:gradient-mask-transparent-linear-90 min-h-[300px]"
       >
         {
           songs
@@ -70,13 +68,12 @@ const songs = await getCollection("hitboySongs");
                   shortTitle={shortTitle}
                   url={url}
                   singers={singers}
-                  detailsColor={
-                    i % 2 === 0 ? "bg-purple-600/50" : "bg-cyan-600/50"
-                  }
+                  detailsColor={"bg-purple-600/50"}
                 />
               ) : null;
             })
         }
+        <div class="sticky w-full h-12 -bottom-1 left-0"></div>
       </div>
     </div>
   </div>
