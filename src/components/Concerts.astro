@@ -1,0 +1,45 @@
+---
+import {getEntry} from "astro:content";
+import {getCollection} from "astro:content";
+
+const concertGroups = await getEntry("concerts", "concerts");
+
+const concerts = concertGroups?.data ?? [];
+---
+
+<section
+  class="concerts py-12 px-6 bg-gradient-to-br from-indigo-900 to-purple-800 text-white rounded-2xl shadow-xl max-w-5xl mx-auto"
+>
+  <h2 class="text-4xl font-bold mb-10 text-center uppercase tracking-wider">
+    Concerts
+  </h2>
+  <ul class="space-y-10">
+    {
+      concerts.map((concert) => (
+        <li class="bg-white/10 p-6 rounded-xl backdrop-blur-lg shadow-lg transition-transform ">
+          <div class="mb-4 text-sm text-purple-200">
+            <p>
+              <strong>Latitude:</strong> {concert.coords.lat}
+            </p>
+            <p>
+              <strong>Longitude:</strong> {concert.coords.long}
+            </p>
+            <p>
+              <strong>Country:</strong> {concert.country}
+            </p>
+          </div>
+          <h3 class="text-2xl font-semibold text-white mb-4">{concert.city}</h3>
+          <div class="space-y-4">
+            {concert.concerts.map((c, i) => (
+              <div class="bg-white/5 border border-white/10 rounded-lg p-4 hover:bg-white/10 transition">
+                <h4 class="text-lg font-bold">{c.eventDate}</h4>
+                <p class="text-sm text-purple-100">Lugar: {c.venueName}</p>
+                <p class="text-sm italic text-purple-300">Tour: {c.tourName}</p>
+              </div>
+            ))}
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</section>

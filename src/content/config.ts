@@ -247,10 +247,32 @@ const vampirosSongs = defineCollection({
   }),
 });
 
+const concerts = defineCollection({
+  type: "data", // para datos, no para páginas
+  schema: z.array(
+    z.object({
+      coords: z.object({
+        lat: z.number(),
+        long: z.number(),
+      }),
+      city: z.string(), // si querés incluir ciudad
+      country: z.string(),
+      concerts: z.array(
+        z.object({
+          eventDate: z.string(),
+          venueName: z.string(),
+          tourName: z.string(),
+        })
+      ),
+    })
+  ),
+});
+
 export const collections = {
   songs,
   freestyles,
   modoDiabloSongs,
   hitboySongs,
   vampirosSongs,
+  concerts,
 };
