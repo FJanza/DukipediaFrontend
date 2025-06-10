@@ -1,0 +1,2127 @@
+[
+  {
+    "coords": {
+      "lat": -34.576,
+      "long": -58.409
+    },
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "30-05-2025",
+        "venueName": "Movistar Arena",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "29-05-2025",
+        "venueName": "Movistar Arena",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "22-03-2025",
+        "venueName": "Movistar Arena",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "21-03-2025",
+        "venueName": "Movistar Arena",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "20-03-2025",
+        "venueName": "Movistar Arena",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "16-03-2025",
+        "venueName": "Movistar Arena",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "15-03-2025",
+        "venueName": "Movistar Arena",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "14-03-2025",
+        "venueName": "Movistar Arena",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "07-12-2017",
+        "venueName": "Groove",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "04-05-2018",
+        "venueName": "Teatro Gran Rex",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "05-10-2018",
+        "venueName": "Estadio Luna Park",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "09-12-2018",
+        "venueName": "Club Hípico Argentino",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "08-04-2021",
+        "venueName": "La Rural",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "12-12-2021",
+        "venueName": "Movistar Arena",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "06-10-2022",
+        "venueName": "Estadio Vélez Sarsfield",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "07-10-2022",
+        "venueName": "Estadio Vélez Sarsfield",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "11-11-2022",
+        "venueName": "Estadio Vélez Sarsfield",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "12-11-2022",
+        "venueName": "Estadio Vélez Sarsfield",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "02-12-2023",
+        "venueName": "Estadio River Plate",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "07-12-2024",
+        "venueName": "Parque de la Ciudad",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "31-10-2024",
+        "venueName": "Movistar Arena",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "03-12-2023",
+        "venueName": "Estadio River Plate",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "20-12-2020",
+        "venueName": "Obras Sanitarias Outdoor",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "26-11-2020",
+        "venueName": "Movistar Arena",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "30-11-2019",
+        "venueName": "Hipódromo de Palermo",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "23-02-2019",
+        "venueName": "Hipódromo de Palermo",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "29-05-2018",
+        "venueName": "Centro Cultural Kirchner",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "22-09-2017",
+        "venueName": "Usina del Arte",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 18.4663338,
+      "long": -66.1057217
+    },
+    "city": "San Juan",
+    "country": "Puerto Rico",
+    "concerts": [
+      {
+        "eventDate": "18-05-2025",
+        "venueName": "Coca-Cola Music Hall",
+        "tourName": "Ameri World Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 25.7742658,
+      "long": -80.1936589
+    },
+    "city": "Miami",
+    "country": "United States",
+    "concerts": [
+      {
+        "eventDate": "17-05-2025",
+        "venueName": "Kaseya Center",
+        "tourName": "Ameri World Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 33.7489954,
+      "long": -84.3879824
+    },
+    "city": "Atlanta",
+    "country": "United States",
+    "concerts": [
+      {
+        "eventDate": "14-05-2025",
+        "venueName": "Tabernacle",
+        "tourName": "Ameri World Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 41.850033,
+      "long": -87.6500523
+    },
+    "city": "Chicago",
+    "country": "United States",
+    "concerts": [
+      {
+        "eventDate": "10-05-2025",
+        "venueName": "Byline Bank Aragon Ballroom",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "25-05-2022",
+        "venueName": "House of Blues Foundation Room",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 38.9906657,
+      "long": -77.026088
+    },
+    "city": "Silver Spring",
+    "country": "United States",
+    "concerts": [
+      {
+        "eventDate": "08-05-2025",
+        "venueName": "The Fillmore Silver Spring",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "08-05-2025",
+        "venueName": "The Fillmore Silver Spring",
+        "tourName": "Ameri World Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 35.2270869,
+      "long": -80.8431268
+    },
+    "city": "Charlotte",
+    "country": "United States",
+    "concerts": [
+      {
+        "eventDate": "06-05-2025",
+        "venueName": "The Fillmore",
+        "tourName": "Ameri World Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 40.7142691,
+      "long": -74.0059729
+    },
+    "city": "New York",
+    "country": "United States",
+    "concerts": [
+      {
+        "eventDate": "03-05-2025",
+        "venueName": "The Theater at Madison Square Garden",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "17-05-2023",
+        "venueName": "Palladium Times Square",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 42.3584308,
+      "long": -71.0597732
+    },
+    "city": "Boston",
+    "country": "United States",
+    "concerts": [
+      {
+        "eventDate": "01-05-2025",
+        "venueName": "Citizens House of Blues Boston",
+        "tourName": "Ameri World Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 39.952335,
+      "long": -75.163789
+    },
+    "city": "Philadelphia",
+    "country": "United States",
+    "concerts": [
+      {
+        "eventDate": "30-04-2025",
+        "venueName": "The Theatre of Living Arts",
+        "tourName": "Ameri World Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 34.052,
+      "long": -118.244
+    },
+    "city": "Los Angeles",
+    "country": "United States",
+    "concerts": [
+      {
+        "eventDate": "27-04-2025",
+        "venueName": "Hollywood Palladium",
+        "tourName": "Ameri World Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 32.7153292,
+      "long": -117.1572551
+    },
+    "city": "San Diego",
+    "country": "United States",
+    "concerts": [
+      {
+        "eventDate": "26-04-2025",
+        "venueName": "SOMA Dungeon",
+        "tourName": "Ameri World Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -32.9511111,
+      "long": -60.6663889
+    },
+    "city": "Rosario",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "12-04-2025",
+        "venueName": "Metropolitano Centro de Eventos y Convenciones",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "28-04-2023",
+        "venueName": "Metropolitano Centro de Eventos y Convenciones",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "22-04-2018",
+        "venueName": "Teatro Broadway",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -31.4,
+      "long": -64.1833333
+    },
+    "city": "Córdoba",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "10-04-2025",
+        "venueName": "Plaza de la Música",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "14-04-2023",
+        "venueName": "Plaza de la Música",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "17-11-2019",
+        "venueName": "Complejo Ferial",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "20-04-2018",
+        "venueName": "Quality Espacio",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "06-10-2017",
+        "venueName": "Fruta",
+        "tourName": "LSD Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -32.8833333,
+      "long": -68.8166667
+    },
+    "city": "Mendoza",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "09-04-2025",
+        "venueName": "Aconcagua Arena",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "27-04-2019",
+        "venueName": "Parque O'Higgins",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -25.2666667,
+      "long": -57.6666667
+    },
+    "city": "Asunción",
+    "country": "Paraguay",
+    "concerts": [
+      {
+        "eventDate": "04-04-2025",
+        "venueName": "SND Arena",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "05-04-2025",
+        "venueName": "SND Arena",
+        "tourName": "Ameri World Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -34.8580556,
+      "long": -56.1708333
+    },
+    "city": "Montevideo",
+    "country": "Uruguay",
+    "concerts": [
+      {
+        "eventDate": "29-03-2025",
+        "venueName": "Antel Arena",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "28-03-2025",
+        "venueName": "Antel Arena",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "02-08-2019",
+        "venueName": "La Trastienda Club",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "06-05-2023",
+        "venueName": "Velódromo Municipal",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -17.3833333,
+      "long": -66.15
+    },
+    "city": "Cochabamba",
+    "country": "Bolivia",
+    "concerts": [
+      {
+        "eventDate": "03-03-2025",
+        "venueName": "Fexco - Recinto Ferial de Alalay",
+        "tourName": "Ameri World Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -17.8,
+      "long": -63.1666667
+    },
+    "city": "Santa Cruz de la Sierra",
+    "country": "Bolivia",
+    "concerts": [
+      {
+        "eventDate": "02-03-2025",
+        "venueName": "Sonilum Park",
+        "tourName": "Ameri World Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -33.0229137105004,
+      "long": -71.5525388717651
+    },
+    "city": "Viña del Mar",
+    "country": "Chile",
+    "concerts": [
+      {
+        "eventDate": "28-02-2025",
+        "venueName": "Quinta Vergara",
+        "tourName": "Ameri World Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -33.426,
+      "long": -70.567
+    },
+    "city": "Santiago",
+    "country": "Chile",
+    "concerts": [
+      {
+        "eventDate": "15-11-2024",
+        "venueName": "Estadio Monumental",
+        "tourName": "A.D.A Tour 2024"
+      },
+      {
+        "eventDate": "11-05-2018",
+        "venueName": "Teatro La Cúpula",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "11-05-2018",
+        "venueName": "Movistar Arena",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "07-09-2019",
+        "venueName": "Teatro Teletón",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "10-09-2022",
+        "venueName": "Movistar Arena",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 51.5084152563931,
+      "long": -0.125532746315002
+    },
+    "city": "London",
+    "country": "United Kingdom",
+    "concerts": [
+      {
+        "eventDate": "23-06-2024",
+        "venueName": "Scala",
+        "tourName": "A.D.A Tour 2024"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 52.5166667,
+      "long": 13.4
+    },
+    "city": "Berlin",
+    "country": "Germany",
+    "concerts": [
+      {
+        "eventDate": "22-06-2024",
+        "venueName": "Huxley's Neue Welt",
+        "tourName": "A.D.A Tour 2024"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 48.853,
+      "long": 2.349
+    },
+    "city": "Paris",
+    "country": "France",
+    "concerts": [
+      {
+        "eventDate": "20-06-2024",
+        "venueName": "Le Bataclan",
+        "tourName": "A.D.A Tour 2024"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 45.4642693810258,
+      "long": 9.1895055770874
+    },
+    "city": "Milan",
+    "country": "Italy",
+    "concerts": [
+      {
+        "eventDate": "19-06-2024",
+        "venueName": "Fabrique",
+        "tourName": "A.D.A Tour 2024"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 40.4165020941502,
+      "long": -3.70256423950195
+    },
+    "city": "Madrid",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "01-07-2023",
+        "venueName": "Estadio Metropolitano",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "08-06-2024",
+        "venueName": "Estadio Santiago Bernabeu",
+        "tourName": "A.D.A Tour 2024"
+      },
+      {
+        "eventDate": "25-02-2023",
+        "venueName": "WiZink Center",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "24-02-2023",
+        "venueName": "WiZink Center",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "03-07-2019",
+        "venueName": "La Riviera",
+        "tourName": "Tour España 2019"
+      },
+      {
+        "eventDate": "11-06-2022",
+        "venueName": "Caja Mágica",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "29-06-2018",
+        "venueName": "But",
+        "tourName": "España Tour 2018"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 6.2913889,
+      "long": -75.5361111
+    },
+    "city": "Medellín",
+    "country": "Colombia",
+    "concerts": [
+      {
+        "eventDate": "05-05-2024",
+        "venueName": "Centro de Espectáculos La Macarena",
+        "tourName": "A.D.A Tour 2024"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 4.6,
+      "long": -74.083
+    },
+    "city": "Bogota",
+    "country": "Colombia",
+    "concerts": [
+      {
+        "eventDate": "04-05-2024",
+        "venueName": "Movistar Arena",
+        "tourName": "A.D.A Tour 2024"
+      },
+      {
+        "eventDate": "16-09-2022",
+        "venueName": "Movistar Arena",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -11.554,
+      "long": -77.173
+    },
+    "city": "San Miguel",
+    "country": "Peru",
+    "concerts": [
+      {
+        "eventDate": "02-05-2024",
+        "venueName": "Multiespacio Costa 21",
+        "tourName": "A.D.A Tour 2024"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 19.434,
+      "long": -99.139
+    },
+    "city": "Mexico City",
+    "country": "Mexico",
+    "concerts": [
+      {
+        "eventDate": "13-04-2024",
+        "venueName": "Palacio de los Deportes",
+        "tourName": "A.D.A Tour 2024"
+      },
+      {
+        "eventDate": "26-11-2023",
+        "venueName": "Autódromo Hermanos Rodríguez",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "19-03-2023",
+        "venueName": "Foro Sol",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "27-05-2022",
+        "venueName": "Pepsi Center WTC",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "14-03-2020",
+        "venueName": "Foro Sol",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "20-10-2019",
+        "venueName": "El Plaza Condesa",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 25.671,
+      "long": -100.308
+    },
+    "city": "Monterrey",
+    "country": "Mexico",
+    "concerts": [
+      {
+        "eventDate": "02-04-2023",
+        "venueName": "Parque Fundidora",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "12-04-2024",
+        "venueName": "Auditorio Citibanamex",
+        "tourName": "A.D.A Tour 2024"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 20.6666667,
+      "long": -103.3333333
+    },
+    "city": "Guadalajara",
+    "country": "Mexico",
+    "concerts": [
+      {
+        "eventDate": "10-04-2024",
+        "venueName": "Arena VFG",
+        "tourName": "A.D.A Tour 2024"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -31.267,
+      "long": -64.467
+    },
+    "city": "Santa Maria de Punilla",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "09-02-2020",
+        "venueName": "Aeródromo Santa María de Punilla",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "11-02-2024",
+        "venueName": "Aeródromo Santa María de Punilla",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -32.4166667,
+      "long": -63.25
+    },
+    "city": "Villa María",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "12-02-2022",
+        "venueName": "Anfiteatro Villa María",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "09-02-2024",
+        "venueName": "Anfiteatro Villa María",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 42.2333333,
+      "long": -8.7166667
+    },
+    "city": "Vigo",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "26-08-2023",
+        "venueName": "Puerto de Vigo",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "22-06-2018",
+        "venueName": "Sala Queen",
+        "tourName": "España Tour 2018"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 36.4166667,
+      "long": -6.1333333
+    },
+    "city": "Chiclana de la Frontera",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "19-08-2023",
+        "venueName": "Poblado de Sancti Petri",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 38.3451735357475,
+      "long": -0.481488704681396
+    },
+    "city": "Alicante",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "17-08-2023",
+        "venueName": "Recinto Ferial Rabasa",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 43.43333,
+      "long": -5.88333
+    },
+    "city": "Llanera",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "21-07-2023",
+        "venueName": "Aeródromo de La Morgal",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 43.2627062282001,
+      "long": -2.9252815246582
+    },
+    "city": "Bilbao",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "04-07-2019",
+        "venueName": "Santana 27",
+        "tourName": "Tour España 2019"
+      },
+      {
+        "eventDate": "07-07-2023",
+        "venueName": "Kobetamendi",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 39.4697524227712,
+      "long": -0.377386808395386
+    },
+    "city": "Valencia",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "29-06-2023",
+        "venueName": "Ciutat de les Arts i les Ciències",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "09-07-2022",
+        "venueName": "Teatro Auditorio Riberas del Guadaira",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 28.1,
+      "long": -15.4166667
+    },
+    "city": "Las Palmas de Gran Canaria",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "23-06-2023",
+        "venueName": "Anexo Estadio",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 42.880524123434,
+      "long": -8.54568958282471
+    },
+    "city": "Santiago de Compostela",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "17-06-2023",
+        "venueName": "Auditorio Monte do Gozo",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "17-06-2022",
+        "venueName": "Auditorio Monte do Gozo",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 41.3887868890716,
+      "long": 2.15898513793945
+    },
+    "city": "Barcelona",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "07-07-2018",
+        "venueName": "Sala Apolo",
+        "tourName": "España Tour 2018"
+      },
+      {
+        "eventDate": "05-07-2019",
+        "venueName": "Sala Apolo",
+        "tourName": "Tour España 2019"
+      },
+      {
+        "eventDate": "04-06-2022",
+        "venueName": "Parc del Fòrum",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "03-03-2023",
+        "venueName": "Palau Sant Jordi",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "04-03-2023",
+        "venueName": "Palau Sant Jordi",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "17-08-2021",
+        "venueName": "Acid House",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "23-07-2021",
+        "venueName": "Parc del Fòrum",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -38.95,
+      "long": -68.0666667
+    },
+    "city": "Neuquén",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "18-02-2023",
+        "venueName": "Paseo de la Costa",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "13-02-2020",
+        "venueName": "Paseo de la Costa",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -50.3407496567902,
+      "long": -72.2768211364746
+    },
+    "city": "El Calafate",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "12-02-2023",
+        "venueName": "Anfiteatro del Bosque",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "27-05-2021",
+        "venueName": "Private Venue",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "21-02-2020",
+        "venueName": "Anfiteatro del Bosque",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -2.1666667,
+      "long": -79.9
+    },
+    "city": "Guayaquil",
+    "country": "Ecuador",
+    "concerts": [
+      {
+        "eventDate": "18-09-2022",
+        "venueName": "Coliseo Voltaire Paladines Polo",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -12.0833333,
+      "long": -77.0833333
+    },
+    "city": "Lima",
+    "country": "Peru",
+    "concerts": [
+      {
+        "eventDate": "10-08-2019",
+        "venueName": "Barranco Arena",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "09-09-2022",
+        "venueName": "Arena Perú Hall",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 38.5381628257925,
+      "long": -0.130977630615234
+    },
+    "city": "Benidorm",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "20-08-2022",
+        "venueName": "Ciudad Deportiva Guillermo Amor",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 28.69503,
+      "long": -17.85287
+    },
+    "city": "La Palma Island",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "18-08-2022",
+        "venueName": "El Paso",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 36.5399844850583,
+      "long": -4.62472915649414
+    },
+    "city": "Fuengirola",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "14-08-2022",
+        "venueName": "Marenostrum Music Castle Park",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 39.1645806513302,
+      "long": -0.249391536098055
+    },
+    "city": "Cullera",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "12-08-2022",
+        "venueName": "Playa de Cullera",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "24-07-2022",
+        "venueName": "Playa de Cullera",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 38.9088342821879,
+      "long": 1.43296480178833
+    },
+    "city": "Ibiza Town",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "09-08-2022",
+        "venueName": "Pacha",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "14-06-2022",
+        "venueName": "Pacha",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 39.9,
+      "long": -0.0666667
+    },
+    "city": "Burriana",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "05-08-2022",
+        "venueName": "Playa El Arenal",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 43.4647222,
+      "long": -3.8044444
+    },
+    "city": "Santander",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "23-07-2022",
+        "venueName": "Campa de La Magdalena",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "02-07-2018",
+        "venueName": "Escenario Santander",
+        "tourName": "España Tour 2018"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 36.1897222,
+      "long": -5.9216667
+    },
+    "city": "Barbate",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "21-07-2022",
+        "venueName": "Playa de la Hierbabuena",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 43.371,
+      "long": -8.396
+    },
+    "city": "A Coruña",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "16-07-2022",
+        "venueName": "Estadio Abanca-Riazor",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "21-06-2018",
+        "venueName": "Pelícano",
+        "tourName": "España Tour 2018"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 43.3833333,
+      "long": -5.1833333
+    },
+    "city": "Arriondas",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "15-07-2022",
+        "venueName": "Orillas del Río Sella",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 37.9833333,
+      "long": -1.1166667
+    },
+    "city": "Murcia",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "01-07-2022",
+        "venueName": "Recinto Ferial de la Fica",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "28-06-2018",
+        "venueName": "Auditorio de Murcia",
+        "tourName": "España Tour 2018"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 41.4500446631785,
+      "long": 2.24741220474243
+    },
+    "city": "Badalona",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "25-06-2022",
+        "venueName": "Pavelló Olímpic de Badalona",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 20.7166667,
+      "long": -103.4
+    },
+    "city": "Zapopan",
+    "country": "Mexico",
+    "concerts": [
+      {
+        "eventDate": "29-05-2022",
+        "venueName": "Calle 2",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "19-10-2019",
+        "venueName": "Explanada Estadio Akron",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 25.667,
+      "long": -100.4
+    },
+    "city": "San Pedro Garza García",
+    "country": "Mexico",
+    "concerts": [
+      {
+        "eventDate": "26-05-2022",
+        "venueName": "Showcenter Complex",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -34.4708333,
+      "long": -58.5286111
+    },
+    "city": "San Isidro",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "18-03-2022",
+        "venueName": "Hipódromo de San Isidro",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -31.7333333,
+      "long": -60.5333333
+    },
+    "city": "Paraná",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "12-03-2022",
+        "venueName": "Predio Acceso Norte",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -35.11326,
+      "long": -65.25415
+    },
+    "city": "Nueva Galia",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "28-02-2022",
+        "venueName": "Anfiteatro \"El Caldén\"",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -25.2666667,
+      "long": -57.3166667
+    },
+    "city": "San Bernardino",
+    "country": "Paraguay",
+    "concerts": [
+      {
+        "eventDate": "29-01-2022",
+        "venueName": "Anfiteatro José Asunción Flores",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -31.6333333,
+      "long": -60.7
+    },
+    "city": "Santa Fe",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "05-12-2021",
+        "venueName": "Estación Belgrano",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "19-04-2018",
+        "venueName": "Centro Cultural ATE Casa España",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -34.3466667,
+      "long": -58.8186111
+    },
+    "city": "Belén de Escobar",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "30-10-2021",
+        "venueName": "Predio de FADEEAC",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -34.4836111,
+      "long": -58.9319444
+    },
+    "city": "Pilar",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "09-10-2021",
+        "venueName": "Polideportivo Municipal",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 41.1166667,
+      "long": 1.25
+    },
+    "city": "Tarragona",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "30-07-2021",
+        "venueName": "Tarraco Arena",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -38,
+      "long": -57.55
+    },
+    "city": "Mar del Plata",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "10-01-2020",
+        "venueName": "Mute",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "27-04-2018",
+        "venueName": "Abbey Road Concert Bar",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -31.4,
+      "long": -58.0333333
+    },
+    "city": "Concordia",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "06-12-2019",
+        "venueName": "Predio Ferial del Centro de Convenciones",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 16.5412,
+      "long": -93.45302
+    },
+    "city": "Nuevo León",
+    "country": "Mexico",
+    "concerts": [
+      {
+        "eventDate": "27-10-2019",
+        "venueName": "El Domo De La Feria",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 20.591,
+      "long": -100.392
+    },
+    "city": "Santiago de Querétaro",
+    "country": "Mexico",
+    "concerts": [
+      {
+        "eventDate": "26-10-2019",
+        "venueName": "Club de Leones",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 19.701,
+      "long": -101.184
+    },
+    "city": "Morelia",
+    "country": "Mexico",
+    "concerts": [
+      {
+        "eventDate": "25-10-2019",
+        "venueName": "Palacio del Arte",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 19.2883333,
+      "long": -99.6672222
+    },
+    "city": "Toluca",
+    "country": "Mexico",
+    "concerts": [
+      {
+        "eventDate": "23-10-2019",
+        "venueName": "Teatro Morelos",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 40.65,
+      "long": -73.95
+    },
+    "city": "Brooklyn",
+    "country": "United States",
+    "concerts": [
+      {
+        "eventDate": "30-08-2019",
+        "venueName": "Barclays Center",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 36.7201559059499,
+      "long": -4.42034482955933
+    },
+    "city": "Málaga",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "30-06-2019",
+        "venueName": "París 15",
+        "tourName": "Tour España 2019"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 39.0943642203101,
+      "long": -5.46810150146484
+    },
+    "city": "Navalvillar de Pela",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "29-06-2019",
+        "venueName": "Sala El Garaje",
+        "tourName": "Tour España 2019"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 38.3963996607113,
+      "long": -0.525498390197754
+    },
+    "city": "San Vicente del Raspeig",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "28-06-2019",
+        "venueName": "Sala The One",
+        "tourName": "Tour España 2019"
+      },
+      {
+        "eventDate": "15-06-2018",
+        "venueName": "Sala The One",
+        "tourName": "España Tour 2018"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 39.47523,
+      "long": -0.41825
+    },
+    "city": "Mislata",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "27-06-2019",
+        "venueName": "Sala Repvblicca",
+        "tourName": "Tour España 2019"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -54.8,
+      "long": -68.3
+    },
+    "city": "Ushuaia",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "10-06-2019",
+        "venueName": "Microestadio Cochocho Vargas",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -34.7202778,
+      "long": -58.2694444
+    },
+    "city": "Quilmes",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "24-05-2019",
+        "venueName": "Santa Cruz Eventos",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "08-06-2018",
+        "venueName": "El Bosque",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "16-02-2018",
+        "venueName": "Enigma",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "19-01-2018",
+        "venueName": "Enigma",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -36.3333333,
+      "long": -57.6666667
+    },
+    "city": "Dolores",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "03-03-2019",
+        "venueName": "Paseo de la Guitarra",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -39.0333333,
+      "long": -67.5833333
+    },
+    "city": "General Roca",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "09-02-2019",
+        "venueName": "Predio de la Fiesta Nacional de la Manzana",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -30.9833333,
+      "long": -64.1
+    },
+    "city": "Jesús María",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "21-01-2019",
+        "venueName": "Anfiteatro José Hernández",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -37.2568393474023,
+      "long": -56.9692611694336
+    },
+    "city": "Villa Gesell",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "17-01-2019",
+        "venueName": "Pueblo Límite",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "16-01-2018",
+        "venueName": "Pueblo Límite",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -31.4,
+      "long": -64.5166667
+    },
+    "city": "Villa Carlos Paz",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "13-01-2019",
+        "venueName": "Keops",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "03-02-2018",
+        "venueName": "Keops",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "13-01-2018",
+        "venueName": "Keops",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 41.0762455147479,
+      "long": 1.18515014648438
+    },
+    "city": "La Pineda",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "07-07-2018",
+        "venueName": "Pacha",
+        "tourName": "España Tour 2018"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 41.6166667,
+      "long": 0.6166667
+    },
+    "city": "Lleida",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "06-07-2018",
+        "venueName": "Biloba Lleida",
+        "tourName": "España Tour 2018"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 37.3772222,
+      "long": -5.9869444
+    },
+    "city": "Seville",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "04-07-2018",
+        "venueName": "Terraza Auditorio Rocio Jurado",
+        "tourName": "España Tour 2018"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 41.656,
+      "long": -0.877
+    },
+    "city": "Zaragoza",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "01-07-2018",
+        "venueName": "Teatro de las Esquinas",
+        "tourName": "España Tour 2018"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 41.80842,
+      "long": 2.74507
+    },
+    "city": "Sils",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "30-06-2018",
+        "venueName": "Ultraclub Millennium",
+        "tourName": "España Tour 2018"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 42.2619861090972,
+      "long": 3.17689418792725
+    },
+    "city": "Roses",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "16-06-2018",
+        "venueName": "Sala Twin",
+        "tourName": "España Tour 2018"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 38.84078,
+      "long": 0.10574
+    },
+    "city": "Denia",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "15-06-2018",
+        "venueName": "Sala Condado",
+        "tourName": "España Tour 2018"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -34.9313889,
+      "long": -57.9488889
+    },
+    "city": "La Plata",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "01-05-2018",
+        "venueName": "El Teatro (Sala Ópera)",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -37.3166667,
+      "long": -59.15
+    },
+    "city": "Tandil",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "30-04-2018",
+        "venueName": "Club Unión y Progreso",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -38.7166667,
+      "long": -62.2833333
+    },
+    "city": "Bahía Blanca",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "29-04-2018",
+        "venueName": "Teatro Don Bosco",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -38.55,
+      "long": -58.75
+    },
+    "city": "Necochea",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "28-04-2018",
+        "venueName": "Cine Teatro París",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -34.4497222,
+      "long": -59.4433333
+    },
+    "city": "San Andrés de Giles",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "03-03-2018",
+        "venueName": "Complejo Aeropuerto",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -34.66018,
+      "long": -58.36744
+    },
+    "city": "Avellaneda",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "24-02-2018",
+        "venueName": "Teatro Colonial",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -31.0833333,
+      "long": -64.5
+    },
+    "city": "La Falda",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "15-01-2018",
+        "venueName": "Anfiteatro Municipal Carlos Gardel",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -23.8333,
+      "long": -64.75
+    },
+    "city": "Ledesma",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "02-12-2017",
+        "venueName": "La Posta",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -24.98206,
+      "long": -65.57891
+    },
+    "city": "Rosario de Lerma",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "01-12-2017",
+        "venueName": "Tranzas Disco",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -24.7833333,
+      "long": -65.4166667
+    },
+    "city": "Salta",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "29-10-2017",
+        "venueName": "Bamboo Bar",
+        "tourName": "LSD Tour"
+      },
+      {
+        "eventDate": "09-07-2017",
+        "venueName": "Bamboo Bar",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -24.1833333,
+      "long": -65.3
+    },
+    "city": "San Salvador de Jujuy",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "28-10-2017",
+        "venueName": "Arde Roma",
+        "tourName": "LSD Tour"
+      },
+      {
+        "eventDate": "07-07-2017",
+        "venueName": "Arde Roma",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -26.817,
+      "long": -65.217
+    },
+    "city": "San Miguel de Tucumán",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "27-10-2017",
+        "venueName": "",
+        "tourName": "LSD Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -26.1833333,
+      "long": -58.1833333
+    },
+    "city": "Formosa",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "16-10-2017",
+        "venueName": "",
+        "tourName": "LSD Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -27.45,
+      "long": -58.9833333
+    },
+    "city": "Resistencia",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "15-10-2017",
+        "venueName": "",
+        "tourName": "LSD Tour"
+      },
+      {
+        "eventDate": "14-10-2017",
+        "venueName": "",
+        "tourName": "LSD Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -27.3833333,
+      "long": -55.8833333
+    },
+    "city": "Posadas",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "13-10-2017",
+        "venueName": "Umma",
+        "tourName": "LSD Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -29.4333333,
+      "long": -66.85
+    },
+    "city": "La Rioja",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "07-10-2017",
+        "venueName": "Club San Lorenzo De Vargas",
+        "tourName": "LSD Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": -46.4333333,
+      "long": -67.5166667
+    },
+    "city": "Caleta Olivia",
+    "country": "Argentina",
+    "concerts": [
+      {
+        "eventDate": "05-08-2017",
+        "venueName": "",
+        "tourName": "N/A"
+      }
+    ]
+  }
+]
