@@ -37,6 +37,8 @@ export default {
         smoke: "url('/smoke.webp')",
         dukiCantandoBW: "url('/duki-cantando-bw.webp')",
         grietaDelInvocador: "url('/lol-bg.webp')",
+        ameri: "url('/ameri-background.webp')",
+        rockstar: "url('/rockstar-escenario.webp')",
       },
       keyframes: {
         "flip-horizontal": {
@@ -138,6 +140,7 @@ export default {
         glitchRed: "#ff0000",
         glitchGreen: "#00ff00",
         glitchCyan: "#00ffff",
+        argentina: "#0D5EAF",
       },
     },
   },
