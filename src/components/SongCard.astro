@@ -13,9 +13,10 @@ const {
 } = Astro.props;
 ---
 
-<div
+<article
   id={`${dateUTCminus3}`}
   class="song relative flex flex-row justify-start gap-5 items-center"
+  role="listitem"
 >
   <div class="relative card hover:brightness-110">
     <div
@@ -23,19 +24,20 @@ const {
     >
       <img
         src={imgUrl}
-        alt={`Portada del álbum ${shortTitle}`}
+        alt={`Portada de la canción "${shortTitle}"`}
         class="w-32 md:w-64 object-cover"
         loading="lazy"
+        decoding="async"
       />
       {
         !description && (
           <div
             class={classNames(
-              "absolute z-50 w-full h-5 xs:h-8 bg-ameri-70/60 -bottom-3 ",
+              "absolute z-50 w-full h-5 xs:h-8 bg-ameri-70/60 -bottom-3",
               detailsColor
             )}
           >
-            <h4 class="text-center font-bold text-xs">{shortTitle}</h4>
+            <h3 class="text-center font-bold text-xs">{shortTitle}</h3>
           </div>
         )
       }
@@ -46,6 +48,8 @@ const {
         data-url={convertToEmbed(url) ?? "dQw4w9WgXcQ"}
       >
         <button
+          type="button"
+          aria-label={`Reproducir video de "${shortTitle}"`}
           class={classNames(
             "button absolute bottom-2 md:bottom-7 md:right-2 bg-ameri-70/40 rounded-full p-1",
             detailsColor
@@ -89,4 +93,4 @@ const {
       </div>
     )
   }
-</div>
+</article>

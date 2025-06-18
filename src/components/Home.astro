@@ -2,39 +2,60 @@
 
 ---
 
-<article class="relative h-lvh justify-center bg-stadium bg-cover">
+<header class="relative h-lvh justify-center bg-stadium bg-cover" role="banner">
   <div
     class="absolute flex-col flex items-end z-40 right-[calc(50%-154px)] sm:right-20 top-[30%] md:top-[35%] lg:gap-3"
+    role="heading"
+    aria-level="1"
   >
-    <div class="flex flex-row items-center cursor-default">
-      <div id="target-div" class="cursor-help">
+    <div class="flex flex-row items-center">
+      <div
+        id="target-div"
+        class="cursor-help"
+        role="tooltip"
+        aria-label="Logo interactivo de Duki"
+      >
         <img
           id="target-img"
           class="w-12 h-12 md:w-14 md:h-14 lg:w-24 lg:h-24"
           src="/duki-logo.svg"
+          alt="Logo de Duki"
+          decoding="async"
         />
       </div>
       <h1 class="text-6xl lg:text-8xl font-bold">UKIPEDIA</h1>
     </div>
-    <h3 class="pl-4 text-md lg:text-xl font-semibold cursor-default">
+    <h2 class="pl-4 text-md lg:text-xl font-semibold">
       La historia de Mauro Ezequiel Lombardo
-    </h3>
-    <h3 class="pl-4 text-md lg:text-xl font-semibold cursor-default">
-      la espalda del TRAP argentino
-    </h3>
+    </h2>
+    <h2 class="pl-4 text-md lg:text-xl font-semibold">
+      La espalda del TRAP argentino
+    </h2>
   </div>
+
   <div
     class="object-cover w-svw h-lvh absolute left-0 top-0 z-20 bg-gradient-to-t from-black to-transparent to-15% md:to-25%"
+    role="presentation"
+    aria-hidden="true"
   >
   </div>
+
   <img
-    loading="lazy"
+    loading="eager"
     id="Duki-singing"
     class="animated-shadow object-cover w-96 lg:w-4/12 absolute lg:left-[10%] bottom-0 z-10"
     src="/duki-cantando.webp"
+    alt="Duki cantando en el escenario"
+    decoding="async"
+    fetchpriority="high"
   />
-  <canvas id="lightning-canvas" class="z-30"></canvas>
-</article>
+
+  <canvas
+    id="lightning-canvas"
+    class="z-30"
+    role="presentation"
+    aria-hidden="true"></canvas>
+</header>
 
 <style>
   .animated-shadow {
