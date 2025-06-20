@@ -2,7 +2,11 @@
 
 ---
 
-<footer class="flex flex-col -mt-[100px] min-h-[150px] items-center">
+<footer
+  class="flex flex-col -mt-[100px] min-h-[150px] items-center"
+  role="contentinfo"
+  aria-label="Pie de página"
+>
   <div class="w-full h-[100px] bg-transparent flex items-end">
     <div
       class="w-full h-[50px] relative"
@@ -10,13 +14,17 @@
         backgroundImage:
           "radial-gradient(circle at 50% -0px,rgba(0, 0, 0, 0) 0,rgba(0, 0, 0, 0) 50px,#1f2937 40px)",
       }}
+      role="presentation"
     >
       <div
         class="w-[90px] aspect-square rounded-full absolute -top-[45px] z-20 flex items-center justify-center bg-black/40"
         style={{right: "calc(50% - 45px)"}}
+        role="presentation"
       >
         <img
           src="/duki-logo.svg"
+          alt="Logo de Duki"
+          decoding="async"
           class="w-[50px] aspect-square transition-all absolute inset-[20px]"
           id="logo1"
           style="opacity: 1;"
@@ -24,6 +32,8 @@
 
         <img
           src="/ameri-logo.svg"
+          alt="Logo de Ameri"
+          decoding="async"
           class="w-[50px] aspect-square transition-all absolute inset-[20px]"
           id="logo2"
           style="opacity: 0;"
@@ -32,14 +42,15 @@
       <div
         class="w-[70px] aspect-square rounded-full bg-transparent absolute -top-[35px] z-10"
         style={{right: "calc(50% - 35px)"}}
+        role="presentation"
       >
       </div>
     </div>
   </div>
   <div class="flex flex-col items-center justify-center w-full">
-    <p class="text-2xl font-semibold text-center w-full pb-3 bg-gray-800">
+    <h2 class="text-2xl font-semibold text-center w-full pb-3 bg-gray-800">
       Dukipedia
-    </p>
+    </h2>
     <div
       class="w-full min-h-[50px] bg-gray-800 px-3 pb-6 flex flex-row justify-center gap-4 items-start text-sm"
     >
@@ -48,6 +59,8 @@
         <a
           href="https://fjanza.vercel.app"
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visitar el sitio web del desarrollador"
           class="hover:text-ameri-30"
         >
           fjanza.dev
@@ -57,6 +70,8 @@
       <a
         href="https://dukipedia.com/humans.txt"
         target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Ver créditos de Dukipedia"
         class="hover:text-ameri-30 font-semibold"
       >
         Créditos

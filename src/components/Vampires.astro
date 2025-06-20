@@ -6,19 +6,32 @@ import {IMG_URL_DEFAULT_VIDEO_NOT_FOUND} from "../utils/constants";
 const songs = await getCollection("vampirosSongs");
 ---
 
-<article
+<section
   class="min-h-svh bg-gradient-to-b from-purple-500/30 from-60% to-zinc-900 flex flex-col items-center pb-20 pt-5"
+  aria-labelledby="vampiros-title"
 >
+  <h2 class="sr-only" id="vampiros-title">Vampiros - Duki y CRO</h2>
+
   <div class="relative flex w-full justify-center pt-4 mb-[100px]">
-    <div class="group">
+    <div class="group" role="presentation">
       <img
         src="/gengar-gastly.webp"
+        alt="Ilustración artística de Gengar y Gastly representando a Duki y CRO"
         class="w-72 sm:w-96 group-hover:scale-105 group-hover:saturate-[1.5] transition-all"
+        width="384"
+        height="219"
+        decoding="async"
+        loading="lazy"
         style={{aspectRatio: 1.75}}
       />
       <img
         src="/alas-titulo-2.webp"
+        alt="Título decorativo de Vampiros"
         class="absolute -bottom-12 sm:-bottom-16 px-4 sm:px-0"
+        width="600"
+        height="150"
+        decoding="async"
+        loading="lazy"
         style={{
           filter: "drop-shadow(0 3mm 5mm rgb(160, 0, 210))",
           left: "50%",
@@ -27,6 +40,7 @@ const songs = await getCollection("vampirosSongs");
       />
     </div>
   </div>
+
   <div
     class="w-full flex flex-col justify-center items-center px-9 md:w-[80%] gap-7 md:gap-12 pt-5"
   >
@@ -42,12 +56,15 @@ const songs = await getCollection("vampirosSongs");
         en el género, fusionando estilos poniendo ese nombre a la dupla.
       </p>
     </div>
+
     <div class="flex flex-col justify-center items-center gap-7 md:gap-9 px-2">
       <h3 class="text-lg md:text-2xl font-semibold">
         Temas en los que participó el grupo
       </h3>
       <div
         class="relative flex flex-row flex-wrap justify-between md:justify-center gap-8 sm:gradient-mask-transparent-linear-90 min-h-[300px]"
+        role="list"
+        aria-label="Lista de canciones de Vampiros"
       >
         {
           songs
@@ -81,4 +98,4 @@ const songs = await getCollection("vampirosSongs");
       </div>
     </div>
   </div>
-</article>
+</section>

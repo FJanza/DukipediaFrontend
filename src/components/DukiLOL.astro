@@ -2,18 +2,20 @@
 import {convertToEmbed} from "../lib/utils";
 ---
 
-<article
+<section
   class="relative flex flex-col min-h-svh justify-center items-center bg-gradient-to-b from-[#19181C] to-[#171719] pb-4"
+  aria-labelledby="duki-lol-title"
 >
   <div
     class="flex flex-col items-start justify-center w-[90%] md:w-[40%] gap-2 p-2 md:p-5 z-30"
   >
-    <h3
+    <h2
+      id="duki-lol-title"
       class="text-4xl font-bold pt-3 pb-6 md:py-0"
       style={{fontFamily: "lol"}}
     >
       Legend of Duki
-    </h3>
+    </h2>
     <div class="flex flex-col md:flex-row gap-2 justify-center items-center">
       <div class="flex-1 flex flex-col gap-2 items-start">
         <p class="prose prose-white">
@@ -36,11 +38,13 @@ import {convertToEmbed} from "../lib/utils";
           class="instagram-media w-full p-0"
           data-instgrm-permalink="https://www.instagram.com/reel/DGoZdbluZ4V/?utm_source=ig_embed&utm_campaign=loading"
           data-instgrm-version="14"
+          title="Publicación de Instagram relacionada con Duki y League of Legends"
         >
         </blockquote>
       </div>
     </div>
   </div>
+
   <div
     class="flex flex-col items-start justify-center w-[90%] md:w-[40%] gap-2 p-5 z-30"
   >
@@ -49,35 +53,72 @@ import {convertToEmbed} from "../lib/utils";
       Pero si hay un momento que quedó grabado en la historia del streaming, es
       el mítico clip con Sandra, su mamá, que surgió mientras jugaba una partida
       en vivo en el canal de Coscu. En pleno rage, Duki, frustrado por la
-      partida, soltó la icónica frase: <span class="font-bold">
-        “No te voy a comprar ningún auto caro, no te voy a comprar la mansión
-        cuando este re zarpado”
-      </span>, dirigiéndose a su madre, quien estaba en la otra habitación. Este
+      partida, soltó la icónica frase: <q class="font-bold">
+        No te voy a comprar ningún auto caro, no te voy a comprar la mansión
+        cuando este re zarpado
+      </q>, dirigiéndose a su madre, quien estaba en la otra habitación. Este
       momento se convirtió en una joya de internet y un meme recurrente entre
       sus seguidores.
     </p>
     <div
       data-url={convertToEmbed("https://youtu.be/M8athqoOvRU", 29)}
       class="relative aspect-video hover:brightness-110 cursor-pointer video-container"
+      role="button"
+      tabindex="0"
+      aria-label="Reproducir clip de Duki jugando en el canal de Coscu"
     >
-      <img src="/clipCoscu.webp" class="aspect-video w-full h-full lg:w-full" />
+      <img
+        src="/clipCoscu.webp"
+        alt="Captura del momento en que Duki habla con su mamá durante el stream"
+        class="aspect-video w-full h-full lg:w-full"
+        width="640"
+        height="360"
+        loading="lazy"
+        decoding="async"
+      />
       <img
         src="/play-button.svg"
+        alt="Botón de reproducir"
         class="absolute w-10 h-10 top-[calc(50%-20px)] right-[calc(50%-20px)] md:w-20 md:h-20 md:top-[calc(50%-40px)] md:right-[calc(50%-40px)] opacity-80 cursor-pointer"
+        width="40"
+        height="40"
+        decoding="async"
+        aria-hidden="true"
       />
     </div>
   </div>
-  <div class="opacity-15">
-    <img src="/leona.webp" class="absolute bottom-0 left-0 z-10" />
+
+  <div class="opacity-15" role="presentation">
+    <img
+      src="/leona.webp"
+      alt="Campeón Leona de League of Legends"
+      class="absolute bottom-0 left-0 z-10"
+      loading="lazy"
+      decoding="async"
+    />
     <img
       src="/nautilus.webp"
+      alt="Campeón Nautilus de League of Legends"
       class="absolute bottom-[500px] md:bottom-0 right-0 z-10"
+      loading="lazy"
+      decoding="async"
     />
-    <img src="/lol-bg.webp" class="absolute inset-0 w-svw opacity-45" />
+    <img
+      src="/lol-bg.webp"
+      alt="Fondo de League of Legends"
+      class="absolute inset-0 w-svw opacity-45"
+      loading="lazy"
+      decoding="async"
+    />
   </div>
+
   <img
     src="/tft-logo.webp"
+    alt="Logo de Teamfight Tactics (TFT)"
     class="absolute top-5 right-2 w-[300px] z-10 opacity-15"
+    loading="lazy"
+    decoding="async"
   />
-</article>
+</section>
+
 <script async src="//www.instagram.com/embed.js"></script>

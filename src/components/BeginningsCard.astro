@@ -1,24 +1,34 @@
 ---
+interface Props {
+  year: number;
+}
+
 const {year} = Astro.props;
 ---
 
-<div class="flex flex-col w-36 md:w-56">
+<article class="flex flex-col w-36 md:w-56" role="listitem">
   <div
     class="relative flex flex-row items-center w-36 md:w-56 py-[2px] md:py-1"
   >
-    <h2
+    <h3
       class="top-2 left-2 text-xl md:text-3xl pl-3 md:pl-5 z-30 font-semibold"
     >
-      {year}
-    </h2>
+      <time datetime={`${year}`}>{year}</time>
+    </h3>
     <div
       class="w-8 h-8 md:w-11 md:h-11 bg-ameri-80 rounded-full absolute -right-[16px] md:-right-[20px] z-10"
+      role="presentation"
+      aria-hidden="true"
     >
     </div>
     <div
       class="absolute top-0 left-0 w-full h-full bg-ameri-80/20 z-20 backdrop-blur-sm"
+      role="presentation"
+      aria-hidden="true"
     >
     </div>
   </div>
-  <slot />
-</div>
+  <div class="timeline-content">
+    <slot />
+  </div>
+</article>

@@ -1,0 +1,159 @@
+---
+interface Props {
+  title?: string;
+  message?: string;
+}
+
+const {
+  title = "¡Bienvenido a la Dukipedia!",
+  message = "Esta es una página dedicada a la vida y carrera de Duki, esta no es una web oficial, sino un proyecto personal para compartir información que fui recopilando sobre el.  Espero que la disfrutes y encuentres útil. Si tenes alguna sugerencia o corrección, no dudes en contactarme a través de mis redes sociales.",
+} = Astro.props;
+---
+
+<dialog
+  class="welcome-dialog bg-transparent text-white z-[9999]"
+  aria-labelledby="welcome-title"
+  aria-modal="true"
+  role="dialog"
+>
+  <div
+    class="w-[90vw] max-w-[600px] bg-gray-900/95 p-8 rounded-xl backdrop-blur-sm"
+  >
+    <h2 id="welcome-title" class="text-3xl font-bold mb-4 text-ameri-80">
+      {title}
+    </h2>
+
+    <p class="text-lg mb-6">
+      {message}
+    </p>
+
+    <button
+      type="button"
+      class="close-welcome-dialog absolute right-4 top-4 rounded p-2 transition hover:scale-110 hover:bg-accent"
+      aria-label="Cerrar mensaje de bienvenida"
+    >
+      <svg
+        class="size-4"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 14 14"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"></path>
+      </svg>
+    </button>
+  </div>
+</dialog>
+
+<script>
+  function setWelcomeShown() {
+    localStorage.setItem("welcomeShown", "true");
+    console.log(
+      "Modal marcado como visto:",
+      localStorage.getItem("welcomeShown")
+    );
+  }
+
+  function showDialog() {
+    const dialog = document.querySelector(
+      ".welcome-dialog"
+    ) as HTMLDialogElement;
+    if (dialog && !localStorage.getItem("welcomeShown")) {
+      console.log("Mostrando modal...");
+      dialog.showModal();
+    }
+  }
+
+  function setupEventListeners(dialog: HTMLDialogElement) {
+    // Manejar clic en el botón de cerrar
+    const closeButton = dialog.querySelector(".close-welcome-dialog");
+    closeButton?.addEventListener("click", () => {
+      dialog.close();
+      setWelcomeShown();
+    });
+
+    // Cerrar al hacer click fuera del modal
+    dialog.addEventListener("mousedown", (e) => {
+      const rect = dialog.getBoundingClientRect();
+      const isInDialog =
+        rect.top <= e.clientY &&
+        e.clientY <= rect.top + rect.height &&
+        rect.left <= e.clientX &&
+        e.clientX <= rect.left + rect.width;
+      if (!isInDialog) {
+        dialog.close();
+        setWelcomeShown();
+      }
+    });
+
+    // Cerrar con Escape
+    dialog.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        dialog.close();
+        setWelcomeShown();
+      }
+    });
+
+    // Enfocar el botón de cerrar para accesibilidad
+    setTimeout(() => {
+      const closeButton = dialog.querySelector(
+        ".close-welcome-dialog"
+      ) as HTMLButtonElement;
+      closeButton?.focus();
+    }, 100);
+  }
+
+  function initializeDialog() {
+    const dialog = document.querySelector(
+      ".welcome-dialog"
+    ) as HTMLDialogElement;
+    if (dialog) {
+      console.log(
+        "Estado del localStorage:",
+        localStorage.getItem("welcomeShown")
+      );
+      setupEventListeners(dialog);
+      showDialog();
+    }
+  }
+
+  // Inicializar cuando el DOM esté listo
+  document.addEventListener("DOMContentLoaded", initializeDialog);
+  document.addEventListener("astro:page-load", initializeDialog);
+
+  // También inicializar inmediatamente si el DOM ya está listo
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initializeDialog);
+  } else {
+    initializeDialog();
+  }
+</script>
+
+<style>
+  .welcome-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+  }
+
+  .welcome-dialog[open] {
+    opacity: 1;
+    transform: scale(1);
+    animation: show-modal 0.3s ease normal;
+  }
+
+  @keyframes show-modal {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+</style>
