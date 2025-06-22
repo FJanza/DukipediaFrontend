@@ -1,6 +1,41 @@
 [
   {
     "coords": {
+      "lat": 28.1,
+      "long": -15.4166667
+    },
+    "city": "Las Palmas de Gran Canaria",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "20-06-2025",
+        "venueName": "Anexo Estadio",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "23-06-2023",
+        "venueName": "Anexo Estadio",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 36.5154308484385,
+      "long": -4.88582611083984
+    },
+    "city": "Marbella",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "14-06-2025",
+        "venueName": "La Cantera de Nagüeles",
+        "tourName": "Ameri World Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
       "lat": 42.880524123434,
       "long": -8.54568958282471
     },
@@ -936,21 +971,6 @@
         "eventDate": "09-07-2022",
         "venueName": "Teatro Auditorio Riberas del Guadaira",
         "tourName": "Ya supiste"
-      }
-    ]
-  },
-  {
-    "coords": {
-      "lat": 28.1,
-      "long": -15.4166667
-    },
-    "city": "Las Palmas de Gran Canaria",
-    "country": "Spain",
-    "concerts": [
-      {
-        "eventDate": "23-06-2023",
-        "venueName": "Anexo Estadio",
-        "tourName": "N/A"
       }
     ]
   },
