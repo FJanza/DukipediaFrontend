@@ -1,0 +1,36 @@
+{
+  "url": "https://www.youtube.com/watch?v=6-bEWZcGBQg",
+  "title": "NO ME ALCANZA",
+  "shortTitle": "NO ME ALCANZA",
+  "singers": "DUKI",
+  "date": "2025-06-23T23:59:08Z",
+  "thumbnails": {
+    "default": {
+      "url": "https://i.ytimg.com/vi/6-bEWZcGBQg/default.jpg",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i.ytimg.com/vi/6-bEWZcGBQg/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i.ytimg.com/vi/6-bEWZcGBQg/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+    },
+    "standard": {
+      "url": "https://i.ytimg.com/vi/6-bEWZcGBQg/sddefault.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "maxres": {
+      "url": "https://i.ytimg.com/vi/6-bEWZcGBQg/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "position": 241,
+  "videoOwnerChannelTitle": "Duki"
+}
