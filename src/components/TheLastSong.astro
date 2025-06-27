@@ -9,6 +9,8 @@ const songs = await getCollection("songs");
 const lastSong = songs.sort(
   (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
 )[0];
+
+const timeAgo = getTimeAgo(new Date(lastSong.data.date));
 ---
 
 <article
@@ -39,7 +41,7 @@ const lastSong = songs.sort(
       />
 
       <p class="text-gray-600 text-center">
-        Hace {getTimeAgo(new Date(lastSong.data.date))}
+        Hace {timeAgo}
       </p>
     </div>
   </div>
