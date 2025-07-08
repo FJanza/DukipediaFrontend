@@ -1,0 +1,36 @@
+{
+  "url": "https://www.youtube.com/watch?v=ZXIWU8GLsAc",
+  "title": "[FREE] 5202 Type Beat",
+  "shortTitle": "[FREE] 5202 Type Beat",
+  "singers": "DUKI",
+  "date": "2025-07-07T03:21:10Z",
+  "thumbnails": {
+    "default": {
+      "url": "https://i.ytimg.com/vi/ZXIWU8GLsAc/default.jpg",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i.ytimg.com/vi/ZXIWU8GLsAc/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i.ytimg.com/vi/ZXIWU8GLsAc/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+    },
+    "standard": {
+      "url": "https://i.ytimg.com/vi/ZXIWU8GLsAc/sddefault.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "maxres": {
+      "url": "https://i.ytimg.com/vi/ZXIWU8GLsAc/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "position": 146,
+  "videoOwnerChannelTitle": "Duki"
+}
