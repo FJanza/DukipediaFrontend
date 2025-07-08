@@ -1,0 +1,36 @@
+{
+  "url": "https://www.youtube.com/watch?v=c66imHOBacU",
+  "title": "eCLIPSE sOLAR",
+  "shortTitle": "eCLIPSE sOLAR",
+  "singers": "DUKI",
+  "date": "2025-07-07T03:21:10Z",
+  "thumbnails": {
+    "default": {
+      "url": "https://i.ytimg.com/vi/c66imHOBacU/default.jpg",
+      "width": 120,
+      "height": 90
+    },
+    "medium": {
+      "url": "https://i.ytimg.com/vi/c66imHOBacU/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+    },
+    "high": {
+      "url": "https://i.ytimg.com/vi/c66imHOBacU/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+    },
+    "standard": {
+      "url": "https://i.ytimg.com/vi/c66imHOBacU/sddefault.jpg",
+      "width": 640,
+      "height": 480
+    },
+    "maxres": {
+      "url": "https://i.ytimg.com/vi/c66imHOBacU/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "position": 146,
+  "videoOwnerChannelTitle": "Duki"
+}
