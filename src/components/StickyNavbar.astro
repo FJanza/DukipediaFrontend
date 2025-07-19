@@ -1,0 +1,90 @@
+---
+const data = [
+  {title: "Los inicios", href: "#TheBeginnings"},
+  {title: "Quinto Escalón", href: "#FifthStep"},
+  {title: "Freestyles", href: "#Freestyles"},
+  {title: "La última canción", href: "#TheLastSong"},
+  {title: "Todos sus temas", href: "#AllSongsTimeline"},
+  {title: "Antezana", href: "#Antezana"},
+  {title: "Modo Diablo 😈", href: "#DevilMode"},
+  {title: "Hitboys", href: "#Hitboys"},
+  {title: "Vampiros", href: "#Vampires"},
+  {title: "Candy Flip", href: "#CandyFlip"},
+  {title: "Duki LOL", href: "#DukiLOL"},
+  {title: "Entrevistas", href: "#Interviews"},
+  {title: "No hay otro camino", href: "#NoOtherWay"},
+  {title: "Mapa de todos sus conciertos", href: "#Concerts"},
+  {title: "Albums en spotify", href: "#Albums"},
+];
+---
+
+<nav
+  class="fixed top-0 left-0 z-50 bg-white/10 backdrop-blur-sm shadow-md w-fit p-2 border-r-2 border-b-2 border-ameri-60 rounded-br-md"
+>
+  <div class="flex justify-center">
+    <div class="w-5 aspect-square flex justify-center py-2">
+      <canvas
+        id="button"
+        class="w-4 h-4 border-r-2 border-t-2 rotate-[135deg] cursor-pointer transition-all duration-300"
+      ></canvas>
+    </div>
+  </div>
+  <ul
+    class="flex flex-col space-y-4 overflow-hidden transition-[max-width,max-height] duration-300 max-h-0 max-w-10"
+    id="column"
+    style="max-height: 0; max-width: 2.5rem;"
+  >
+    {
+      data.map((el) => (
+        <li>
+          <a
+            href={`${el.href}`}
+            class="text-white hover:text-ameri-50 transition-colors font-semibold whitespace-nowrap overflow-hidden block"
+          >
+            <span class="link-text">{el.title}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<script is:inline>
+  // Ajuste de scroll-margin-top para todas las secciones ancladas
+  document.querySelectorAll("section[id]").forEach((section) => {
+    section.style.scrollMarginTop = "3rem";
+  });
+  const btn = document.getElementById("button");
+  const column = document.getElementById("column");
+  if (btn && column) {
+    btn.addEventListener("click", () => {
+      const isClosed =
+        column.style.maxHeight === "0px" ||
+        column.style.maxHeight === "0" ||
+        !column.style.maxHeight;
+      if (isClosed) {
+        column.style.maxHeight = "100vh";
+        column.style.maxWidth = "100vw";
+        btn.classList.remove("rotate-[135deg]");
+        btn.classList.add("-rotate-45");
+        // Mostrar texto de links
+        column
+          .querySelectorAll(".link-text")
+          .forEach((span) => (span.style.opacity = "1"));
+      } else {
+        column.style.maxHeight = "0";
+        column.style.maxWidth = "2.5rem";
+        btn.classList.remove("-rotate-45");
+        btn.classList.add("rotate-[135deg]");
+        // Ocultar texto de links
+        column
+          .querySelectorAll(".link-text")
+          .forEach((span) => (span.style.opacity = "0"));
+      }
+    });
+    // Inicialmente ocultar texto
+    column
+      .querySelectorAll(".link-text")
+      .forEach((span) => (span.style.opacity = "0"));
+  }
+</script>

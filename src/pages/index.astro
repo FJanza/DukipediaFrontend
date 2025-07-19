@@ -14,6 +14,7 @@ import Home from "../components/Home.astro";
 import Interviews from "../components/Interviews.astro";
 import Modal from "../components/Modal.astro";
 import NoOtherWay from "../components/NoOtherWay.astro";
+import StickyNavbar from "../components/StickyNavbar.astro";
 import TheBeginnings from "../components/TheBeginnings.astro";
 import TheLastSong from "../components/TheLastSong.astro";
 import Vampires from "../components/Vampires.astro";
@@ -24,53 +25,57 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Dukipedia 𓆰𓆪">
   <Modal />
   <WelcomeModal />
-
+  <StickyNavbar />
   <main style="content-visibility:auto;">
     <Home />
   </main>
-  <section style="content-visibility:auto;">
+  <section style="content-visibility:auto;" id="TheBeginnings">
     <TheBeginnings />
   </section>
-  <section style="content-visibility:auto;">
+  <section style="content-visibility:auto;" id="FifthStep">
     <FifthStep />
   </section>
-  <section style="content-visibility:auto;">
+  <section style="content-visibility:auto;" id="Freestyles">
     <Freestyles />
   </section>
-  <section style="content-visibility:auto;" class="bg-zinc-900">
+  <section
+    style="content-visibility:auto;"
+    class="bg-zinc-900"
+    id="TheLastSong"
+  >
     <TheLastSong />
   </section>
-  <section style="content-visibility:auto;">
+  <section style="content-visibility:auto;" id="AllSongsTimeline">
     <AllSongTimeLine />
   </section>
-  <section style="content-visibility:auto;">
+  <section style="content-visibility:auto;" id="Antezana">
     <Antezana />
   </section>
-  <section style="content-visibility:auto;" class="bg-black">
+  <section style="content-visibility:auto;" class="bg-black" id="DevilMode">
     <DevilMode />
   </section>
-  <section style="content-visibility:auto;">
+  <section style="content-visibility:auto;" id="Hitboys">
     <Hitboys />
   </section>
-  <section style="content-visibility:auto;">
+  <section style="content-visibility:auto;" id="Vampires">
     <Vampires />
   </section>
-  <section style="content-visibility:auto;">
+  <section style="content-visibility:auto;" id="CandyFlip">
     <CandyFlip />
   </section>
-  <section style="content-visibility:auto;">
+  <section style="content-visibility:auto;" id="DukiLOL">
     <DukiLOL />
   </section>
-  <section style="content-visibility:auto;" class="bg-zinc-900">
+  <section style="content-visibility:auto;" class="bg-zinc-900" id="Interviews">
     <Interviews />
   </section>
-  <section style="content-visibility:auto;">
+  <section style="content-visibility:auto;" id="NoOtherWay">
     <NoOtherWay />
   </section>
-  <section>
+  <section id="Concerts">
     <Concerts />
   </section>
-  <section style="content-visibility:auto;">
+  <section style="content-visibility:auto;" id="Albums">
     <Albums />
   </section>
   <Footer />
