@@ -53,10 +53,6 @@ const {
 <script>
   function setWelcomeShown() {
     localStorage.setItem("welcomeShown", "true");
-    console.log(
-      "Modal marcado como visto:",
-      localStorage.getItem("welcomeShown")
-    );
   }
 
   function showDialog() {
@@ -64,7 +60,6 @@ const {
       ".welcome-dialog"
     ) as HTMLDialogElement;
     if (dialog && !localStorage.getItem("welcomeShown")) {
-      console.log("Mostrando modal...");
       dialog.showModal();
     }
   }
@@ -113,10 +108,6 @@ const {
       ".welcome-dialog"
     ) as HTMLDialogElement;
     if (dialog) {
-      console.log(
-        "Estado del localStorage:",
-        localStorage.getItem("welcomeShown")
-      );
       setupEventListeners(dialog);
       showDialog();
     }

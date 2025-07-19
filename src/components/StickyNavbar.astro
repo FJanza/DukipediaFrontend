@@ -1,0 +1,67 @@
+---
+const links = [
+  "TheBeginnings",
+  "FifthStep",
+  "Freestyles",
+  "TheLastSong",
+  "AllSongsTimeline",
+  "Antezana",
+  "DevilMode",
+  "Hitboys",
+  "Vampires",
+  "CandyFlip",
+  "DukiLOL",
+  "Interviews",
+  "NoOtherWay",
+  "Concerts",
+  "Albums",
+];
+---
+
+<nav class="sticky top-0 left-0 z-50 bg-white shadow-md w-fit p-2">
+  <div class="flex justify-end">
+    <img
+      id="button"
+      src="right-arrow.svg"
+      class="w-5 aspect-square rotate-90 cursor-pointer transition-all"
+    />
+  </div>
+  <ul class="flex-col space-y-4 hidden" id="column">
+    {
+      links.map((link) => (
+        <li>
+          <a
+            href={`#${link}`}
+            class="text-gray-700 hover:text-blue-500 transition-colors"
+          >
+            {link.replace(/([A-Z])/g, " $1").trim()}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<script is:inline>
+  // Ajuste de scroll-margin-top para todas las secciones ancladas
+  document.querySelectorAll("section[id]").forEach((section) => {
+    section.style.scrollMarginTop = "3rem";
+  });
+  const btn = document.getElementById("button");
+  const column = document.getElementById("column");
+  if (btn && column) {
+    btn.addEventListener("click", () => {
+      if (column.classList.contains("hidden")) {
+        column.classList.remove("hidden");
+        column.classList.add("flex");
+        btn.classList.remove("rotate-90");
+        btn.classList.add("rotate-180");
+      } else {
+        column.classList.remove("flex");
+        column.classList.add("hidden");
+        btn.classList.remove("rotate-180");
+        btn.classList.add("rotate-90");
+      }
+    });
+  }
+</script>
