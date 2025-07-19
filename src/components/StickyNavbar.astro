@@ -1,40 +1,41 @@
 ---
-const links = [
-  "TheBeginnings",
-  "FifthStep",
-  "Freestyles",
-  "TheLastSong",
-  "AllSongsTimeline",
-  "Antezana",
-  "DevilMode",
-  "Hitboys",
-  "Vampires",
-  "CandyFlip",
-  "DukiLOL",
-  "Interviews",
-  "NoOtherWay",
-  "Concerts",
-  "Albums",
+const data = [
+  {title: "Los inicios", href: "#TheBeginnings"},
+  {title: "Quinto Escalón", href: "#FifthStep"},
+  {title: "Freestyles", href: "#Freestyles"},
+  {title: "La última canción", href: "#TheLastSong"},
+  {title: "Todos sus temas", href: "#AllSongsTimeline"},
+  {title: "Antezana", href: "#Antezana"},
+  {title: "Modo Diablo 😈", href: "#DevilMode"},
+  {title: "Hitboys", href: "#Hitboys"},
+  {title: "Vampiros", href: "#Vampires"},
+  {title: "Candy Flip", href: "#CandyFlip"},
+  {title: "Duki LOL", href: "#DukiLOL"},
+  {title: "Entrevistas", href: "#Interviews"},
+  {title: "No hay otro camino", href: "#NoOtherWay"},
+  {title: "Mapa de todos sus conciertos", href: "#Concerts"},
+  {title: "Albums en spotify", href: "#Albums"},
 ];
 ---
 
-<nav class="sticky top-0 left-0 z-50 bg-white shadow-md w-fit p-2">
-  <div class="flex justify-end">
-    <img
+<nav
+  class="sticky top-0 left-0 z-50 bg-white/10 backdrop-blur-sm shadow-md w-fit p-2 border-r-2 border-b-2 border-ameri-60 rounded-br-md"
+>
+  <div class="flex justify-center min-w-10">
+    <canvas
       id="button"
-      src="right-arrow.svg"
-      class="w-5 aspect-square rotate-90 cursor-pointer transition-all"
-    />
+      class="w-5 border-r-2 border-t-2 aspect-square rotate-45 cursor-pointer transition-all"
+    ></canvas>
   </div>
-  <ul class="flex-col space-y-4 hidden" id="column">
+  <ul class="flex-col space-y-4 hidden pt-3" id="column">
     {
-      links.map((link) => (
+      data.map((el) => (
         <li>
           <a
-            href={`#${link}`}
-            class="text-gray-700 hover:text-blue-500 transition-colors"
+            href={`${el.href}`}
+            class="text-white hover:text-ameri-50 transition-colors font-semibold"
           >
-            {link.replace(/([A-Z])/g, " $1").trim()}
+            {el.title}
           </a>
         </li>
       ))
@@ -54,13 +55,13 @@ const links = [
       if (column.classList.contains("hidden")) {
         column.classList.remove("hidden");
         column.classList.add("flex");
-        btn.classList.remove("rotate-90");
-        btn.classList.add("rotate-180");
+        btn.classList.remove("rotate-45");
+        btn.classList.add("rotate-[135deg]");
       } else {
         column.classList.remove("flex");
         column.classList.add("hidden");
-        btn.classList.remove("rotate-180");
-        btn.classList.add("rotate-90");
+        btn.classList.remove("rotate-[135deg]");
+        btn.classList.add("rotate-45");
       }
     });
   }
