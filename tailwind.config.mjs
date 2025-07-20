@@ -39,6 +39,7 @@ export default {
         grietaDelInvocador: "url('/lol-bg.webp')",
         ameri: "url('/ameri-background.webp')",
         rockstar: "url('/rockstar-escenario.webp')",
+        ameri2: "url('/duki-antes-de-ameri-hd-wallpaper-preview.webp')",
       },
       keyframes: {
         "flip-horizontal": {

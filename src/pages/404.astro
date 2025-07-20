@@ -1,5 +1,8 @@
 ---
 const title = "404 - Página no encontrada";
+
+const {url} = Astro.request;
+const path = new URL(url).pathname;
 ---
 
 <html lang="es">
@@ -11,10 +14,23 @@ const title = "404 - Página no encontrada";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body
-    class="min-h-screen flex flex-col items-center justify-center bg-[#0f1516] text-white"
+    class="min-h-screen flex flex-col items-center justify-center bg-[#0f1516] text-white gap-2 bg-ameri2 bg-cover bg-center"
   >
-    <h1 class="text-5xl font-bold mb-4">404</h1>
-    <p class="text-2xl mb-8">Página no encontrada</p>
+    <div class="relative flex flex-col items-center group">
+      <img src="duki-mirandote.webp" class="group-hover:animate-spin" />
+      <div
+        class="absolute -top-8 left-1/2 -translate-x-1/2 -translate-y-full bg-white text-black px-4 py-2 rounded-xl shadow-lg text-base font-semibold max-w-xs text-center speech-bubble"
+      >
+        <span class="group-hover:hidden flex"
+          >¿Boludo te perdiste? {path} no existe.</span
+        >
+        <span class="group-hover:flex hidden">aaaaaaaa pega como cotto.</span>
+        <span
+          class="absolute left-1/4 -bottom-2 -translate-x-1/3 w-0 h-0 border-x-8 border-x-transparent border-t-8 border-t-white"
+        ></span>
+      </div>
+    </div>
+
     <a
       href="/"
       class="px-6 py-2 bg-ameri-60 rounded-md text-white font-semibold hover:bg-ameri-50 transition-colors"
