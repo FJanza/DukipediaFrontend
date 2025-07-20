@@ -1,6 +1,101 @@
 [
   {
     "coords": {
+      "lat": 39.1645806513302,
+      "long": -0.249391536098055
+    },
+    "city": "Cullera",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "18-07-2025",
+        "venueName": "Playa de Cullera",
+        "tourName": "N/A"
+      },
+      {
+        "eventDate": "12-08-2022",
+        "venueName": "Playa de Cullera",
+        "tourName": "Ya supiste"
+      },
+      {
+        "eventDate": "24-07-2022",
+        "venueName": "Playa de Cullera",
+        "tourName": "Ya supiste"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 36.838141238227,
+      "long": -2.45973587036133
+    },
+    "city": "Almería",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "11-07-2025",
+        "venueName": "Recinto Ferial de Almería Vega de Acá",
+        "tourName": "Ameri World Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 37.3772222,
+      "long": -5.9869444
+    },
+    "city": "Seville",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "05-07-2025",
+        "venueName": "Estadio La Cartuja de Sevilla",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "04-07-2018",
+        "venueName": "Terraza Auditorio Rocio Jurado",
+        "tourName": "España Tour 2018"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 36.4166667,
+      "long": -6.1333333
+    },
+    "city": "Chiclana de la Frontera",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "04-07-2025",
+        "venueName": "Poblado de Sancti Petri",
+        "tourName": "Ameri World Tour"
+      },
+      {
+        "eventDate": "19-08-2023",
+        "venueName": "Poblado de Sancti Petri",
+        "tourName": "N/A"
+      }
+    ]
+  },
+  {
+    "coords": {
+      "lat": 42.3,
+      "long": -1.9666667
+    },
+    "city": "Calahorra",
+    "country": "Spain",
+    "concerts": [
+      {
+        "eventDate": "27-06-2025",
+        "venueName": "Parque del Cidacos",
+        "tourName": "Ameri World Tour"
+      }
+    ]
+  },
+  {
+    "coords": {
       "lat": 28.1,
       "long": -15.4166667
     },
@@ -891,21 +986,6 @@
   },
   {
     "coords": {
-      "lat": 36.4166667,
-      "long": -6.1333333
-    },
-    "city": "Chiclana de la Frontera",
-    "country": "Spain",
-    "concerts": [
-      {
-        "eventDate": "19-08-2023",
-        "venueName": "Poblado de Sancti Petri",
-        "tourName": "N/A"
-      }
-    ]
-  },
-  {
-    "coords": {
       "lat": 38.3451735357475,
       "long": -0.481488704681396
     },
@@ -1140,26 +1220,6 @@
       {
         "eventDate": "14-08-2022",
         "venueName": "Marenostrum Music Castle Park",
-        "tourName": "Ya supiste"
-      }
-    ]
-  },
-  {
-    "coords": {
-      "lat": 39.1645806513302,
-      "long": -0.249391536098055
-    },
-    "city": "Cullera",
-    "country": "Spain",
-    "concerts": [
-      {
-        "eventDate": "12-08-2022",
-        "venueName": "Playa de Cullera",
-        "tourName": "Ya supiste"
-      },
-      {
-        "eventDate": "24-07-2022",
-        "venueName": "Playa de Cullera",
         "tourName": "Ya supiste"
       }
     ]
@@ -1800,21 +1860,6 @@
       {
         "eventDate": "06-07-2018",
         "venueName": "Biloba Lleida",
-        "tourName": "España Tour 2018"
-      }
-    ]
-  },
-  {
-    "coords": {
-      "lat": 37.3772222,
-      "long": -5.9869444
-    },
-    "city": "Seville",
-    "country": "Spain",
-    "concerts": [
-      {
-        "eventDate": "04-07-2018",
-        "venueName": "Terraza Auditorio Rocio Jurado",
         "tourName": "España Tour 2018"
       }
     ]
